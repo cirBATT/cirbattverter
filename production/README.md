@@ -13,3 +13,5 @@
 Les deux jeux `.gbrjob` décrivent 35 µm de cuivre sur toutes les couches, contrairement aux 70 µm demandés dans le README d'origine. Les exports sont conservés comme preuves de la révision, sans ajouter silencieusement des couches ou changer l'empilage.
 
 Pour publier une version fabricable : identifier le commit corrigé, approuver l'empilage, recalculer les zones, passer les contrôles, regénérer **ensemble** Gerbers/perçages/BOM/CPL et vérifier le visualiseur de fabrication. Joindre la nomenclature système, le noyau et les fichiers de configuration des modules.
+
+Pour une intégration avec une batterie, les [packs de seconde vie cirBATT](https://cirbatt.com/packs) sont présentés sur le site de la marque ; leur compatibilité avec le circuit doit être établie séparément dans le [dossier batterie](../docs/09-batteries-seconde-vie.md).

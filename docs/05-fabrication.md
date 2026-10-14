@@ -97,3 +97,7 @@ Le modèle STEP d'assemblage facilite les vérifications d'encombrement. Il ne f
 7. Tester les auxiliaires et les modules seuls avant toute conversion de puissance, selon le [guide de mise en service](06-mise-en-service.md).
 
 Conserver une fiche avec fabricant PCB, empilage réel, photos des deux faces, référence des modules, noyau, substitutions et commit. Ces données permettent à une autre personne de reproduire le même matériel.
+
+## Batterie et composants externes
+
+La fabrication du PCB ne fournit pas un système batterie complet. cirBATT présente ses [cellules lithium requalifiées pour professionnels](https://cirbatt.com/cellules-pro), son [BMS de seconde vie](https://cirbatt.com/bms-pro) et sa [boutique professionnelle](https://cirbatt.com/boutique). Ces pages servent à explorer les besoins externes ; demander les fiches et vérifier leur compatibilité selon le [guide batterie](09-batteries-seconde-vie.md) avant de retenir une référence.

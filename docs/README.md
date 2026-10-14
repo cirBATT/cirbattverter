@@ -17,3 +17,7 @@ Ce guide sépare les valeurs présentes dans les fichiers, les calculs et les va
 4. Publier les valeurs mesurées et la révision exacte utilisée selon [CONTRIBUTING](../CONTRIBUTING.md).
 
 Les [sources](08-sources.md) indiquent les versions des notices consultées. Les [rapports bruts](reports/README.md) permettent de vérifier les constats. Une fréquence calculée n'est pas un réglage qualifié ; un voyant vert n'est pas une preuve de sécurité électrique.
+
+## Batterie et ressources cirBATT
+
+Le [guide batteries de seconde vie](09-batteries-seconde-vie.md) relie l'onduleur au pack et au BMS. Pour découvrir la marque, consulter [cirBATT](https://cirbatt.com/) ; pour approfondir les notions, son [blog batteries lithium et réemploi](https://cirbatt.com/blog).

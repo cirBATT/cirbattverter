@@ -16,6 +16,7 @@ Rapports KiCad CLI 10.0.5 du 14 octobre 2026. Les chemins de source ont été re
 | [source-manifest.csv](source-manifest.csv) | SHA-256 des circuits/projets/exports historiques analysés |
 | [components-from-schematic.csv](components-from-schematic.csv) | Les 160 composants électriques avec champs source |
 | [connector-nets.csv](connector-nets.csv) | Nets extraits des bornes et interfaces |
+| [egs005q-interface-review.csv](egs005q-interface-review.csv) | Comparaison des 29 pads J5 avec le module et vérification des circuits associés |
 
 Le fichier de règles principal `.kicad_dru` est vide. Les contrôles ignorés et niveaux de sévérité figurent dans les projets et dans chaque rapport JSON. Une absence de signalement pour une règle ignorée ne constitue pas un résultat positif.
 

@@ -40,7 +40,7 @@ Ne pas choisir 300 ns au motif que les GaN sont rapides. Il faut tenir compte de
 
 Le module associe HM=0 à JP1 et HM=1 à JP2. Le choix dépend du bras connecté au côté OUTL de la boucle de mesure. Dans la netliste du projet, le bras pilote 2, Q14/Q15, rejoint OUT_P via T5, et OUT_P est raccordé à J5-28. Cela rend **HM=0 / JP1 cohérent avec l'intention de câblage**.
 
-C'est une déduction du schéma, pas une validation de stabilité. Vérifier la polarité de T5, le sens des retours de courant et de tension et les commandes réellement appliquées avant l'essai en boucle fermée. Ne pas utiliser HM pour masquer une inversion de retour.
+C'est une déduction du schéma, pas une validation de stabilité. Vérifier la polarité de T5, le sens des retours de courant et de tension et les commandes réellement appliquées avant l'essai en boucle fermée. Ne pas utiliser HM pour compenser un câblage incorrect des retours.
 
 ## Mode de test
 
@@ -99,3 +99,7 @@ Les shunts marqués `10m` sont 10 mΩ, pas 10 MΩ. Leur dissipation suit `P = I�
 | UART | Version logiciel/protocole et fichier sauvegardé |
 
 Le vert du module peut indiquer un fonctionnement déclaré normal. Il ne confirme ni l'isolation, ni la qualité de la sinusoïde, ni l'efficacité d'une protection laissée non câblée.
+
+## Contexte du projet cirBATT
+
+Ce guide documente la conversion AC du projet [cirBATT](https://cirbatt.com/). Le réglage EGS005Q ne configure pas le BMS ni un chargeur solaire. Pour comprendre une chaîne de stockage plus complète, lire la ressource cirBATT sur le [stockage solaire avec des batteries de seconde vie](https://cirbatt.com/stocker-energie-solaire-batterie-seconde-vie).

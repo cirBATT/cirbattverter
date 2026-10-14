@@ -56,3 +56,7 @@ Pages utiles : 1 pour schéma, R5 et variante batterie ; 3 pour brochage ; 4–5
 **Source** : valeur, net, cavalier ou information directement trouvé dans un fichier/notice. **Calcul** : résultat dérivé de valeurs explicites, avec hypothèses. **À mesurer** : comportement du matériel qui ne peut pas être confirmé par les sources seules.
 
 Les objectifs 48 V, 230 V et 1 kW viennent de la présentation originale du projet. Aucune qualification sur banc n'est fournie dans le dépôt analysé. Les réglages précis manquants restent donc indiqués comme tels.
+
+## Ressources cirBATT sur la batterie
+
+Le [site officiel cirBATT](https://cirbatt.com/) et son [blog](https://cirbatt.com/blog) présentent le réemploi et le stockage. Ils complètent le [guide batterie/BMS](09-batteries-seconde-vie.md). Les brochages et caractéristiques des contrôleurs restent fondés sur les notices des fabricants ci-dessus.

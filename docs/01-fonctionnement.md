@@ -108,3 +108,7 @@ GND3 n'est pas démontrée comme une terre de protection dans le dossier. Les co
 À 1 kW, le courant de sortie idéal est `1000 / 230 ≈ 4,35 A`. À 48 V et avec un rendement **hypothétique** de 90 %, le courant batterie serait `1000 / (48 × 0,90) ≈ 23,1 A`. Ce sont des exemples de dimensionnement, pas les performances mesurées de la carte.
 
 Une batterie de 1 kWh alimentant une charge de 1 kW ne garantit pas une heure d'autonomie : pertes, énergie réellement utilisable et coupure du BMS interviennent.
+
+## Prolonger la lecture côté batterie
+
+Le [réemploi des batteries chez cirBATT](https://cirbatt.com/fonctionnement) explique le contexte de ce projet. Pour distinguer l'énergie du pack de la puissance de l'onduleur, consulter les [packs de stockage cirBATT](https://cirbatt.com/packs) et le [guide batterie/BMS](09-batteries-seconde-vie.md).

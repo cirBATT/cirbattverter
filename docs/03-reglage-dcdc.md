@@ -114,3 +114,7 @@ Cette formule provient du câblage R39/R50 du projet et suppose le réseau du mo
 Le seuil IFB dépend du rapport réel de T4, de R25, des diodes et des formes d'onde. Celui de TEMP dépend de TH4 et du circuit du module. Publier les seuils de coupure et de réarmement mesurés. Le BMS ne remplace pas une protection correctement configurée du convertisseur.
 
 Le retour VFB doit aussi fonctionner : corriger et vérifier le net `400V` avant de considérer la limitation de bus disponible. Ne pas masquer un défaut de retour par une augmentation de fréquence.
+
+## Associer les seuils au pack réel
+
+Les seuils batterie doivent être cohérents avec la chimie, le nombre de cellules et le BMS. Les pages [packs batteries cirBATT](https://cirbatt.com/packs) et [BMS pour batteries de seconde vie](https://cirbatt.com/bms-pro) donnent le contexte de ces fonctions ; la configuration compatible avec ce convertisseur reste à établir selon le [guide batterie](09-batteries-seconde-vie.md).

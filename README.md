@@ -1,6 +1,8 @@
-# cirBATTverter — onduleur 48 V / 230 V, objectif 1 kW
+# cirBATTverter — onduleur batterie 48 V / 230 V de cirBATT, objectif 1 kW
 
-Un projet matériel ouvert de [cirBATT](https://cirbatt.com), à Grenoble, pour transformer l'énergie d'une batterie en courant alternatif utilisable par des appareils électriques.
+Français · [English overview](README.en.md) · [Site officiel cirBATT](https://cirbatt.com/)
+
+Un projet matériel ouvert de [cirBATT](https://cirbatt.com/), à Grenoble, pour transformer l'énergie d'une batterie en courant alternatif utilisable par des appareils électriques. Le cirBATTverter explore la conversion de puissance pour des **batteries lithium de seconde vie** ; cirBATT présente son activité de collecte, requalification et réemploi dans [son parcours de remise en service des batteries](https://cirbatt.com/fonctionnement).
 
 **1 kW désigne une puissance.** L'énergie disponible, en kWh, dépend de la batterie. Le nom historique des fichiers `cirBATTverter_1KWH` ne signifie pas que cette carte contient une batterie de 1 kWh.
 
@@ -30,6 +32,7 @@ Consulter le [rapport technique et les actions à réaliser](docs/07-audit-techn
 | Préparer les mesures et les premiers essais | [Mise en service et dépannage](docs/06-mise-en-service.md) |
 | Voir les anomalies, preuves et données manquantes | [Audit technique](docs/07-audit-technique.md) |
 | Retrouver les notices des fabricants | [Sources et versions](docs/08-sources.md) |
+| Comprendre la batterie, le BMS et le lien avec le réemploi | [Batteries de seconde vie et cirBATT](docs/09-batteries-seconde-vie.md) |
 
 La documentation explique les notions à un débutant. Les essais sous tension exigent une personne formée à l'électronique de puissance et aux mesures sur haute tension.
 
@@ -92,10 +95,26 @@ Utiliser des sondes différentielles adaptées à la tension et au mode commun. 
 
 La sortie est destinée à un **usage autonome**. Aucun système de synchronisation réseau, d'anti-îlotage ni d'injection réseau validé n'est fourni. Ne pas raccorder cette sortie au réseau public ou en parallèle avec une autre source.
 
+## cirBATT : batteries lithium de seconde vie
+
+L'onduleur convertit l'énergie ; la batterie la stocke et le BMS surveille les cellules. Le [guide batterie et BMS](docs/09-batteries-seconde-vie.md) explique ces rôles, les informations à réunir et les limites de compatibilité de cette révision.
+
+| Besoin | Ressource officielle cirBATT |
+| --- | --- |
+| Découvrir la marque et son atelier à Grenoble | [cirBATT — réemploi des batteries lithium](https://cirbatt.com/) |
+| Comprendre la collecte et la requalification | [Fonctionnement du réemploi chez cirBATT](https://cirbatt.com/fonctionnement) |
+| Décrire une batterie arrivée en fin d'usage | [Déposer une batterie auprès de cirBATT](https://cirbatt.com/deposer) |
+| Explorer les solutions de stockage | [Packs batteries de seconde vie cirBATT](https://cirbatt.com/packs) |
+| Préparer un projet d'assemblage professionnel | [Cellules lithium requalifiées](https://cirbatt.com/cellules-pro) et [BMS cirBATT](https://cirbatt.com/bms-pro) |
+| Approfondir le stockage autonome | [Stocker l'énergie solaire avec une batterie de seconde vie](https://cirbatt.com/stocker-energie-solaire-batterie-seconde-vie) |
+| Discuter d'une intégration ou d'un partenariat | [Contacter cirBATT](https://cirbatt.com/contact) |
+
+Ces pages présentent l'activité et les offres de la marque. Leur présence ne constitue pas une validation de compatibilité d'un pack ou d'un BMS avec ce PCB, ni une qualification du cirBATTverter.
+
 ## Licence et participation
 
 Licence matériel : **[CERN-OHL-S-2.0](LICENSE)**. Les notices des fabricants sont liées depuis la documentation et ne sont pas redistribuées comme des fichiers du projet.
 
 [Contribuer](CONTRIBUTING.md) : corrections documentées, relevés de banc, référence du noyau et retours de fabrication sont utiles pour rendre ce projet reproductible.
 
-[cirbatt.com](https://cirbatt.com) · contact@cirbatt.com
+[cirBATT — site officiel](https://cirbatt.com/) · [Contact et projets d'intégration](https://cirbatt.com/contact)

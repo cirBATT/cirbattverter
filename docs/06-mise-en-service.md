@@ -111,3 +111,7 @@ Copier cette fiche dans un rapport d'essai ; remplir les champs avec des donnée
 | Arrêts, anomalies et modifications | À renseigner |
 
 Calculer le rendement à partir de puissances mesurées de manière appropriée : `η = Psortie / Pentrée`. Pour une charge non résistive, `VAC RMS × IAC RMS` donne une puissance apparente ; elle ne remplace pas la mesure de puissance active.
+
+## Préparer une demande d'intégration
+
+Pour échanger avec [cirBATT](https://cirbatt.com/contact) sur l'association batterie/onduleur, transmettre les caractéristiques du pack et du BMS, la révision de la carte et les besoins de l'application. Les relevés nécessaires sont ceux de la fiche ci-dessus et du [guide batterie](09-batteries-seconde-vie.md).

@@ -48,11 +48,13 @@ Les 26 problèmes de parité sont : 8 duplications des références `REF**`, 9 e
 | A06 | Q15-7/11 = ISENSE1_P ; Q15-12 = ISENSE3_P, séparés par les réseaux de shunts | Référence logique/pilote différente de la source. Vérifier l'intention, la tension entre SGND/PGND et les chemins de retour. |
 | A07 | GND3 sort sur J7-1 ; liaisons C38–C49 vers GND1/GND2 ; C17/C21 entre domaines | Raccordement au châssis/PE, classe des condensateurs et isolation non qualifiés. Publier une étude et un câblage justifiés. |
 
-### Orientation physique de J5
+### Vérification complète de l'interface EGS005Q
 
-Les trois PDF transmis par le porteur du projet ont été ajoutés à la vérification : la notice EGS005Q fournie est identique à celle téléchargée, et le schéma EGS005Q du 26 juillet 2024 confirme **P3-17 = GND2**. Les empreintes des documents sont conservées dans [controller-documents.json](reports/controller-documents.json). Il s’agit de la broche du connecteur du module, pas de la broche 17 du circuit intégré U1.
+Les trois PDF fournis ont été examinés. Le schéma EGS005Q du 26 juillet 2024 confirme **P3-17 = GND2** ; J5-17 est raccordée à `+15V` dans les deux sources KiCad. Les empreintes des documents sont conservées dans [controller-documents.json](reports/controller-documents.json).
 
-Le PCB confirme une rangée de 29 pads au pas de 1,27 mm, avec les numéros 1 à 29 dans cet ordre physique. La possibilité d'inverser le module a été contrôlée **sur toutes les correspondances utiles**, pas seulement sur la broche 17. Une inversion complète donne `pad PCB = 30 − broche module` : la masse module 17 arrive sur J5-13, mais son alimentation 7 arrive sur la commande PWM J5-23, son alimentation 8 sur GND2 J5-22, et son retour OUTN 29 sur le bus J5-1. Le conflit A01 décrit l'alignement 1 → 1 ; l'alignement inverse ne résout pas la compatibilité globale. Voir le [tableau d'orientation](02-connectique.md#vérification-dune-rotation-de-180).
+Les **29 pads de J5** et les broches de **17 composants associés** ont été comparés entre netliste du schéma et PCB : leurs nets correspondent. Les commandes HO/LO, les retours VS/SDH, les shunts IFB1/IFB2, les retours OUTL/OUTN, le bus et les canaux de température rejoignent les fonctions attendues du module. Voir la [vérification des circuits](02-connectique.md#vérification-des-circuits-raccordés-à-j5) et le [relevé par broche](reports/egs005q-interface-review.csv).
+
+Cette cohérence n'efface pas **IFBCOM ouverte (A02)** ni la **référence de pilote Q15 (A06)**. FAN/J5-4 n'est pas utilisée : la ventilation actuelle est commandée depuis le DC-DC. Les positions NC 13/18/22 reliées à GND2 demandent une revue du dégagement, et les lois TH2/R40 et TH3/R42 une validation de seuils. Le rail J5-8 calculé à 12,09 V doit être mesuré avec sa marge bootstrap ; ce calcul seul ne démontre pas une incompatibilité avec l'EGS005Q.
 
 ### Limitation TL431 prévue
 
@@ -107,3 +109,7 @@ Ces chemins 3D concernent la visualisation. Ne pas confondre leur réparation av
 - Gerbers/BOM/CPL approuvés et cohérents avec le même commit et empilage.
 
 Une fois ces informations disponibles et les défauts corrigés, les guides de fabrication et de mise en service peuvent devenir une procédure de reproduction avec des valeurs concrètes. À ce stade, laisser les inconnues visibles évite qu'une valeur d'exemple devienne une consigne dangereuse.
+
+## Échanger sur une révision
+
+Les corrections et preuves de validation se suivent dans les issues du projet. Pour les besoins d'intégration d'une batterie ou de partenariat autour de la marque, utiliser le [contact cirBATT](https://cirbatt.com/contact).

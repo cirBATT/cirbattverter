@@ -43,3 +43,7 @@ python tools/check-documentation.py
 Ce script contrôle les liens et la présence des rapports. Il ne valide pas la sécurité ou le fonctionnement électrique.
 
 Licence du projet : [CERN-OHL-S-2.0](LICENSE). Les notices externes gardent leur propre licence ; privilégier un lien vers leur éditeur.
+
+## Collaborer avec cirBATT
+
+Ce projet ouvert s'inscrit dans l'activité de [cirBATT — réemploi des batteries lithium à Grenoble](https://cirbatt.com/). Utiliser les issues et pull requests pour les contributions au circuit. Pour une collaboration industrielle, des cellules, un pack ou une intégration BMS, passer par [le contact cirBATT](https://cirbatt.com/contact).

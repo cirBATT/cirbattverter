@@ -83,22 +83,31 @@ Source du module : [notice officielle EGS005Q, pp. 3 et 5, et schéma fourni du 
 
 Les broches 13/18/22 sont réservées sur le module, et participent à son dégagement. Leur utilisation comme masse sur la carte doit être revue en tenant compte du cuivre et de l'isolation, même sans broche fonctionnelle correspondante.
 
-## Vérification d'une rotation de 180°
+## Vérification des circuits raccordés à J5
 
-J5 utilise une empreinte standard à **29 pads en une seule rangée**, au pas de 1,27 mm. Dans le PCB, la rangée est orientée à 90° : pad 1 à `(219,19 ; 196,10)` mm et pad 29 à `(254,75 ; 196,10)` mm. Le pad 17 est à `(239,51 ; 196,10)` mm. Les numéros sont ceux des pads, pas un comptage effectué depuis une photo.
+Les **29 nets J5 sont identiques dans le schéma et le PCB**. Les connexions des 17 composants d'interface examinés ont également été comparées aux pads du PCB. Le relevé détaillé est publié dans [egs005q-interface-review.csv](reports/egs005q-interface-review.csv). La comparaison utilise le connecteur P3 du schéma EGS005Q du 26 juillet 2024 et la notice V1.0.
 
-Si les mêmes 29 contacts sont alignés après inversion complète de la rangée, la correspondance est : **broche module n → pad PCB 30 − n**. La broche 17 devient donc J5-13, pas J5-1.
+| Groupe | Connexions vérifiées | Conclusion |
+| --- | --- | --- |
+| Bras 2 | 10 → PWM Q14 ; 14 → PWM Q15 ; 12 → R57-2/drain Q15 ; 11 → R57-1/source Q14 | HO, LO, VS et SDH associés au même bras |
+| Bras 1 | 19 → PWM Q16 ; 23 → PWM Q17 ; 21 → R58-2/drain Q17 ; 20 → R58-1/source Q16 | HO, LO, VS et SDH associés au même bras |
+| Courant bas bras 2 | 15 → source Q15/R59-1 ; 16 → R59-2 | IFB2P/IFB2N encadrent R59 dans le bon sens |
+| Courant bas bras 1 | 24 → source Q17/R60-1 ; 25 → R60-2 | IFB1P/IFB1N encadrent R60 dans le bon sens |
+| Référence courant | R59-2 et R60-2 communs, puis R52 vers GND2 | Retour commun cohérent ; effets de R52, bruit et seuils à valider |
+| Mesure AC | 28 → OUT_P, après T5 depuis bras 2 ; 29 → OUT_N, après T5 depuis bras 1 | Retours pris après filtre ; HM=0 cohérent avec cette affectation, à valider |
+| Mesure bus | 1 → C3-1 et drains Q14/Q16 | Retour +400V raccordé au bus |
+| Température | 5 → TH2/R40 ; 6 → TH3/R42 | Canaux raccordés ; lois et seuils différents à étalonner |
+| Alimentations | 3/27 → GND2 ; 7 → U6/+5V ; 8 → U4/rail nommé +15V | Affectations cohérentes ; tensions réelles et marge bootstrap à mesurer |
 
-| Broche EGS005Q V1.0 | Fonction | Alignement 1 → 1 | Alignement inversé 1 → 29 |
-| --- | --- | --- | --- |
-| 1 | Mesure +400V | J5-1 : +400V | J5-29 : OUT_N |
-| 7 | Alimentation +5V | J5-7 : +5V | J5-23 : OUT_LS1_P, commande PWM |
-| 8 | Alimentation +15V | J5-8 : rail nommé +15V | J5-22 : GND2 |
-| 17 | GND | J5-17 : rail nommé +15V | J5-13 : GND2 |
-| 28 | Mesure OUTL | J5-28 : OUT_P | J5-2 : non connecté |
-| 29 | Mesure OUTN | J5-29 : OUT_N | J5-1 : +400V |
+**L'erreur de brochage identifiée est J5-17 : elle doit recevoir GND2 conformément au module.** Les autres signaux actifs sont associés aux fonctions attendues, avec les réserves suivantes :
 
-L'inversion raccorde bien la broche 17 à une masse, mais rend les alimentations et retours incompatibles. **Aucune de ces deux orientations ne fournit un raccordement complet correct pour la notice EGS005Q V1.0.** Tourner ou regarder la carte depuis l'autre face peut changer l'ordre visuel ; cela ne change pas les fonctions électriques des contacts. Si le retournement est effectué autour de l’axe longitudinal du connecteur sans inverser l’ordre de ses contacts, la correspondance reste 1 → 1 et le conflit de J5-17 demeure. Le schéma EGS005Q fourni du 26 juillet 2024 confirme ce brochage. Vérifier une éventuelle autre révision du module sur sa propre notice.
+- **J5-26 / IFBCOM ouverte :** le schéma du module mène cette entrée à IFB_IN via R5, D1 et C4. Il faut étudier le capteur, le niveau de repos, le seuil et le déclenchement ; ne pas simplement la relier à une masse pour faire disparaître le point d'audit.
+- **Q15 :** sa source, broche 12, rejoint ISENSE3_P/R59, mais SGND et PGND, broches 7 et 11, rejoignent ISENSE1_P/R60, la référence du bras 1. Les condensateurs locaux C52/C53 suivent aussi ISENSE1_P. Revoir ce raccordement et les chemins de retour du pilote avant essai. Q17 possède source et références sur ISENSE1_P ; les références de Q14 et Q16 suivent bien leurs sources respectives.
+- **J5-4 / FAN ouverte :** FAN1 est piloté depuis J4 via Q13 dans le domaine batterie. La commande thermique FAN de l'EGS005Q ne commande donc pas ce ventilateur. Valider comment la température de l'onduleur déclenche la ventilation ; ne pas réunir GND1 et GND2 pour ajouter cette fonction.
+- **J5-13/18/22 / NC :** le module n'attribue pas de signal à ces positions, alors que la carte y place GND2. Ce n'est pas un second conflit de signal actif ; vérifier néanmoins dégagement et isolation.
+- **J5-8 :** le calcul idéal d'U4 donne environ 12,09 V. La notice décrit un essai du module à 12–15 V ; le nom `+15V` ne suffit donc pas à conclure à une erreur de brochage. Vérifier tension en charge, démarrage et marges des pilotes, notamment après les chutes du bootstrap.
+
+Cette vérification établit la cohérence des connexions, pas la qualification des protections, du routage différentiel, du filtre ou de la stabilité. Une interface corrigée doit être contrôlée hors tension puis validée sur banc.
 
 ## Port de configuration
 
@@ -118,3 +127,7 @@ Configurer de préférence le module retiré du circuit de puissance, sur un ban
 | 6 | Entrée redresseur auxiliaire D26/D28 |
 
 Cette table **ne donne pas** la correspondance avec les pastilles du PCB planaire. Il reste à publier un dessin de raccordement, le rapport de spires, la polarité des enroulements et les essais magnétiques.
+
+## Définir le pack raccordé à J1/J2
+
+La connectique ne suffit pas à établir la compatibilité d'une batterie. Réunir les données du pack et de son BMS selon le [guide batterie](09-batteries-seconde-vie.md). Pour un projet d'intégration, [contacter cirBATT](https://cirbatt.com/contact) avec les plages de tension et de courant attendues.
