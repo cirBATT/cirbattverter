@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="520" viewBox="0 0 1180 520" role="img" aria-labelledby="title desc">
+  <title id="title">Architecture fonctionnelle visÃ©e du cirBATTverter</title>
+  <desc id="desc">Une batterie alimente un pont DC-DC et un transformateur planaire. Une branche rÃ©sonante et un redresseur produisent un bus haute tension. Un pont pilotÃ© par EGS005Q et un filtre produisent une sortie alternative. Les rÃ©glages DC-DC et 50 ou 60 Hz sont distincts. Cette rÃ©vision nÃ©cessite des corrections avant fabrication.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#41546b"/></marker>
+    <style>text{font-family:Arial,sans-serif;fill:#172c42}.heading{font-size:24px;font-weight:700}.small{font-size:15px}.label{font-size:18px;font-weight:700}.line{fill:none;stroke:#41546b;stroke-width:2.5;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1180" height="520" rx="16" fill="#f4f7fa"/>
+  <text x="30" y="44" class="heading">De la batterie Ã  la sinusoÃ¯de</text>
+  <text x="30" y="72" class="small">Architecture visÃ©e â€¢ objectif 48 V / 230 V, 1 kW â€¢ fonctionnement Ã  qualifier</text>
+  <rect x="26" y="101" width="513" height="238" rx="14" fill="#e7f3f0"/>
+  <rect x="557" y="101" width="597" height="238" rx="14" fill="#fff0e2"/>
+  <text x="44" y="128" class="small">CÃ”TÃ‰ BATTERIE â€” GND1</text>
+  <text x="576" y="128" class="small">CÃ”TÃ‰ HAUTE TENSION â€” GND2</text>
+  <path d="M548 101V339" stroke="#8091a4" stroke-width="2" stroke-dasharray="6 5"/>
+  <g fill="white" stroke="#b8cbd7" stroke-width="1.5">
+    <rect x="44" y="164" width="133" height="117" rx="10"/>
+    <rect x="206" y="164" width="133" height="117" rx="10"/>
+    <rect x="368" y="164" width="152" height="117" rx="10"/>
+    <rect x="576" y="164" width="163" height="117" rx="10"/>
+    <rect x="768" y="164" width="156" height="117" rx="10"/>
+    <rect x="953" y="164" width="181" height="117" rx="10"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="111" y="195" class="label">Batterie</text><text x="111" y="225" class="small">48 V nominal</text><text x="111" y="252" class="small">BMS / fusible</text>
+    <text x="272" y="195" class="label">Pont DC-DC</text><text x="272" y="225" class="small">8 MOSFET</text><text x="272" y="252" class="small">Haute frÃ©quence</text>
+    <text x="444" y="195" class="label">T1 planaire</text><text x="444" y="225" class="small">Ã‰lÃ©vation tension</text><text x="444" y="252" class="small">PCB + noyau ferrite</text>
+    <text x="657" y="195" class="label">LC + diodes</text><text x="657" y="225" class="small">L1 / C2 / redresseur</text><text x="657" y="252" class="small">Bus Â« +400V Â», C3</text>
+    <text x="846" y="195" class="label">Pont AC</text><text x="846" y="225" class="small">Q14 Ã  Q17</text><text x="846" y="252" class="small">DÃ©coupage SPWM</text>
+    <text x="1044" y="195" class="label">Sortie J7</text><text x="1044" y="225" class="small">T5 / C57 Ã  valider</text><text x="1044" y="252" class="small">Objectif 230 V efficace</text>
+  </g>
+  <path class="line" d="M178 221H203"/><path class="line" d="M340 221H365"/><path class="line" d="M521 221H573"/><path class="line" d="M740 221H765"/><path class="line" d="M925 221H950"/>
+  <text x="44" y="313" class="small">Commande externe J4 : frÃ©quence Ã  accorder au circuit LC</text>
+  <text x="576" y="313" class="small">EGS005Q, J5 : sinusoÃ¯de 50 / 60 Hz ; porteuse nominale 20 kHz</text>
+  <rect x="30" y="360" width="1120" height="129" rx="12" fill="#172c42"/>
+  <text x="50" y="390" style="font:700 18px Arial,sans-serif;fill:white">Trois frÃ©quences, trois rÃ´les</text>
+  <text x="50" y="420" style="font:16px Arial,sans-serif;fill:#dce7ef">DC-DC : transfert d'Ã©nergie et rÃ©sonance â€¢ SPWM : dÃ©coupage du pont AC â€¢ 50/60 Hz : frÃ©quence de la sortie</text>
+  <text x="50" y="455" style="font:16px Arial,sans-serif;fill:#ffd5af">Prototype : interface J5, boucle bus, cuivre U4 et dossier de fabrication Ã  corriger avant utilisation.</text>
+</svg>

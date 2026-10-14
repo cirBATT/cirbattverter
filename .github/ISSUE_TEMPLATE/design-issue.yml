@@ -1,0 +1,29 @@
+name: Anomalie du design ou de la documentation
+description: Signaler un problème avec sa preuve et la révision concernée.
+title: "[Anomalie] "
+body:
+  - type: input
+    id: revision
+    attributes:
+      label: Commit ou révision
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: Constat et emplacement
+      description: Fichier, repère, broche, net, règle ou passage de documentation. Ajouter une capture ou un extrait limité si utile.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Preuve et conséquence
+      description: Distinguer lecture des sources, calcul, simulation et mesure. Préciser l'impact possible.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction proposée et validation
+      description: Décrire la solution et les vérifications réalisées ou nécessaires.
