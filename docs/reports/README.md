@@ -12,6 +12,7 @@ Rapports KiCad CLI 10.0.5 du 14 octobre 2026. Les chemins de source ont été re
 | [drc-inverter-current.json](drc-inverter-current.json) | 157 DRC + 26 parités après récupération |
 | [drc-inverter-clearance-enabled.json](drc-inverter-clearance-enabled.json) | 185 DRC dont 28 erreurs + 26 parités sur copie avec 3 règles réactivées |
 | [drc-planar.json](drc-planar.json) | 50 DRC dont 40 erreurs sur le planaire |
+| [controller-documents.json](controller-documents.json) | SHA-256 et constats des trois PDF fournis par le porteur du projet |
 | [source-manifest.csv](source-manifest.csv) | SHA-256 des circuits/projets/exports historiques analysés |
 | [components-from-schematic.csv](components-from-schematic.csv) | Les 160 composants électriques avec champs source |
 | [connector-nets.csv](connector-nets.csv) | Nets extraits des bornes et interfaces |

@@ -50,6 +50,8 @@ Les 26 problèmes de parité sont : 8 duplications des références `REF**`, 9 e
 
 ### Orientation physique de J5
 
+Les trois PDF transmis par le porteur du projet ont été ajoutés à la vérification : la notice EGS005Q fournie est identique à celle téléchargée, et le schéma EGS005Q du 26 juillet 2024 confirme **P3-17 = GND2**. Les empreintes des documents sont conservées dans [controller-documents.json](reports/controller-documents.json). Il s’agit de la broche du connecteur du module, pas de la broche 17 du circuit intégré U1.
+
 Le PCB confirme une rangée de 29 pads au pas de 1,27 mm, avec les numéros 1 à 29 dans cet ordre physique. La possibilité d'inverser le module a été contrôlée **sur toutes les correspondances utiles**, pas seulement sur la broche 17. Une inversion complète donne `pad PCB = 30 − broche module` : la masse module 17 arrive sur J5-13, mais son alimentation 7 arrive sur la commande PWM J5-23, son alimentation 8 sur GND2 J5-22, et son retour OUTN 29 sur le bus J5-1. Le conflit A01 décrit l'alignement 1 → 1 ; l'alignement inverse ne résout pas la compatibilité globale. Voir le [tableau d'orientation](02-connectique.md#vérification-dune-rotation-de-180).
 
 ### Limitation TL431 prévue

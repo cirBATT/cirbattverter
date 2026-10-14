@@ -16,11 +16,15 @@ Notices consultées le **14 octobre 2026**. Les liens pointent vers les fabrican
 
 [EGmicro — EGS005Q, notice utilisateur V1.0](https://www.egmicro.com/static/application/DC-AC%E6%96%B9%E6%A1%88/%E5%8D%95%E5%90%91%E9%80%86%E5%8F%98/EGD1000W_24V%28EG1611%2BEG8025Q%29/%E6%96%87%E6%A1%A3/11.%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_EGS005Q%20%E6%AD%A3%E5%BC%A6%E6%B3%A2%E9%80%86%E5%8F%98%E5%99%A8%E9%A9%B1%E5%8A%A8%E6%9D%BF%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1.0.pdf).
 
+Le porteur du projet a fourni la même notice ainsi que `12.原理图_EGS005Q_2024-07-26.pdf`. Le schéma daté confirme le connecteur P3, dont **17 = GND2** et **26 = IFBCOM**. La notice fournie et la notice téléchargée ont la même empreinte SHA-256. Les [empreintes des trois documents](reports/controller-documents.json) permettent de retrouver les versions utilisées ; les PDF ne sont pas redistribués ici.
+
 Pages utiles : 3–5 pour photos et brochage ; 6 pour cavaliers ; 7–8 pour test du module ; 9 pour dimensions. Le tableau de temps mort et le paragraphe « défaut usine » de la page 6 se contredisent pour JP3+JP6 : documenté dans le [guide](04-reglage-onduleur.md).
 
 ## EGT003
 
 [EGmicro — EGT003_24/48/60V, notice utilisateur V1.0](https://www.egmicro.com/static/application/DC-AC%E6%96%B9%E6%A1%88/%E5%8D%95%E5%90%91%E9%80%86%E5%8F%98/EGD1000W_24V%28EG1611%2BEG8025Q%29/%E6%96%87%E6%A1%A3/15.%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_EGT003_24V%E5%89%8D%E7%BA%A7%E9%A9%B1%E5%8A%A8%E6%9D%BF%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8CV1_0.pdf).
+
+Le schéma fourni `13.原理图_EGT003_24V_2023-07-06.pdf` confirme le diviseur R3 = 22 kΩ / R4 = 2 kΩ et R5 sur FADJ. Les 24 kΩ ajoutés par la carte principale sont pris en compte dans le [calcul des seuils batterie](03-reglage-dcdc.md#diviseur-batterie-du-schéma-egt003-fourni).
 
 Pages utiles : 1 pour schéma, R5 et variante batterie ; 3 pour brochage ; 4–5 pour test indépendant ; 7 pour pas 2,54 mm. Cette notice établit une correspondance d'interface avec J4 ; elle ne confirme pas le module réellement choisi pour cirBATTverter.
 

@@ -79,7 +79,7 @@ Sur la carte principale, R39 et R50, deux résistances de 12 kΩ, se trouvent **
 | 28 | OUT_P | OUTL | Retour tension AC |
 | 29 | OUT_N | OUTN | Retour tension AC |
 
-Source du module : [notice officielle EGS005Q, pp. 3 et 5](08-sources.md#egs005q). Le pas EGS005Q est 1,27 mm, comme J5. Vérifier aussi la hauteur, la face d'assemblage et le sens d'insertion.
+Source du module : [notice officielle EGS005Q, pp. 3 et 5, et schéma fourni du 26 juillet 2024](08-sources.md#egs005q). Le schéma 2024 confirme explicitement **P3-17 = GND2**. Cette numérotation est celle du connecteur à 29 broches, pas celle du circuit intégré U1 à 70 broches. Le pas EGS005Q est 1,27 mm, comme J5. Vérifier aussi la hauteur, la face d'assemblage et le sens d'insertion.
 
 Les broches 13/18/22 sont réservées sur le module, et participent à son dégagement. Leur utilisation comme masse sur la carte doit être revue en tenant compte du cuivre et de l'isolation, même sans broche fonctionnelle correspondante.
 
@@ -98,7 +98,7 @@ Si les mêmes 29 contacts sont alignés après inversion complète de la rangée
 | 28 | Mesure OUTL | J5-28 : OUT_P | J5-2 : non connecté |
 | 29 | Mesure OUTN | J5-29 : OUT_N | J5-1 : +400V |
 
-L'inversion raccorde bien la broche 17 à une masse, mais rend les alimentations et retours incompatibles. **Aucune de ces deux orientations ne fournit un raccordement complet correct pour la notice EGS005Q V1.0.** Tourner ou regarder la carte depuis l'autre face peut changer l'ordre visuel ; cela ne change pas les fonctions électriques des contacts. Vérifier une éventuelle autre révision du module sur sa propre notice.
+L'inversion raccorde bien la broche 17 à une masse, mais rend les alimentations et retours incompatibles. **Aucune de ces deux orientations ne fournit un raccordement complet correct pour la notice EGS005Q V1.0.** Tourner ou regarder la carte depuis l'autre face peut changer l'ordre visuel ; cela ne change pas les fonctions électriques des contacts. Si le retournement est effectué autour de l’axe longitudinal du connecteur sans inverser l’ordre de ses contacts, la correspondance reste 1 → 1 et le conflit de J5-17 demeure. Le schéma EGS005Q fourni du 26 juillet 2024 confirme ce brochage. Vérifier une éventuelle autre révision du module sur sa propre notice.
 
 ## Port de configuration
 

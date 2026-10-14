@@ -22,6 +22,24 @@ Le but du réglage est de choisir une commutation compatible avec les caractéri
 
 La donnée 33 µH provient de la [fiche de la référence C2976970](https://www.lcsc.com/product-detail/power-inductors_sxn-shun-xiang-nuo-elec-smms1770-330m_C2976970.html). Elle doit être confrontée à la notice du composant réellement monté et à sa mesure sous les conditions utiles.
 
+## Diviseur batterie du schéma EGT003 fourni
+
+Le schéma `13.原理图_EGT003_24V_2023-07-06.pdf` fourni par le porteur du projet montre **R3 = 22 kΩ** et **R4 = 2 kΩ** sur le module. Les R39/R50 de la carte principale ajoutent 24 kΩ en série en amont. Avec ce module précis et sans autre modification, le facteur total de division vaut :
+
+```text
+(24 + 22 + 2) / 2 = 24
+```
+
+En utilisant les seuils nominaux de la notice EG1611 V1.2 :
+
+| Fonction | Seuil au circuit intégré | Seuil batterie calculé |
+| --- | --- | --- |
+| Coupure sous-tension | 1,66 V | 39,84 V |
+| Alarme sous-tension | 1,75 V | 42,00 V |
+| Coupure surtension | 2,50 V | 60,00 V |
+
+Cette combinaison est cohérente avec l'intention d'adapter le module **24 V** à la carte d'entrée nominale 48 V. C'est une déduction du réseau de résistances. Ces seuils théoriques restent à mesurer et à confronter au pack/BMS utilisé ; ils ne qualifient pas une chimie ou un nombre de cellules particulier. Le montage d'une variante module déjà modifiée pour 48 V changerait ces résultats. [Schéma fourni et notice EG1611](08-sources.md#egt003).
+
 ## Calcul préliminaire
 
 Pour un LC série idéal :
