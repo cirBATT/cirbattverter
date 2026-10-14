@@ -1,0 +1,30 @@
+# KiCad files are text, but they must keep LF endings on every platform:
+# otherwise Windows and Linux contributors rewrite whole files on checkout and
+# every diff becomes unreadable.
+*.kicad_pro   text eol=lf
+*.kicad_sch   text eol=lf
+*.kicad_pcb   text eol=lf
+*.kicad_mod   text eol=lf
+*.kicad_sym   text eol=lf
+*.kicad_dru   text eol=lf
+fp-lib-table  text eol=lf
+sym-lib-table text eol=lf
+
+*.md          text eol=lf
+*.txt         text eol=lf
+LICENSE       text eol=lf
+
+# 3D models, archives and fabrication outputs are binary. Git must never
+# touch their bytes, and a textual diff of them is meaningless.
+*.step  binary
+*.STEP  binary
+*.stp   binary
+*.zip   binary
+*.xlsx  binary
+*.pdf   binary
+
+# Gerbers and drill files are text, but they are machine output: keep them
+# verbatim and out of diffs, which are noise for a human reviewer.
+*.gbr     -diff
+*.gbrjob  -diff
+*.drl     -diff

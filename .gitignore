@@ -1,0 +1,38 @@
+# --- KiCad working files -----------------------------------------------
+# Lock files, left behind when a project is open or crashes
+*.lck
+~*.lck
+
+# Per-user local settings: window layout, last opened sheet, zoom level.
+# Noise in a shared repository — every contributor would conflict on them.
+*.kicad_prl
+
+# KiCad's own automatic backups and restore points
+*-backups/
+_restore_backup_*/
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.bak
+
+# Editor history plugins
+.history/
+
+# Netlists and intermediate files, regenerated from the schematic
+*.net
+*.xml
+fp-info-cache
+
+# Temporary exports
+$tempfile$*
+*.tmp
+
+# --- Generated outputs --------------------------------------------------
+# Gerbers and assembly files are committed on purpose, under production/.
+# These are ad-hoc plot directories that should not be.
+gerber_output/
+plot/
+
+# --- Systems ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini

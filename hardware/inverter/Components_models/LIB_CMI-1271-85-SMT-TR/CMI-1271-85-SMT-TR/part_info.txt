@@ -1,0 +1,9 @@
+Manufacturer=Same Sky
+PartNumber=CMI-1271-85-SMT-TR
+PartCategory=Loudspeaker or Buzzer
+PackageCategory=Other
+PinCount=2
+Version=10.2
+Released=2021-04-24 10:43:40
+Downloaded=2026-08-08 21:05:15
+3D=Y
