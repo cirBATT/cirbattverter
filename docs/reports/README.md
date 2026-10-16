@@ -1,5 +1,13 @@
 # Rapports de vérification
 
+## Révision reçue le 16 octobre 2026
+
+[Revue actuelle](../10-revue-corrections-2026-10-16.md) · [Synthèse JSON](2026-10-16/summary.json) · [Manifeste du ZIP](2026-10-16/input-manifest.json) · [ERC](2026-10-16/erc.json) · [DRC courant](2026-10-16/drc-inverter.json) · [DRC renforcé sur copie](2026-10-16/drc-inverter-clearance-enabled.json) · [DRC planaire conservé](2026-10-16/drc-planar.json).
+
+Le manifeste racine [source-manifest.csv](source-manifest.csv) décrit les sources courantes avec fins de ligne Git LF. Le [manifeste du 14 octobre](2026-10-14/source-manifest.csv) reste conservé pour l'audit initial. Le CSV J5 et les inventaires racine décrivent la révision actuelle.
+
+## Rapports historiques du 14 octobre 2026
+
 [Audit expliqué](../07-audit-technique.md) · [Guide](../README.md)
 
 Rapports KiCad CLI 10.0.5 du 14 octobre 2026. Les chemins de source ont été rendus relatifs pour publier le dossier sans chemin du poste local ; les signalements et objets sont conservés.

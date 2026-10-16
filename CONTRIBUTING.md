@@ -4,7 +4,7 @@ Le projet vise une reproduction indépendante d'un onduleur batterie. Les [point
 
 ## Contributions utiles
 
-- Correction J5 / EGS005Q, IFBCOM, retour de bus et contacts cuivre U4-FB.
+- Correction du cuivre J5-17 et du retour de bus ; validation des protections et de la mesure commune R59/R60/R52 selon la [revue actuelle](docs/10-revue-corrections-2026-10-16.md).
 - Dossier du transformateur : noyau, matériau, spires, connexions, assemblage et mesures.
 - Identification de la carte DC-DC et configuration complète des deux modules.
 - Validation du filtre de sortie, de l'isolation et des protections.

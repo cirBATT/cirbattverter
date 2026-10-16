@@ -4,7 +4,7 @@
 
 Les tableaux ci-dessous décrivent la révision publiée. Les nets proviennent de la netliste KiCad et ont été comparés aux pads du PCB. Le CSV [connector-nets.csv](reports/connector-nets.csv) conserve les noms exacts.
 
-**Ne pas enficher directement l'EGS005Q dans J5 sur cette révision.** Le conflit de la broche 17 doit être résolu par une correction étudiée de la carte ou un adaptateur documenté, puis vérifié hors tension. Un réglage logiciel ne corrige pas ce câblage.
+**Ne pas enficher l'EGS005Q dans cette révision.** Le pad J5-17 est désormais marqué non connecté, mais des pistes +15V touchent encore sa pastille sur In2.Cu. Voir la [revue du 16 octobre](10-revue-corrections-2026-10-16.md#j5-17--le-net-déclaré-ne-supprime-pas-le-cuivre).
 
 ## Bornes utilisateur
 
@@ -30,7 +30,7 @@ Interface logique conforme à l'ordre des broches EGT003 documenté par EGmicro 
 | 2 | BEEP | Beep |
 | 3 | BAT | Détection batterie |
 | 4 | FAN | Commande ventilateur |
-| 5 | VFB | Retour de limitation du bus |
+| 5 | Net-(J4-Pin_5) | Retour VFB du module ; nom de net supprimé, raccordement U1/C7/R32 conservé |
 | 6 | GND1 | GND |
 | 7 | +12V | Alimentation module |
 | 8 | LO1 | LO1 |
@@ -61,53 +61,49 @@ Sur la carte principale, R39 et R50, deux résistances de 12 kΩ, se trouvent **
 | 10 | OUT_HS2_P | 2HO | Commande haute bras 2 |
 | 11 | DESAT2_P | SDH2 | Retour shunt R57 |
 | 12 | OUT_HS2_N | VS2 | Nœud de commutation bras 2 |
-| 13 | GND2 | NC | Pad de dégagement relié à la masse sur la carte |
+| 13 | Non connectée | NC | Cohérent ; dégagement à vérifier |
 | 14 | OUT_LS2_P | 2LO | Commande basse bras 2 |
-| 15 | ISENSE3_P | IFB2P | Retour courant bras 2 |
+| 15 | ISENSE1_P | IFB2P | Mesure commune R59 // R60, identique au canal 1 |
 | 16 | ISENSE1_N | IFB2N | Retour commun aux mesures |
-| **17** | **+15V** | **GND** | **Conflit : risque de court-circuit de l'alimentation** |
+| **17** | **Non connectée dans les nets** | **GND** | **Pistes +15V encore en contact avec le pad : court-circuit physique** |
 | 18 | GND2 | NC | Pad de dégagement relié à la masse sur la carte |
 | 19 | OUT_HS1_P | 1HO | Commande haute bras 1 |
 | 20 | DESAT1_P | SDH1 | Retour shunt R58 |
 | 21 | OUT_HS1_N | VS1 | Nœud de commutation bras 1 |
-| 22 | GND2 | NC | Pad de dégagement relié à la masse sur la carte |
+| 22 | Non connectée | NC | Cohérent ; dégagement à vérifier |
 | 23 | OUT_LS1_P | 1LO | Commande basse bras 1 |
-| 24 | ISENSE1_P | IFB1P | Retour courant bras 1 |
+| 24 | ISENSE1_P | IFB1P | Mesure commune R59 // R60, identique au canal 2 |
 | 25 | ISENSE1_N | IFB1N | Retour commun aux mesures |
-| **26** | **Non connectée** | **IFBCOM** | **Protection à raccorder et valider** |
+| **26** | **ISENSE1_N** | **IFBCOM** | **Raccordée au-dessus de R52 ; protection à valider** |
 | 27 | GND2 | GND | Cohérent |
 | 28 | OUT_P | OUTL | Retour tension AC |
 | 29 | OUT_N | OUTN | Retour tension AC |
 
 Source du module : [notice officielle EGS005Q, pp. 3 et 5, et schéma fourni du 26 juillet 2024](08-sources.md#egs005q). Le schéma 2024 confirme explicitement **P3-17 = GND2**. Cette numérotation est celle du connecteur à 29 broches, pas celle du circuit intégré U1 à 70 broches. Le pas EGS005Q est 1,27 mm, comme J5. Vérifier aussi la hauteur, la face d'assemblage et le sens d'insertion.
 
-Les broches 13/18/22 sont réservées sur le module, et participent à son dégagement. Leur utilisation comme masse sur la carte doit être revue en tenant compte du cuivre et de l'isolation, même sans broche fonctionnelle correspondante.
+Les positions 13/18/22 sont NC sur le module. Dans la révision du ZIP du 15 octobre, 13 et 22 sont ouvertes, tandis que 18 reste sur GND2. Vérifier dégagement et isolation. La position 17 est une masse fonctionnelle du module.
 
 ## Vérification des circuits raccordés à J5
 
-Les **29 nets J5 sont identiques dans le schéma et le PCB**. Les connexions des 17 composants d'interface examinés ont également été comparées aux pads du PCB. Le relevé détaillé est publié dans [egs005q-interface-review.csv](reports/egs005q-interface-review.csv). La comparaison utilise le connecteur P3 du schéma EGS005Q du 26 juillet 2024 et la notice V1.0.
+Les 29 nets J5 et toutes les broches des 160 composants électriques ont été comparés entre netliste KiCad et PCB : aucun écart de net n'a été retrouvé. Le [CSV par broche](reports/egs005q-interface-review.csv) décrit la révision actuelle. Ce contrôle des noms de nets ne remplace pas le contrôle des contacts cuivre : J5-17 en est le contre-exemple.
 
-| Groupe | Connexions vérifiées | Conclusion |
+| Groupe | Raccordement courant | Conclusion |
 | --- | --- | --- |
-| Bras 2 | 10 → PWM Q14 ; 14 → PWM Q15 ; 12 → R57-2/drain Q15 ; 11 → R57-1/source Q14 | HO, LO, VS et SDH associés au même bras |
-| Bras 1 | 19 → PWM Q16 ; 23 → PWM Q17 ; 21 → R58-2/drain Q17 ; 20 → R58-1/source Q16 | HO, LO, VS et SDH associés au même bras |
-| Courant bas bras 2 | 15 → source Q15/R59-1 ; 16 → R59-2 | IFB2P/IFB2N encadrent R59 dans le bon sens |
-| Courant bas bras 1 | 24 → source Q17/R60-1 ; 25 → R60-2 | IFB1P/IFB1N encadrent R60 dans le bon sens |
-| Référence courant | R59-2 et R60-2 communs, puis R52 vers GND2 | Retour commun cohérent ; effets de R52, bruit et seuils à valider |
-| Mesure AC | 28 → OUT_P, après T5 depuis bras 2 ; 29 → OUT_N, après T5 depuis bras 1 | Retours pris après filtre ; HM=0 cohérent avec cette affectation, à valider |
-| Mesure bus | 1 → C3-1 et drains Q14/Q16 | Retour +400V raccordé au bus |
-| Température | 5 → TH2/R40 ; 6 → TH3/R42 | Canaux raccordés ; lois et seuils différents à étalonner |
-| Alimentations | 3/27 → GND2 ; 7 → U6/+5V ; 8 → U4/rail nommé +15V | Affectations cohérentes ; tensions réelles et marge bootstrap à mesurer |
+| Bras 2 | 10 → PWM Q14 ; 14 → PWM Q15 ; 11 → source Q14/R57-1 ; 12 → R57-2/drain Q15 | HO/LO/SDH/VS affectés au bon bras |
+| Bras 1 | 19 → PWM Q16 ; 23 → PWM Q17 ; 20 → source Q16/R58-1 ; 21 → R58-2/drain Q17 | HO/LO/SDH/VS affectés au bon bras |
+| Courant IFB1/IFB2 | 15 et 24 communs sur ISENSE1_P ; 16 et 25 communs sur ISENSE1_N | Deux canaux alimentés par la même mesure ; R59 // R60 = 5 mΩ idéaux |
+| IFBCOM | 26 → ISENSE1_N ; R52 = 10 mΩ vers GND2 | Raccordement ajouté ; seuil et fonctionnement à vérifier |
+| Q15 / Q17 | Sources, SGND et PGND sur ISENSE1_P | Ancien défaut de référence Q15 supprimé ; valider le montage commun et le retour Kelvin |
+| Tension AC / HM | 28 → OUT_P après T5 depuis bras 2 ; 29 → OUT_N après T5 depuis bras 1 | Affectation cohérente avec HM=0 ; stabilité à valider |
+| Mesure bus | 1 → +400V/C3 | Raccordement du module présent ; le diviseur TL431 R35 reste sur un autre net |
+| Températures | 5 → TH2/R40 ; 6 → TH3/R42 | Lois différentes à étalonner |
+| Alimentations | 3/27 → GND2 ; 7 → +5V ; 8 → rail nommé +15V | Tensions réelles et marge bootstrap à vérifier |
 
-**L'erreur de brochage identifiée est J5-17 : elle doit recevoir GND2 conformément au module.** Les autres signaux actifs sont associés aux fonctions attendues, avec les réserves suivantes :
+J5-4/FAN reste ouverte ; FAN1 est commandé par J4/Q13 dans le domaine batterie. La commande thermique de l'EGS005Q ne commande donc pas directement ce ventilateur. Ne pas réunir GND1 et GND2 pour ajouter cette fonction.
 
-- **J5-26 / IFBCOM ouverte :** le schéma du module mène cette entrée à IFB_IN via R5, D1 et C4. Il faut étudier le capteur, le niveau de repos, le seuil et le déclenchement ; ne pas simplement la relier à une masse pour faire disparaître le point d'audit.
-- **Q15 :** sa source, broche 12, rejoint ISENSE3_P/R59, mais SGND et PGND, broches 7 et 11, rejoignent ISENSE1_P/R60, la référence du bras 1. Les condensateurs locaux C52/C53 suivent aussi ISENSE1_P. Revoir ce raccordement et les chemins de retour du pilote avant essai. Q17 possède source et références sur ISENSE1_P ; les références de Q14 et Q16 suivent bien leurs sources respectives.
-- **J5-4 / FAN ouverte :** FAN1 est piloté depuis J4 via Q13 dans le domaine batterie. La commande thermique FAN de l'EGS005Q ne commande donc pas ce ventilateur. Valider comment la température de l'onduleur déclenche la ventilation ; ne pas réunir GND1 et GND2 pour ajouter cette fonction.
-- **J5-13/18/22 / NC :** le module n'attribue pas de signal à ces positions, alors que la carte y place GND2. Ce n'est pas un second conflit de signal actif ; vérifier néanmoins dégagement et isolation.
-- **J5-8 :** le calcul idéal d'U4 donne environ 12,09 V. La notice décrit un essai du module à 12–15 V ; le nom `+15V` ne suffit donc pas à conclure à une erreur de brochage. Vérifier tension en charge, démarrage et marges des pilotes, notamment après les chutes du bootstrap.
+J5-8 conserve un rail calculé idéalement à environ 12,09 V. La notice permet un essai de module à 12–15 V ; ce calcul seul ne prouve pas une incompatibilité. Mesurer les marges et le comportement des pilotes en conditions réelles.
 
-Cette vérification établit la cohérence des connexions, pas la qualification des protections, du routage différentiel, du filtre ou de la stabilité. Une interface corrigée doit être contrôlée hors tension puis validée sur banc.
+Voir les [preuves et actions restantes](10-revue-corrections-2026-10-16.md). Les changements du courant commun et le contact cuivre J5-17 empêchent de qualifier cette interface comme validée.
 
 ## Port de configuration
 

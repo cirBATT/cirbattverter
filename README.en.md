@@ -4,6 +4,8 @@
 
 cirBATTverter is an open hardware power electronics project by [cirBATT](https://cirbatt.com/), based in Grenoble, France. It explores a **48 V battery to 230 V sine-wave inverter**, with a target power of **1 kW**, in the context of second-life lithium batteries. Learn about [cirBATT's battery collection and requalification process](https://cirbatt.com/fonctionnement).
 
+**Reviewed 16 October 2026: corrections remain incomplete.** Read the [current correction review](docs/10-revue-corrections-2026-10-16.md).
+
 **This revision is a prototype requiring corrections before manufacture or energisation.** Power, efficiency, isolation, protection behaviour and DC-DC tuning have not been qualified on a physical board. Read the [technical audit](docs/07-audit-technique.md) before using the design.
 
 ## How it works
@@ -17,9 +19,9 @@ The DC-DC switching frequency, SPWM carrier frequency and 50/60 Hz output freque
 
 ## Current findings
 
-- J5-17 is connected to the auxiliary supply, while EGS005Q P3-17 requires ground. Correct this interface before inserting the controller.
-- Other active J5 signals follow the expected bridge channels. IFBCOM/J5-26 is open; Q15 driver grounds require review against its source. See the [29-pin interface review](docs/02-connectique.md) and [CSV evidence](docs/reports/egs005q-interface-review.csv).
-- The DC-DC bus limiting divider uses `400V`, separate from `+400V`. A clearance check also identifies copper contacts between U4-FB and the auxiliary rail.
+- J5-17 is now marked unconnected, but two +15V tracks still physically touch its plated pad on In2.Cu. EGS005Q P3-17 is ground: the supply short remains possible.
+- Bridge commands follow the expected channels. IFBCOM/J5-26 is now connected and Q15 driver grounds share its source net. R59 and R60 are now in parallel (5 mΩ), feeding both IFB channels with the same measurement; protection behaviour remains unqualified. See the [29-pin interface review](docs/02-connectique.md) and [CSV evidence](docs/reports/egs005q-interface-review.csv).
+- The DC-DC bus limiting divider uses `400V`, separate from `+400V`. The earlier U4-FB copper contacts are no longer reported; the strengthened PCB check now reports 35 errors, including the J5-17 contacts.
 - The main Gerber archive lacks B.Cu and both solder masks. PCB metadata specifies 35 µm copper, while the original README requested 70 µm.
 - Transformer core, winding correspondence and magnetic data are incomplete. No measured DC-DC resonance setting is supplied.
 

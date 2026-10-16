@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-16",
+  "kicad_version": "10.0.5",
+  "status": "not-approved-for-manufacture",
+  "component_net_mismatches": 0,
+  "electrical_components": 160,
+  "erc": {
+    "errors": 7,
+    "warnings": 194,
+    "library_access_warnings": 191,
+    "other_warnings": 3,
+    "library_validation_complete": false
+  },
+  "drc_supplied_rules": {
+    "violations": 0,
+    "parity_warnings": 17,
+    "ignored_rule_count": 15
+  },
+  "drc_three_rules_enabled": {
+    "errors": 35,
+    "shorting_items": 2,
+    "clearance": 17,
+    "annular_width": 16,
+    "parity_warnings": 17
+  },
+  "planar": {
+    "changed": false,
+    "errors": 40,
+    "warnings": 10
+  },
+  "open_findings": [
+    "physical +15V contact at J5-17",
+    "R35 isolated on /400V",
+    "common shunt/protection validation",
+    "missing B.Cu F.Mask B.Mask",
+    "magnetics/filter/isolation/commissioning qualification"
+  ]
+}

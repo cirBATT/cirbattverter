@@ -1,8 +1,10 @@
-# Audit technique des sources
+# Audit historique des sources du 14 octobre 2026
+
+**Document historique.** Pour le ZIP corrigé reçu le 16 octobre, consulter la [revue actuelle](10-revue-corrections-2026-10-16.md). Les constats et décomptes ci-dessous décrivent la révision initiale.
 
 [Sommaire](README.md) · [Rapports bruts](reports/README.md)
 
-Analyse du **14 octobre 2026**, à partir du commit matériel `57c311172280aa886eefcb7f3e61cd4b875de159`, avec KiCad CLI **10.0.5**. Les empreintes SHA-256 des circuits et exports analysés sont conservées dans [source-manifest.csv](reports/source-manifest.csv).
+Analyse du **14 octobre 2026**, à partir du commit matériel `57c311172280aa886eefcb7f3e61cd4b875de159`, avec KiCad CLI **10.0.5**. Les empreintes SHA-256 des circuits et exports analysés sont conservées dans [source-manifest.csv](reports/2026-10-14/source-manifest.csv).
 
 **Conclusion : cette révision ne dispose pas encore d'un dossier permettant à un utilisateur de fabriquer et mettre en service seul un produit qualifié.** La documentation a été développée ; les anomalies matérielles ci-dessous doivent être levées et les informations manquantes publiées.
 

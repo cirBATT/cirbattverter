@@ -6,7 +6,7 @@
 
 ## 1. Choisir une révision corrigée
 
-Identifier le commit utilisé, résoudre les conflits J5/EGS005Q et `400V`, inspecter les contacts U4-FB/+15V, puis exécuter ERC et DRC avec les vérifications d'espacement actives. Les justifications d'exclusion doivent être documentées individuellement ; ne pas neutraliser une famille entière de contrôles pour obtenir un rapport vide.
+Identifier le commit utilisé, lire la [revue du 16 octobre](10-revue-corrections-2026-10-16.md), résoudre les contacts cuivre J5-17/+15V et le retour `400V`, valider la nouvelle mesure de courant, puis exécuter ERC et DRC avec les vérifications d'espacement actives. Les justifications d'exclusion doivent être documentées individuellement ; ne pas neutraliser une famille entière de contrôles pour obtenir un rapport vide.
 
 Vérifier la correspondance schéma/PCB et les empreintes des composants critiques. Les bibliothèques récupérées dans `hardware/inverter/libraries/` permettent de retrouver les objets intégrés au projet ; elles ne prouvent pas qu'un brochage est conforme au composant acheté.
 

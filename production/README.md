@@ -1,8 +1,10 @@
-# Exports historiques de production
+# Exports de production non approuvés
+
+**ZIP Gerber principal remplacé par celui fourni le 16 octobre, exporté le 15 octobre.** Il reste incomplet : B.Cu, F.Mask et B.Mask absents. BOM/CPL et planaire inchangés. Lire la [revue des corrections](../docs/10-revue-corrections-2026-10-16.md).
 
 **Lire l'[audit](../docs/07-audit-technique.md) et le [guide de fabrication](../docs/05-fabrication.md) avant usage. Cette révision ne constitue pas un ensemble approuvé pour commande.**
 
-| Dossier / fichier | État constaté le 14 octobre 2026 |
+| Dossier / fichier | État revérifié le 16 octobre 2026 |
 | --- | --- |
 | `inverter/gerber.zip` | Incomplet : manque B.Cu, F.Mask et B.Mask pour le PCB quatre couches |
 | `inverter/*_JLCPCB_BOM.xlsx` | 61 lignes groupées, 160 repères ; valeurs et références critiques à compléter |

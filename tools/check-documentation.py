@@ -45,7 +45,7 @@ def main():
             elif url.fragment and target.suffix == '.md':
                 if unquote(url.fragment) not in anchors(target.read_text(encoding='utf-8-sig')):
                     problems.append(f'{file.relative_to(ROOT)}: missing anchor {raw}')
-    reports = list((ROOT / 'docs/reports').glob('*.json'))
+    reports = list((ROOT / 'docs/reports').rglob('*.json'))
     for report in reports:
         try:
             json.loads(report.read_text(encoding='utf-8'))

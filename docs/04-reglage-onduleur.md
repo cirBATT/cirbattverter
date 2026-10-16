@@ -4,7 +4,7 @@
 
 Le porteur du projet a confirmé **EGS005Q**. Les réglages ci-dessous se rapportent à la **notice V1.0**, dont les tableaux et photos ont été vérifiés. Une carte vendue sous un nom voisin ou une révision différente doit être contrôlée avant usage.
 
-**Prérequis : corriger la compatibilité J5, les défauts du bus et du PCB.** Sur cette révision, J5-17 reçoit `+15V` alors que le module y attend GND. Les cavaliers ne permettent pas de corriger cette erreur.
+**Prérequis : corriger la compatibilité J5, les défauts du bus et du PCB.** Dans la révision reçue le 16 octobre, J5-17 est marquée non connectée mais touche encore des pistes `+15V` sur In2.Cu, alors que le module y présente GND. Les cavaliers ne permettent pas de corriger cette erreur.
 
 ## Fréquence de sortie
 
@@ -81,7 +81,7 @@ TFB2 = 5 × R42 / (RTH3 + R42), R42 = 6,2 kΩ
 
 À 25 °C, si les NTC valent réellement 10 kΩ, on attend idéalement environ 0,83 V et 1,91 V. Les deux canaux ont donc des lois différentes. Pour convertir une tension de déclenchement en température, il faut la courbe R(T), le coefficient B, la tolérance et l'emplacement des NTC. Ils ne sont pas documentés complètement ici.
 
-Les shunts marqués `10m` sont 10 mΩ, pas 10 MΩ. Leur dissipation suit `P = I²R`. Le seuil réel dépend du montage, des amplificateurs du module et du courant instantané. La référence SGND de Q15 est commune à ISENSE1_P alors que sa source est sur ISENSE3_P : il faut vérifier cette connexion et les erreurs de mesure avant une calibration.
+Les shunts marqués `10m` sont 10 mΩ, pas 10 MΩ. Leur dissipation suit `P = I²R`. Le seuil réel dépend du montage, des amplificateurs du module et du courant instantané. La révision reçue relie maintenant source et références de Q15 à ISENSE1_P, comme Q17. R59 et R60 sont en parallèle (5 mΩ idéaux) et IFB1/IFB2 voient la même mesure. J5-26 rejoint le côté ISENSE1_N de R52 = 10 mΩ. Cette nouvelle topologie impose une revue des gains, seuils et chemins de courant avant calibration ; voir la [revue actuelle](10-revue-corrections-2026-10-16.md#mesure-du-courant-après-la-correction-q15).
 
 ## Fiche de configuration à publier
 

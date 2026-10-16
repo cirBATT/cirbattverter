@@ -10,15 +10,18 @@ Un projet matériel ouvert de [cirBATT](https://cirbatt.com/), à Grenoble, pour
 
 ## État de cette révision
 
-**Prototype à revoir avant fabrication ou mise sous tension.** L'analyse des sources du 14 octobre 2026 a identifié des défauts qui empêchent de présenter cette révision comme un kit autonome prêt à assembler :
+**Mise à jour du 16 octobre 2026 :** les nouvelles sources du ZIP fourni sont intégrées à la branche de revue. Lire la [vérification des corrections](docs/10-revue-corrections-2026-10-16.md).
 
-- **EGS005Q / J5 :** la broche 17 est une masse sur le module officiel, mais reçoit le rail `+15V` sur la carte. Un montage direct peut court-circuiter l'alimentation auxiliaire. La protection `IFBCOM`, broche 26, est laissée ouverte.
-- **Retour de tension DC-DC :** le diviseur R35/R36 est connecté au net `400V`, distinct du bus `+400V`. La limitation du bus n'est donc pas reliée à la tension qu'elle devrait surveiller dans la netliste.
-- **Cuivre du PCB :** un contrôle des espacements réactivé sur une copie signale trois contacts entre `U4-FB` et des vias du rail `+15V`.
-- **Fabrication :** l'archive Gerber principale est incomplète. Le cuivre est annoncé à 70 µm dans l'ancien README mais défini à 35 µm dans les deux PCB et leurs fichiers de fabrication.
-- **Transformateur et réglages :** la référence du noyau, les caractéristiques magnétiques et une fréquence DC-DC validée sur banc ne sont pas fournies.
+**Prototype à revoir avant fabrication ou mise sous tension.** La revue des sources reçues le 16 octobre 2026 a confirmé des défauts qui empêchent de présenter cette révision comme un kit autonome prêt à assembler :
 
-Consulter le [rapport technique et les actions à réaliser](docs/07-audit-technique.md). Ces constats sont issus des fichiers et des notices, pas de mesures sur une carte physique. Les schémas, pistes et fichiers de fabrication n'ont pas été corrigés par la restructuration documentaire.
+- **EGS005Q / J5-17 :** son net a été retiré, mais deux pistes `+15V` touchent encore sa pastille sur In2.Cu. Le module y présente GND2 : le court-circuit physique demeure.
+- **Retour de tension DC-DC :** R35 reste sur `400V`, distinct de `+400V`. La limitation du bus n'est pas raccordée à sa mesure.
+- **Mesures courant :** Q15 a ses références alignées avec sa source et IFBCOM est raccordée. R59/R60 sont désormais en parallèle (5 mΩ), et les deux canaux IFB reçoivent la même mesure : cette topologie et ses seuils restent à valider.
+- **Contrôles PCB :** 35 erreurs avec trois contrôles d'espacement/anneaux réactivés sur copie, dont les deux contacts de J5-17 ; 17 avertissements de parité. Le zéro obtenu avec les réglages fournis ne couvre pas ces contrôles ignorés.
+- **Fabrication :** le nouveau Gerber ZIP manque toujours B.Cu, F.Mask et B.Mask. Cuivre déclaré 35 µm ; ancienne intention 70 µm non arbitrée.
+- **Transformateur et réglages :** noyau, caractéristiques magnétiques, filtre et fréquence DC-DC validée sur banc restent incomplets.
+
+Consulter la [revue actuelle et les actions à réaliser](docs/10-revue-corrections-2026-10-16.md) et l'[audit historique](docs/07-audit-technique.md). Ces constats sont issus des fichiers et des notices, pas de mesures sur une carte physique. Les changements matériels proviennent du ZIP fourni par le concepteur ; la revue ne les présente pas comme une validation de fabrication.
 
 ## Commencer ici
 
@@ -30,7 +33,8 @@ Consulter le [rapport technique et les actions à réaliser](docs/07-audit-techn
 | Régler 50/60 Hz, temps mort et démarrage EGS005Q | [Configuration de l'onduleur](docs/04-reglage-onduleur.md) |
 | Préparer les achats, PCB et l'assemblage | [Fabrication](docs/05-fabrication.md) |
 | Préparer les mesures et les premiers essais | [Mise en service et dépannage](docs/06-mise-en-service.md) |
-| Voir les anomalies, preuves et données manquantes | [Audit technique](docs/07-audit-technique.md) |
+| Vérifier les dernières corrections et les points ouverts | [Revue du 16 octobre](docs/10-revue-corrections-2026-10-16.md) |
+| Voir les preuves de la révision initiale | [Audit historique](docs/07-audit-technique.md) |
 | Retrouver les notices des fabricants | [Sources et versions](docs/08-sources.md) |
 | Comprendre la batterie, le BMS et le lien avec le réemploi | [Batteries de seconde vie et cirBATT](docs/09-batteries-seconde-vie.md) |
 

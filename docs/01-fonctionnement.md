@@ -91,7 +91,7 @@ T5 est associé à une self de mode commun PDMCAT18107-202ML, puis C57 est plac�
 
 - **T4 et R25** : courant de la branche résonante, redressé par D18/D20/D21/D22 vers IFB du DC-DC.
 - **R57/R58** : shunts côté interrupteurs hauts, reliés aux entrées nommées DESAT/SDH.
-- **R59/R60 et R52** : mesures de courant côté bas. Leur câblage et les références SGND/PGND doivent être examinés ensemble.
+- **R59/R60 et R52** : dans la révision du 15 octobre, R59 et R60 sont en parallèle et les deux entrées IFB partagent la mesure ; IFBCOM rejoint le côté haut de R52. Les références de Q15 sont alignées avec sa source. Le [fonctionnement et les seuils restent à vérifier](10-revue-corrections-2026-10-16.md#mesure-du-courant-après-la-correction-q15).
 - **TH4** : température du DC-DC via J4. **TH2/TH3** : températures via J5.
 - **OUT_P/OUT_N et J5-1** : retours tension AC et bus vers EGS005Q.
 
