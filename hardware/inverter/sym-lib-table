@@ -1,0 +1,6 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Symbols") (type "KiCad") (uri "${KIPRJMOD}/libraries/recovered-symbols/Symbols.kicad_sym") (options "") (descr "Snapshot recovered from committed schematic"))
+	(lib (name "cirbattverter_Library") (type "KiCad") (uri "${KIPRJMOD}/libraries/recovered-symbols/cirbattverter_Library.kicad_sym") (options "") (descr "Snapshot recovered from committed schematic"))
+	(lib (name "CS4200V_01") (type "KiCad") (uri "${KIPRJMOD}/libraries/recovered-symbols/CS4200V_01.kicad_sym") (options "") (descr "Snapshot recovered from committed schematic"))
+)

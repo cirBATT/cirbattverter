@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="850" viewBox="0 0 680 850">
+<rect width="680" height="850" fill="#fff"/>
+<style>text{font-family:Arial,sans-serif;fill:#182433}</style>
+<text x="32" y="38" font-size="23" font-weight="bold">J5-17: remaining copper contact</text>
+<text x="32" y="68" font-size="16">PCB supplied 15 October / review 16 October 2026</text>
+<text x="32" y="98" font-size="16">Red: +15V tracks on In2.Cu. Gold: connector pads.</text>
+<text x="32" y="123" font-size="16">Pad 17 is marked unconnected but still touches +15V.</text>
+<defs><clipPath id="board"><rect x="65" y="155" width="495" height="621"/></clipPath></defs>
+<line x1="92.00000000000102" y1="155" x2="92.00000000000102" y2="776" stroke="#e0e4ea"/>
+<text x="92.00000000000102" y="803" text-anchor="middle" font-size="13">237</text>
+<line x1="182.00000000000102" y1="155" x2="182.00000000000102" y2="776" stroke="#e0e4ea"/>
+<text x="182.00000000000102" y="803" text-anchor="middle" font-size="13">238</text>
+<line x1="272.000000000001" y1="155" x2="272.000000000001" y2="776" stroke="#e0e4ea"/>
+<text x="272.000000000001" y="803" text-anchor="middle" font-size="13">239</text>
+<line x1="362.000000000001" y1="155" x2="362.000000000001" y2="776" stroke="#e0e4ea"/>
+<text x="362.000000000001" y="803" text-anchor="middle" font-size="13">240</text>
+<line x1="452.000000000001" y1="155" x2="452.000000000001" y2="776" stroke="#e0e4ea"/>
+<text x="452.000000000001" y="803" text-anchor="middle" font-size="13">241</text>
+<line x1="542.000000000001" y1="155" x2="542.000000000001" y2="776" stroke="#e0e4ea"/>
+<text x="542.000000000001" y="803" text-anchor="middle" font-size="13">242</text>
+<line x1="65" y1="236.0000000000005" x2="560" y2="236.0000000000005" stroke="#e0e4ea"/>
+<text x="52" y="241.0000000000005" text-anchor="end" font-size="13">192</text>
+<line x1="65" y1="326.0000000000005" x2="560" y2="326.0000000000005" stroke="#e0e4ea"/>
+<text x="52" y="331.0000000000005" text-anchor="end" font-size="13">193</text>
+<line x1="65" y1="416.0000000000005" x2="560" y2="416.0000000000005" stroke="#e0e4ea"/>
+<text x="52" y="421.0000000000005" text-anchor="end" font-size="13">194</text>
+<line x1="65" y1="506.0000000000005" x2="560" y2="506.0000000000005" stroke="#e0e4ea"/>
+<text x="52" y="511.0000000000005" text-anchor="end" font-size="13">195</text>
+<line x1="65" y1="596.0000000000005" x2="560" y2="596.0000000000005" stroke="#e0e4ea"/>
+<text x="52" y="601.0000000000005" text-anchor="end" font-size="13">196</text>
+<line x1="65" y1="686.0000000000005" x2="560" y2="686.0000000000005" stroke="#e0e4ea"/>
+<text x="52" y="691.0000000000005" text-anchor="end" font-size="13">197</text>
+<line x1="65" y1="776.0000000000005" x2="560" y2="776.0000000000005" stroke="#e0e4ea"/>
+<text x="52" y="781.0000000000005" text-anchor="end" font-size="13">198</text>
+<g clip-path="url(#board)">
+<line x1="317.9000000000002" y1="387.2000000000011" x2="317.9000000000002" y2="605.0" stroke="#c53a2f" stroke-width="45.0" stroke-linecap="round"/>
+<line x1="248.60000000000184" y1="445.70000000000164" x2="317.9000000000002" y2="515.0" stroke="#c53a2f" stroke-width="45.0" stroke-linecap="round"/>
+<line x1="317.9000000000002" y1="515.0" x2="317.9000000000002" y2="605.0" stroke="#c53a2f" stroke-width="45.0" stroke-linecap="round"/>
+<rect x="44.30000000000092" y="560.0" width="90.0" height="90.0" fill="#efc873" fill-opacity=".8" stroke="#785e25"/>
+<circle cx="89.30000000000092" cy="605.0" r="29.25" fill="white"/>
+<text x="89.30000000000092" y="685.0" font-size="17" font-weight="bold" text-anchor="middle">15</text>
+<rect x="158.60000000000184" y="560.0" width="90.0" height="90.0" fill="#efc873" fill-opacity=".8" stroke="#785e25"/>
+<circle cx="203.60000000000184" cy="605.0" r="29.25" fill="white"/>
+<text x="203.60000000000184" y="685.0" font-size="17" font-weight="bold" text-anchor="middle">16</text>
+<rect x="272.9000000000002" y="560.0" width="90.0" height="90.0" fill="#efc873" fill-opacity=".8" stroke="#785e25"/>
+<circle cx="317.9000000000002" cy="605.0" r="29.25" fill="white"/>
+<text x="317.9000000000002" y="685.0" font-size="17" font-weight="bold" text-anchor="middle">17</text>
+<rect x="387.2000000000011" y="560.0" width="90.0" height="90.0" fill="#efc873" fill-opacity=".8" stroke="#785e25"/>
+<circle cx="432.2000000000011" cy="605.0" r="29.25" fill="white"/>
+<text x="432.2000000000011" y="685.0" font-size="17" font-weight="bold" text-anchor="middle">18</text>
+<rect x="501.50000000000205" y="560.0" width="90.0" height="90.0" fill="#efc873" fill-opacity=".8" stroke="#785e25"/>
+<circle cx="546.500000000002" cy="605.0" r="29.25" fill="white"/>
+<text x="546.500000000002" y="685.0" font-size="17" font-weight="bold" text-anchor="middle">19</text>
+</g>
+<text x="310" y="835" font-size="14" text-anchor="middle">PCB coordinates (mm); front view of inner copper</text>
+</svg>

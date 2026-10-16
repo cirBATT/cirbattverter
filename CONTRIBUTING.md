@@ -1,64 +1,49 @@
-# Contributing to cirBATTverter
+# Contribuer à cirBATTverter
 
-Thanks for looking. This is a working engineering design, not a finished
-product, so there is plenty to improve.
+Le projet vise une reproduction indépendante d'un onduleur batterie. Les [points bloquants](docs/07-audit-technique.md) et les [données manquantes](docs/05-fabrication.md) définissent les priorités actuelles.
 
-## What helps most
+## Contributions utiles
 
-**Bench data.** We publish the design; what it needs is independent
-validation. Efficiency curves, thermal images under load, waveforms at the
-switching nodes, behaviour at the limits — all of it is more valuable than
-another layout tweak. Open an issue with your measurements, your setup and
-the conditions.
+- Correction du cuivre J5-17 et du retour de bus ; validation des protections et de la mesure commune R59/R60/R52 selon la [revue actuelle](docs/10-revue-corrections-2026-10-16.md).
+- Dossier du transformateur : noyau, matériau, spires, connexions, assemblage et mesures.
+- Identification de la carte DC-DC et configuration complète des deux modules.
+- Validation du filtre de sortie, de l'isolation et des protections.
+- Mesures de rendement, courant, tension, températures et qualité de la sinusoïde.
+- Correction de valeurs ambiguës dans la BOM et dossier de production complet.
+- Amélioration des explications avec des références vérifiables.
 
-**Failure reports.** If something blew up, we want to know what and why.
-Include the conditions, what you measured and, where you can, photographs.
-A documented failure is worth more to the next builder than a clean build.
+## Rapporter une fabrication ou un défaut
 
-**Build reports.** Tell us it worked, with which fabricator, which copper
-weight and which component substitutions. That turns a schematic into
-something others can trust.
+Indiquer commit, fabricant PCB, cuivre **par couche**, empilage, modules/révisions, noyau, composants remplacés, paramètres et conditions d'essai. Joindre les captures avec axes, échelles, sondes et références de masse. Une panne doit préciser le symptôme, la chronologie et les pièces affectées ; ne pas la reproduire à forte énergie pour compléter le rapport.
 
-**Design issues.** Creepage and clearance, derating, EMC, protection
-coverage. Point at the specific net or component and say what you would
-change.
+Les modèles d'issues GitHub proposent ces champs. Ne pas déclarer un essai de 1 kW réussi sans durée, tension batterie, température, refroidissement et méthode de mesure.
 
-## Working on the files
+## Modifier le projet KiCad
 
-The project is KiCad 10. Open
-`hardware/inverter/cirBATTverter_1KWH.kicad_pro` — the custom libraries are
-referenced relatively and resolve from the repository layout, so keep the
-folder structure as it is.
+Utiliser KiCad 10 avec ses bibliothèques officielles. Ouvrir le `.kicad_pro` correspondant pour charger les tables locales. Les bibliothèques récupérées sont documentées dans [hardware/inverter/libraries/README.md](hardware/inverter/libraries/README.md).
 
-A few practical points:
+- Ne pas remplacer automatiquement un symbole ou une empreinte récupérée : comparer les broches, pads et références locales.
+- Conserver les fichiers `.kicad_prl`, sauvegardes et états locaux hors Git.
+- Ne pas changer silencieusement une hypothèse de cuivre, de noyau ou de composant.
+- Après modification matérielle, exécuter ERC, DRC et parité avec les contrôles utiles actifs. Justifier les exclusions et leurs effets.
+- Regénérer les exports de fabrication après approbation du circuit, puis mettre à jour manifeste et rapports pour la nouvelle révision.
 
-- **Do not commit `.kicad_prl` files or backups.** They are per-user state and
-  are already ignored.
-- **KiCad files are text, but they do not merge well.** Say in your issue or
-  pull request what you are changing before you start on the PCB, so two
-  people do not rework the same area.
-- **If you change the layout, regenerate the files in `production/`** —
-  Gerbers, BOM and CPL — so they stay consistent with the design.
-- **Keep the 70 µm copper assumption** unless you resize the tracks for
-  something else, and say so explicitly if you do.
+Les erreurs ERC dues au typage d'une broche peuvent avoir une justification ; la consigner. Un contrôle ignoré n'est pas une justification.
 
-## Pull requests
+## Documentation et pull requests
 
-Describe what changed and why, and what you did to verify it. For a hardware
-change, "verified" means measured or at least simulated — not "it should
-work". If you could not test it, say so; an untested but well-argued change is
-still welcome, it just gets reviewed differently.
+Expliquer le problème concret, la modification et la validation. Distinguer lecture des sources, calcul, simulation et mesure. Pour des consignes de réglage, préciser la révision du module, le composant concerné et la convention de mesure de fréquence.
 
-## Licence
+Vérifier les liens locaux avec :
 
-The hardware is under
-[CERN-OHL-S-2.0](LICENSE), a strongly reciprocal licence. By contributing you
-agree that your contribution is licensed the same way, so that it stays
-available to everyone downstream.
+```text
+python tools/check-documentation.py
+```
 
-## Safety
+Ce script contrôle les liens et la présence des rapports. Il ne valide pas la sécurité ou le fonctionnement électrique.
 
-Please do not post build instructions or encouragement that skip the safety
-basics. This board produces 230 V AC and runs from a battery that can deliver
-enormous fault currents. Anyone reproducing it should be equipped to work on
-mains, and the documentation should keep saying so.
+Licence du projet : [CERN-OHL-S-2.0](LICENSE). Les notices externes gardent leur propre licence ; privilégier un lien vers leur éditeur.
+
+## Collaborer avec cirBATT
+
+Ce projet ouvert s'inscrit dans l'activité de [cirBATT — réemploi des batteries lithium à Grenoble](https://cirbatt.com/). Utiliser les issues et pull requests pour les contributions au circuit. Pour une collaboration industrielle, des cellules, un pack ou une intégration BMS, passer par [le contact cirBATT](https://cirbatt.com/contact).

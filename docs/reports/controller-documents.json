@@ -1,0 +1,17 @@
+[
+  {
+    "document": "11.用户手册_EGS005Q 正弦波逆变器驱动板用户手册V1.0.pdf",
+    "sha256": "3c003354010bc838cb498bc3efc75c120d6eb6f228231f627b7f0cc9e94d1f2c",
+    "finding": "Notice fournie identique octet pour octet à la notice officielle téléchargée."
+  },
+  {
+    "document": "12.原理图_EGS005Q_2024-07-26.pdf",
+    "sha256": "e43883813674ced831bc25caaa8d09b70576cb7fddf858aedffd1c1ea29cd555",
+    "finding": "Schéma fourni : P3-17 = GND2, P3-26 = IFBCOM ; réglages et ports UART confirmés."
+  },
+  {
+    "document": "13.原理图_EGT003_24V_2023-07-06.pdf",
+    "sha256": "bbf0d87f3200ac5501ccfeeb86056f7201db7dc50cb539834997c9c8c1bb0ff1",
+    "finding": "Schéma fourni : R3 = 22 kΩ, R4 = 2 kΩ, potentiomètre R5 = 10 kΩ sur FADJ."
+  }
+]
