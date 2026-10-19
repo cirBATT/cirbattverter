@@ -113,7 +113,7 @@ Cette formule provient du câblage R39/R50 du projet et suppose le réseau du mo
 
 Le seuil IFB dépend du rapport réel de T4, de R25, des diodes et des formes d'onde. Celui de TEMP dépend de TH4 et du circuit du module. Publier les seuils de coupure et de réarmement mesurés. Le BMS ne remplace pas une protection correctement configurée du convertisseur.
 
-Le retour VFB doit aussi fonctionner : corriger et vérifier le net `400V` avant de considérer la limitation de bus disponible. Ne pas masquer un défaut de retour par une augmentation de fréquence.
+Le retour VFB doit aussi fonctionner : R35 rejoint désormais `+400V` dans les sources du 17 octobre, mais vérifier la consigne et le comportement réel de la boucle avant de considérer la limitation de bus disponible. Ne pas masquer un défaut de retour par une augmentation de fréquence.
 
 ## Associer les seuils au pack réel
 

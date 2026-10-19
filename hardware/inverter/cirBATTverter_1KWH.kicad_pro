@@ -601,7 +601,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "../deliverables/gerber/gerber/",
+      "plot": "../deliverables/gerber/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""

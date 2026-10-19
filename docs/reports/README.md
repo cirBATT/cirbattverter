@@ -1,8 +1,14 @@
 # Rapports de vérification
 
-## Révision reçue le 16 octobre 2026
+## Révision reçue le 19 octobre 2026
 
-[Revue actuelle](../10-revue-corrections-2026-10-16.md) · [Synthèse JSON](2026-10-16/summary.json) · [Manifeste du ZIP](2026-10-16/input-manifest.json) · [ERC](2026-10-16/erc.json) · [DRC courant](2026-10-16/drc-inverter.json) · [DRC renforcé sur copie](2026-10-16/drc-inverter-clearance-enabled.json) · [DRC planaire conservé](2026-10-16/drc-planar.json).
+[Revue actuelle](../11-revue-corrections-2026-10-19.md) · [Synthèse](2026-10-19/summary.json) · [Manifeste ZIP](2026-10-19/input-manifest.json) · [ERC](2026-10-19/erc.json) · [DRC fourni](2026-10-19/drc-inverter.json) · [DRC renforcé](2026-10-19/drc-inverter-clearance-enabled.json) · [Inventaire Gerber](2026-10-19/gerber-inventory.json).
+
+Les CSV racine décrivent les sources actuelles. Les rapports précédents sont historiques. Le [manifeste du 16 octobre](2026-10-16/source-manifest.csv) conserve les empreintes de la révision précédente.
+
+## Révision historique reçue le 16 octobre 2026
+
+[Revue précédente](../10-revue-corrections-2026-10-16.md) · [Synthèse JSON](2026-10-16/summary.json) · [Manifeste du ZIP](2026-10-16/input-manifest.json) · [ERC](2026-10-16/erc.json) · [DRC courant](2026-10-16/drc-inverter.json) · [DRC renforcé sur copie](2026-10-16/drc-inverter-clearance-enabled.json) · [DRC planaire conservé](2026-10-16/drc-planar.json).
 
 Le manifeste racine [source-manifest.csv](source-manifest.csv) décrit les sources courantes avec fins de ligne Git LF. Le [manifeste du 14 octobre](2026-10-14/source-manifest.csv) reste conservé pour l'audit initial. Le CSV J5 et les inventaires racine décrivent la révision actuelle.
 
@@ -21,7 +27,7 @@ Rapports KiCad CLI 10.0.5 du 14 octobre 2026. Les chemins de source ont été re
 | [drc-inverter-clearance-enabled.json](drc-inverter-clearance-enabled.json) | 185 DRC dont 28 erreurs + 26 parités sur copie avec 3 règles réactivées |
 | [drc-planar.json](drc-planar.json) | 50 DRC dont 40 erreurs sur le planaire |
 | [controller-documents.json](controller-documents.json) | SHA-256 et constats des trois PDF fournis par le porteur du projet |
-| [source-manifest.csv](source-manifest.csv) | SHA-256 des circuits/projets/exports historiques analysés |
+| [source-manifest.csv](source-manifest.csv) | SHA-256 des circuits/projets/exports courants ; anciens manifestes conservés dans les dossiers datés |
 | [components-from-schematic.csv](components-from-schematic.csv) | Les 160 composants électriques avec champs source |
 | [connector-nets.csv](connector-nets.csv) | Nets extraits des bornes et interfaces |
 | [egs005q-interface-review.csv](egs005q-interface-review.csv) | Comparaison des 29 pads J5 avec le module et vérification des circuits associés |

@@ -6,7 +6,7 @@
 
 ## 1. Choisir une révision corrigée
 
-Identifier le commit utilisé, lire la [revue du 16 octobre](10-revue-corrections-2026-10-16.md), résoudre les contacts cuivre J5-17/+15V et le retour `400V`, valider la nouvelle mesure de courant, puis exécuter ERC et DRC avec les vérifications d'espacement actives. Les justifications d'exclusion doivent être documentées individuellement ; ne pas neutraliser une famille entière de contrôles pour obtenir un rapport vide.
+Identifier le commit utilisé, lire la [revue du 19 octobre](11-revue-corrections-2026-10-19.md), résoudre ou justifier les références du pilote Q15, valider les mesures de courant et protections, puis exécuter ERC et DRC avec les vérifications d'espacement actives. Les justifications d'exclusion doivent être documentées individuellement ; ne pas neutraliser une famille entière de contrôles pour obtenir un rapport vide.
 
 Vérifier la correspondance schéma/PCB et les empreintes des composants critiques. Les bibliothèques récupérées dans `hardware/inverter/libraries/` permettent de retrouver les objets intégrés au projet ; elles ne prouvent pas qu'un brochage est conforme au composant acheté.
 
@@ -30,7 +30,7 @@ Les fichiers déclarent 1,6 mm mais il faut vérifier l'épaisseur finale de l'e
 
 ## 3. Regénérer les Gerbers
 
-L'archive historique `production/inverter/gerber.zip` contient trois couches cuivre : F.Cu, In1.Cu et In2.Cu. Elle ne contient **ni B.Cu, ni F.Mask, ni B.Mask**. Elle ne peut pas définir la carte quatre couches attendue.
+L’archive `production/inverter/gerber.zip` exportée le 17 octobre contient désormais F.Cu, In1.Cu, In2.Cu, B.Cu, les deux masques, le profil, les sérigraphies, pâtes et perçages PTH/NPTH. Les anciennes couches manquantes ont été ajoutées. Ce contrôle de présence ne qualifie ni le circuit ni un dossier prêt à commander.
 
 Après corrections et approbation du stackup :
 
@@ -64,7 +64,7 @@ Points particuliers :
 - **Q1 à Q9 :** documenter la référence exacte des huit MOSFET peu nommés dans le schéma, les pertes et le montage thermique.
 - **Q14–Q17 :** conserver la fonction de pilote intégré, vérifier brochage, références SGND/PGND, MSL et refroidissement.
 - **D17 / ventilateur :** revoir la diode, Q13 et le courant du ventilateur choisi ; ne pas supposer une diode de petit signal adaptée à toute charge.
-- **FAN1 :** le code d'achat du schéma/BOM diffère du champ PCB historique. Vérifier l'empreinte par rapport au connecteur livré.
+- **FAN1 :** champs schéma/PCB désormais alignés ; vérifier l'empreinte et la BOM par rapport au connecteur livré.
 - **T1 :** composant spécifique, sans référence d'achat dans la BOM. Il faut un dossier magnétique complet.
 
 La CPL doit être contrôlée dans le visualiseur de l'assembleur : origine, unité, face, rotation, pin 1 et polarité. Valider en particulier les pièces de face arrière. Ne pas corriger toutes les rotations avec un décalage global supposé.

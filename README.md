@@ -10,18 +10,17 @@ Un projet matériel ouvert de [cirBATT](https://cirbatt.com/), à Grenoble, pour
 
 ## État de cette révision
 
-**Mise à jour du 16 octobre 2026 :** les nouvelles sources du ZIP fourni sont intégrées à la branche de revue. Lire la [vérification des corrections](docs/10-revue-corrections-2026-10-16.md).
+**Mise à jour du 19 octobre 2026 :** sources du 17 octobre intégrées. Lire la [vérification actuelle](docs/11-revue-corrections-2026-10-19.md).
 
-**Prototype à revoir avant fabrication ou mise sous tension.** La revue des sources reçues le 16 octobre 2026 a confirmé des défauts qui empêchent de présenter cette révision comme un kit autonome prêt à assembler :
+**Prototype à revoir avant fabrication ou mise sous tension.** Les fichiers confirment des progrès et des points encore ouverts :
 
-- **EGS005Q / J5-17 :** son net a été retiré, mais deux pistes `+15V` touchent encore sa pastille sur In2.Cu. Le module y présente GND2 : le court-circuit physique demeure.
-- **Retour de tension DC-DC :** R35 reste sur `400V`, distinct de `+400V`. La limitation du bus n'est pas raccordée à sa mesure.
-- **Mesures courant :** Q15 a ses références alignées avec sa source et IFBCOM est raccordée. R59/R60 sont désormais en parallèle (5 mΩ), et les deux canaux IFB reçoivent la même mesure : cette topologie et ses seuils restent à valider.
-- **Contrôles PCB :** 35 erreurs avec trois contrôles d'espacement/anneaux réactivés sur copie, dont les deux contacts de J5-17 ; 17 avertissements de parité. Le zéro obtenu avec les réglages fournis ne couvre pas ces contrôles ignorés.
-- **Fabrication :** le nouveau Gerber ZIP manque toujours B.Cu, F.Mask et B.Mask. Cuivre déclaré 35 µm ; ancienne intention 70 µm non arbitrée.
-- **Transformateur et réglages :** noyau, caractéristiques magnétiques, filtre et fréquence DC-DC validée sur banc restent incomplets.
+- **Corrections confirmées :** anciennes pistes +15V de J5-17 supprimées, R35 raccordée à +400V, quatre couches cuivre et deux masques présents dans les Gerbers.
+- **Q15 :** source 12 sur ISENSE3_P, mais SGND 7 et PGND 11 sur ISENSE1_P. Cette référence de pilote différente de la source reste à corriger ou justifier.
+- **Mesures courant :** R59/R60 sont de nouveau deux shunts séparés de 10 mΩ ; IFBCOM reste raccordée. Gains, seuils et dynamique à valider.
+- **Contrôles :** 33 erreurs avec trois règles d'espacement/anneaux réactivées sur copie, 17 parités ; ERC à 7 erreurs et 11 avertissements. Les règles ignorées expliquent le zéro du DRC fourni.
+- **Fabrication et réglages :** cuivre déclaré 35 µm contre une ancienne intention de 70 µm ; noyau, magnétique, filtre, isolation et fréquence DC-DC mesurée restent à qualifier.
 
-Consulter la [revue actuelle et les actions à réaliser](docs/10-revue-corrections-2026-10-16.md) et l'[audit historique](docs/07-audit-technique.md). Ces constats sont issus des fichiers et des notices, pas de mesures sur une carte physique. Les changements matériels proviennent du ZIP fourni par le concepteur ; la revue ne les présente pas comme une validation de fabrication.
+Consulter la [revue actuelle et les actions à réaliser](docs/11-revue-corrections-2026-10-19.md) et l'[audit historique](docs/07-audit-technique.md). Ces constats sont issus des fichiers et des notices, pas de mesures sur une carte physique. Les changements matériels proviennent du ZIP fourni par le concepteur ; la revue ne les présente pas comme une validation de fabrication.
 
 ## Commencer ici
 
@@ -33,7 +32,7 @@ Consulter la [revue actuelle et les actions à réaliser](docs/10-revue-correcti
 | Régler 50/60 Hz, temps mort et démarrage EGS005Q | [Configuration de l'onduleur](docs/04-reglage-onduleur.md) |
 | Préparer les achats, PCB et l'assemblage | [Fabrication](docs/05-fabrication.md) |
 | Préparer les mesures et les premiers essais | [Mise en service et dépannage](docs/06-mise-en-service.md) |
-| Vérifier les dernières corrections et les points ouverts | [Revue du 16 octobre](docs/10-revue-corrections-2026-10-16.md) |
+| Vérifier les dernières corrections et les points ouverts | [Revue du 19 octobre](docs/11-revue-corrections-2026-10-19.md) |
 | Voir les preuves de la révision initiale | [Audit historique](docs/07-audit-technique.md) |
 | Retrouver les notices des fabricants | [Sources et versions](docs/08-sources.md) |
 | Comprendre la batterie, le BMS et le lien avec le réemploi | [Batteries de seconde vie et cirBATT](docs/09-batteries-seconde-vie.md) |

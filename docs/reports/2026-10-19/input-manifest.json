@@ -1,0 +1,337 @@
+{
+  "archive_sha256": "c9b9e0353699a32026b97ae602efe9da4a341db8043da1eadba42d1c5b2d8c5b",
+  "review_date": "2026-10-19",
+  "baseline_commit": "8686bb68babf5e142b5b482a8a3aa163c82f589e",
+  "files": [
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH.kicad_dru",
+      "repository_path": "hardware/inverter/cirBATTverter_1KWH.kicad_dru",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        6,
+        10
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previous_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH.kicad_pcb",
+      "repository_path": "hardware/inverter/cirBATTverter_1KWH.kicad_pcb",
+      "zip_timestamp": [
+        2026,
+        10,
+        17,
+        9,
+        44,
+        10
+      ],
+      "sha256": "b7e6af1e4960083ff27205a789fa0b387b8e09d2f43cff8fa65c62725c747fa3",
+      "previous_sha256": "ba71adf43b15ac3287faee9620acbac991e7a79a330b4d1e72ac39b5a9c6dcfd",
+      "changed": true
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH.kicad_pro",
+      "repository_path": "hardware/inverter/cirBATTverter_1KWH.kicad_pro",
+      "zip_timestamp": [
+        2026,
+        10,
+        17,
+        9,
+        44,
+        12
+      ],
+      "sha256": "359726b8faca82296b09f67e30e90be9067d13016e73a2c6308999197d35dcd5",
+      "previous_sha256": "a2b45527d8e0dc25096e0f33cf0f4c5af46fd670c832ca8cade6cd9d2c173573",
+      "changed": true
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH.kicad_sch",
+      "repository_path": "hardware/inverter/cirBATTverter_1KWH.kicad_sch",
+      "zip_timestamp": [
+        2026,
+        10,
+        17,
+        9,
+        41,
+        18
+      ],
+      "sha256": "2c4c8fb57c7f760d283e2ee9d06b2d0985a71fd0f5858c70f4edf05ef78570c8",
+      "previous_sha256": "5c9ae9c9b1763acea8225e926dad30edc83a88cb35f58c99cf162f94eda77c4f",
+      "changed": true
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/7448031002+%28rev1%29.stp",
+      "repository_path": "hardware/inverter/3d/7448031002+%28rev1%29.stp",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        7,
+        8
+      ],
+      "sha256": "707c960469d026e1d543c89c773c56a5018e516ed68a06685535dd7db548f270",
+      "previous_sha256": "707c960469d026e1d543c89c773c56a5018e516ed68a06685535dd7db548f270",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/7762-SEMS--3DModel-STEP-630548.STEP",
+      "repository_path": "hardware/inverter/3d/7762-SEMS--3DModel-STEP-630548.STEP",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        7,
+        8
+      ],
+      "sha256": "9079503bf80a3ded438d184198bba5cef9ec1fdc4eaaaaa3fec92d652e6a2c3c",
+      "previous_sha256": "9079503bf80a3ded438d184198bba5cef9ec1fdc4eaaaaa3fec92d652e6a2c3c",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/B2B-XH-A.step",
+      "repository_path": "hardware/inverter/3d/B2B-XH-A.step",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        7,
+        8
+      ],
+      "sha256": "de9e4953b77cde6c42c835c102022cc9ee9e47c23ef45097e4176ac57ba59111",
+      "previous_sha256": "de9e4953b77cde6c42c835c102022cc9ee9e47c23ef45097e4176ac57ba59111",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/BoostMosf.STEP",
+      "repository_path": "hardware/inverter/3d/BoostMosf.STEP",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        29,
+        34
+      ],
+      "sha256": "fa98a488b99772819a96f619a305169598cd0ec61e34faa29163ead0cb98ac25",
+      "previous_sha256": "fa98a488b99772819a96f619a305169598cd0ec61e34faa29163ead0cb98ac25",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/buzzer.STEP",
+      "repository_path": "hardware/inverter/3d/buzzer.STEP",
+      "zip_timestamp": [
+        2026,
+        9,
+        25,
+        20,
+        30,
+        16
+      ],
+      "sha256": "52a0ecc2cf1141d01ccda7db9492eee89488c08ebde10f95a75f74527ff7d39b",
+      "previous_sha256": "52a0ecc2cf1141d01ccda7db9492eee89488c08ebde10f95a75f74527ff7d39b",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/CMI-1271-85-SMT-TR--3DModel-STEP-1.STEP",
+      "repository_path": "hardware/inverter/3d/CMI-1271-85-SMT-TR--3DModel-STEP-1.STEP",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        7,
+        8
+      ],
+      "sha256": "52a0ecc2cf1141d01ccda7db9492eee89488c08ebde10f95a75f74527ff7d39b",
+      "previous_sha256": "52a0ecc2cf1141d01ccda7db9492eee89488c08ebde10f95a75f74527ff7d39b",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/CS4200V-01L.stp",
+      "repository_path": "hardware/inverter/3d/CS4200V-01L.stp",
+      "zip_timestamp": [
+        2026,
+        9,
+        25,
+        20,
+        53,
+        24
+      ],
+      "sha256": "ad7aa0cfedcca53e92b19591528737db53337522ecd7d48cb2ca715670619fae",
+      "previous_sha256": "ad7aa0cfedcca53e92b19591528737db53337522ecd7d48cb2ca715670619fae",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/diode_smd.STEP",
+      "repository_path": "hardware/inverter/3d/diode_smd.STEP",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        7,
+        8
+      ],
+      "sha256": "5976afd0d6a51480d13d27e0ba97c46d5c96c8045383cb948c863d5e83caa605",
+      "previous_sha256": "5976afd0d6a51480d13d27e0ba97c46d5c96c8045383cb948c863d5e83caa605",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/GaN.STEP",
+      "repository_path": "hardware/inverter/3d/GaN.STEP",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        7,
+        8
+      ],
+      "sha256": "161d42a6241061cdecaf2f91508ef4275bf2afcd81e251990b8163f704405f0b",
+      "previous_sha256": "161d42a6241061cdecaf2f91508ef4275bf2afcd81e251990b8163f704405f0b",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/LM5013DDAR.stp",
+      "repository_path": "hardware/inverter/3d/LM5013DDAR.stp",
+      "zip_timestamp": [
+        2026,
+        9,
+        25,
+        21,
+        3,
+        28
+      ],
+      "sha256": "5508c9e28c15fdadd3ad3b76d66d8a29022878326009f9c22ee5632be096f52f",
+      "previous_sha256": "5508c9e28c15fdadd3ad3b76d66d8a29022878326009f9c22ee5632be096f52f",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/LM5013DDAR--3DModel-STEP-56544.STEP",
+      "repository_path": "hardware/inverter/3d/LM5013DDAR--3DModel-STEP-56544.STEP",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        7,
+        8
+      ],
+      "sha256": "b9d4a45444e0ec20db61722b61f54101ea209b7986cc2034f31e581eff975581",
+      "previous_sha256": "b9d4a45444e0ec20db61722b61f54101ea209b7986cc2034f31e581eff975581",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/optocoupler.stp",
+      "repository_path": "hardware/inverter/3d/optocoupler.stp",
+      "zip_timestamp": [
+        2026,
+        9,
+        25,
+        20,
+        27,
+        0
+      ],
+      "sha256": "b4ff796900201e7bdfccdb1a5f84b1dc62f532f0c0dd79f416bb542a6d9b26e0",
+      "previous_sha256": "b4ff796900201e7bdfccdb1a5f84b1dc62f532f0c0dd79f416bb542a6d9b26e0",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/PlanarW_11082026.step",
+      "repository_path": "hardware/inverter/3d/PlanarW_11082026.step",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        7,
+        8
+      ],
+      "sha256": "fd30c82b6de3a8ce725bcbe819016a3ffaeda1f36c21ff9502c35a3b3acb54b8",
+      "previous_sha256": "fd30c82b6de3a8ce725bcbe819016a3ffaeda1f36c21ff9502c35a3b3acb54b8",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/cirBATTverter_1KWH/step/smd_ind.STEP",
+      "repository_path": "hardware/inverter/3d/smd_ind.STEP",
+      "zip_timestamp": [
+        2026,
+        9,
+        21,
+        14,
+        7,
+        8
+      ],
+      "sha256": "15fc6127b0df9110da3caa8533be14451eb8e17b8855c4121b98c9fe518d4a70",
+      "previous_sha256": "15fc6127b0df9110da3caa8533be14451eb8e17b8855c4121b98c9fe518d4a70",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/deliverables/bom_cpl/cirBATTverter_1KWH_CPL_JLCPCB.xlsx",
+      "repository_path": "production/inverter/cirBATTverter_1KWH_CPL_JLCPCB.xlsx",
+      "zip_timestamp": [
+        2026,
+        9,
+        29,
+        13,
+        24,
+        54
+      ],
+      "sha256": "d37b8cc978fa7b02119907d22669f4f5b43ec1a8dc852a01422eed46bc205f42",
+      "previous_sha256": "d37b8cc978fa7b02119907d22669f4f5b43ec1a8dc852a01422eed46bc205f42",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/deliverables/bom_cpl/cirBATTverter_1KWH_JLCPCB_BOM.xlsx",
+      "repository_path": "production/inverter/cirBATTverter_1KWH_JLCPCB_BOM.xlsx",
+      "zip_timestamp": [
+        2026,
+        9,
+        25,
+        21,
+        39,
+        42
+      ],
+      "sha256": "61fb2d5124682a4b0cf4aae50e237452703a3d4bbc6dd4b07c36285712867e9b",
+      "previous_sha256": "61fb2d5124682a4b0cf4aae50e237452703a3d4bbc6dd4b07c36285712867e9b",
+      "changed": false
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/cirBATTverter_1KWH/deliverables/gerber.zip",
+      "repository_path": "production/inverter/gerber.zip",
+      "zip_timestamp": [
+        2026,
+        10,
+        17,
+        9,
+        44,
+        36
+      ],
+      "sha256": "8ec227544b8091d0fd9b111664a7d44793c7b8a59e8d1ed0278718285f0c5813",
+      "previous_sha256": "a3b97e34cebe02a0e043672c709cc9830992889500297f869ee7091c69070002",
+      "changed": true
+    },
+    {
+      "archive_path": "cirBATTverter_1KWH/PCB-cad/Cirbatt.step",
+      "repository_path": "hardware/mechanical/Cirbatt.step",
+      "zip_timestamp": [
+        2026,
+        9,
+        25,
+        21,
+        28,
+        48
+      ],
+      "sha256": "4f5cc4260603428f9655c562bc551daad6919b1b9bd15ef997ea60c15d89a8d3",
+      "previous_sha256": "4f5cc4260603428f9655c562bc551daad6919b1b9bd15ef997ea60c15d89a8d3",
+      "changed": false
+    }
+  ]
+}

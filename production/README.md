@@ -1,12 +1,12 @@
 # Exports de production non approuvés
 
-**ZIP Gerber principal remplacé par celui fourni le 16 octobre, exporté le 15 octobre.** Il reste incomplet : B.Cu, F.Mask et B.Mask absents. BOM/CPL et planaire inchangés. Lire la [revue des corrections](../docs/10-revue-corrections-2026-10-16.md).
+**ZIP Gerber principal remplacé par celui reçu le 19 octobre, exporté le 17 octobre.** Les quatre couches cuivre et les deux masques sont présents ; le dossier reste non approuvé. BOM/CPL et planaire inchangés. Lire la [revue actuelle](../docs/11-revue-corrections-2026-10-19.md).
 
 **Lire l'[audit](../docs/07-audit-technique.md) et le [guide de fabrication](../docs/05-fabrication.md) avant usage. Cette révision ne constitue pas un ensemble approuvé pour commande.**
 
-| Dossier / fichier | État revérifié le 16 octobre 2026 |
+| Dossier / fichier | État revérifié le 19 octobre 2026 |
 | --- | --- |
-| `inverter/gerber.zip` | Incomplet : manque B.Cu, F.Mask et B.Mask pour le PCB quatre couches |
+| `inverter/gerber.zip` | 14 fichiers : quatre cuivres, deux masques, profil, sérigraphies/pâtes, gbrjob et perçages PTH/NPTH ; non approuvé |
 | `inverter/*_JLCPCB_BOM.xlsx` | 61 lignes groupées, 160 repères ; valeurs et références critiques à compléter |
 | `inverter/*_CPL_JLCPCB.xlsx` | 160 positions, y compris traversants ; rotations/polarités à valider |
 | `planar-transformer/Gerbers.zip` | 8 couches cuivre, masques et perçages présents ; erreurs DRC et magnétique à traiter |

@@ -1,6 +1,6 @@
 # Audit historique des sources du 14 octobre 2026
 
-**Document historique.** Pour le ZIP corrigé reçu le 16 octobre, consulter la [revue actuelle](10-revue-corrections-2026-10-16.md). Les constats et décomptes ci-dessous décrivent la révision initiale.
+**Document historique.** Pour le ZIP corrigé reçu le 19 octobre, consulter la [revue actuelle](11-revue-corrections-2026-10-19.md). Les constats et décomptes ci-dessous décrivent la révision initiale.
 
 [Sommaire](README.md) · [Rapports bruts](reports/README.md)
 

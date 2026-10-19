@@ -12,17 +12,17 @@ J5_pad,EGS005Q_P3_function,schematic_net,PCB_net,schematic_PCB_match,review,comm
 11,SDH2,/DESAT2_P,/DESAT2_P,True,coherent_a_valider,R57-1 / source Q14-12 ; R57-2 sur VS2. Retour positif shunt haut bras 2.
 12,VS2,/OUT_HS2_N,/OUT_HS2_N,True,coherent,R57-2 / drain Q15-1 / T5-4 : noeud de commutation bras 2.
 13,NC,unconnected-(J5-Pin_13-Pad13),unconnected-(J5-Pin_13-Pad13),True,coherent,NC laisse ouverte.
-14,2LO,/OUT_LS2_P,/OUT_LS2_P,True,coherent_mesure_a_valider,PWM Q15 correct ; source et SGND/PGND maintenant communes sur ISENSE1_P. Mesure de courant commune modifiee.
-15,IFB2P,/ISENSE1_P,/ISENSE1_P,True,mesure_commune_a_valider,"IFB2P est commun a IFB1P ; R59 et R60 en parallele, 5 mOhm ideaux."
+14,2LO,/OUT_LS2_P,/OUT_LS2_P,True,reference_pilote_a_revoir,PWM Q15 correct ; Q15-S sur ISENSE3_P mais SGND/PGND sur ISENSE1_P.
+15,IFB2P,/ISENSE3_P,/ISENSE3_P,True,mesure_par_bras_a_valider,IFB2P mesure ISENSE3_P via R59=10mOhm ; distinct du bras 1.
 16,IFB2N,/ISENSE1_N,/ISENSE1_N,True,coherent_a_valider,R59-2 / R60-2 / R52-1 : retour commun des deux shunts bas.
-17,GND,unconnected-(J5-Pin_17-Pad17),unconnected-(J5-Pin_17-Pad17),True,erreur_cuivre_persistante,"Pad marque non connecte, mais deux pistes +15V sur In2.Cu touchent encore la pastille ; module P3-17=GND2."
+17,GND,unconnected-(J5-Pin_17-Pad17),unconnected-(J5-Pin_17-Pad17),True,ancien_contact_supprime,"Anciens segments +15V retires ; aucun shorting_items DRC courant. Pad NC ; P3-17 module GND2, autres masses via J5-3/27."
 18,NC,GND2,GND2,True,nc_a_revoir,"NC sur le module, GND2 sur le PCB ; verifier degagement et isolation."
 19,1HO,/OUT_HS1_P,/OUT_HS1_P,True,coherent,"Commande PWM Q16-8, interrupteur haut du bras 1."
 20,SDH1,/DESAT1_P,/DESAT1_P,True,coherent_a_valider,R58-1 / source Q16-12 ; R58-2 sur VS1. Retour positif shunt haut bras 1.
 21,VS1,/OUT_HS1_N,/OUT_HS1_N,True,coherent,R58-2 / drain Q17-1 / T5-1 : noeud de commutation bras 1.
 22,NC,unconnected-(J5-Pin_22-Pad22),unconnected-(J5-Pin_22-Pad22),True,coherent,NC laisse ouverte.
 23,1LO,/OUT_LS1_P,/OUT_LS1_P,True,coherent,"Commande PWM Q17-8, interrupteur bas du bras 1."
-24,IFB1P,/ISENSE1_P,/ISENSE1_P,True,mesure_commune_a_valider,"IFB1P est commun a IFB2P ; R59 et R60 en parallele, 5 mOhm ideaux."
+24,IFB1P,/ISENSE1_P,/ISENSE1_P,True,mesure_par_bras_a_valider,IFB1P mesure ISENSE1_P via R60=10mOhm ; distinct du bras 2.
 25,IFB1N,/ISENSE1_N,/ISENSE1_N,True,coherent_a_valider,R60-2 / R59-2 / R52-1 : retour commun des deux shunts bas.
 26,IFBCOM,/ISENSE1_N,/ISENSE1_N,True,raccordee_a_valider,"IFBCOM reliee a ISENSE1_N, au-dessus de R52=10mOhm. Seuil, signe et dynamique a valider."
 27,GND,GND2,GND2,True,coherent,Masse secondaire GND2.

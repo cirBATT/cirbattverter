@@ -61,7 +61,7 @@ D3, D11, D12 et D13 forment le redresseur. C3 stocke et lisse l'énergie reçue.
 
 Le nom `+400V` exprime une intention. Il n'est ni une mesure ni une consigne garantie. Une tension suffisante au bus permet au second pont de produire la crête de 325 V demandée, avec une marge pour les pertes et la modulation.
 
-U2 (TL431), R35/R36/R37/R38 et U1 (optocoupleur) sont prévus pour limiter le bus avec un retour isolé vers le contrôleur DC-DC. Dans cette révision, `400V` et `+400V` sont deux nets différents. **Cette boucle ne peut pas être considérée opérationnelle.**
+U2 (TL431), R35/R36/R37/R38 et U1 (optocoupleur) sont prévus pour limiter le bus avec un retour isolé vers le contrôleur DC-DC. Dans la révision du 17 octobre, R35 rejoint désormais `+400V` : l'ancien défaut de connexion est corrigé. **Consigne, polarité, dynamique et protection restent à valider sur banc.**
 
 ## 5. Les alimentations auxiliaires
 
@@ -91,7 +91,7 @@ T5 est associé à une self de mode commun PDMCAT18107-202ML, puis C57 est plac�
 
 - **T4 et R25** : courant de la branche résonante, redressé par D18/D20/D21/D22 vers IFB du DC-DC.
 - **R57/R58** : shunts côté interrupteurs hauts, reliés aux entrées nommées DESAT/SDH.
-- **R59/R60 et R52** : dans la révision du 15 octobre, R59 et R60 sont en parallèle et les deux entrées IFB partagent la mesure ; IFBCOM rejoint le côté haut de R52. Les références de Q15 sont alignées avec sa source. Le [fonctionnement et les seuils restent à vérifier](10-revue-corrections-2026-10-16.md#mesure-du-courant-après-la-correction-q15).
+- **R59/R60 et R52** : la révision du 17 octobre rétablit deux shunts distincts de 10 mΩ, un par bras ; IFBCOM rejoint le côté haut de R52. Source et références de pilote Q15 sont toutefois sur des nets différents. Le [fonctionnement et les seuils restent à vérifier](11-revue-corrections-2026-10-19.md#q15-et-mesure-du-courant--point-encore-ouvert).
 - **TH4** : température du DC-DC via J4. **TH2/TH3** : températures via J5.
 - **OUT_P/OUT_N et J5-1** : retours tension AC et bus vers EGS005Q.
 

@@ -16,7 +16,7 @@ Les masses de voies d'un oscilloscope de table sont généralement communes et r
 
 - [ ] Révision matérielle corrigée identifiée ; rapport ERC/DRC joint et anomalies justifiées.
 - [ ] J5-17 compatible avec GND du module ; IFBCOM et toutes les protections traitées.
-- [ ] Retour `400V` réellement relié au bus prévu ; stabilité et seuils de la limitation vérifiés.
+- [ ] R35 reliée au bus `+400V` dans la révision assemblée ; stabilité et seuils de la limitation vérifiés.
 - [ ] Cuivre U4-FB/+15V inspecté et corrigé ; auxiliaires conformes.
 - [ ] Module DC-DC identifié ; pas J4, sens et diviseur BAT complets connus.
 - [ ] Noyau, connexions du planaire, isolation et refroidissement documentés.
@@ -77,8 +77,8 @@ Documenter seuils, délais, hystérésis et comportement de réarmement. Vérifi
 
 | Symptôme | Contrôles prioritaires, hors tension si intervention |
 | --- | --- |
-| Alimentation auxiliaire s'effondre à l'insertion EGS005Q | Conflit J5-17, orientation, courts-circuits ; ne pas augmenter la limite de courant |
-| Bus trop haut ou dérivant | Net 400V/+400V, diviseur et optocoupleur, retour VFB, réglage DC-DC |
+| Alimentation auxiliaire s'effondre à l'insertion EGS005Q | Contrôler la révision réellement assemblée, l'orientation et les courts-circuits ; l'ancien contact J5-17 est supprimé dans les sources du 17 octobre ; ne pas augmenter la limite de courant |
+| Bus trop haut ou dérivant | Continuité vers R35/+400V, diviseur et optocoupleur, retour VFB, réglage DC-DC |
 | Rail nommé +15V proche de 12 V | Diviseur U4 identique à U3 ; mesurer, vérifier conformité puis traiter le nom/consigne |
 | Rail U4 incorrect ou instable | Contacts cuivre FB/+15V, routage, redresseur auxiliaire, marge VIN |
 | Courant à vide excessif | Noyau, fréquence, saturation, asymétrie, temps mort, branche L/C |

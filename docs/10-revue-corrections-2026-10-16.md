@@ -1,5 +1,7 @@
 # Revue des corrections du 16 octobre 2026
 
+**Document historique :** ces constats décrivent les sources du 15 octobre. La [revue du 19 octobre](11-revue-corrections-2026-10-19.md) remplace leur utilisation comme état actuel, notamment pour J5-17, R35, Q15 et les Gerbers.
+
 [Sommaire](README.md) · [Connectique actuelle](02-connectique.md) · [Audit historique du 14 octobre](07-audit-technique.md)
 
 **Conclusion : corrections partielles ; révision non approuvée pour fabrication ou mise sous tension.** Les nouvelles sources sont publiées pour poursuivre la revue. Les points non résolus restent ouverts.
