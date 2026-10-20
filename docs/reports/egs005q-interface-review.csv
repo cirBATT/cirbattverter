@@ -1,0 +1,30 @@
+J5_pad,EGS005Q_P3_function,schematic_net,PCB_net,schematic_PCB_match,review,comment
+1,+400V,/+400V,/+400V,True,coherent,"Bus C3-1, Q14-1 et Q16-1 ; mesure bus du module."
+2,NC,unconnected-(J5-Pin_2-Pad2),unconnected-(J5-Pin_2-Pad2),True,coherent,NC sur les deux interfaces.
+3,GND,GND2,GND2,True,coherent,Masse secondaire GND2.
+4,FAN,unconnected-(J5-Pin_4-Pad4),unconnected-(J5-Pin_4-Pad4),True,fonction_non_raccordee,Sortie FAN du module inutilisee ; FAN1 est commande par J4/Q13 dans le domaine primaire.
+5,TFB1,/TFB1,/TFB1,True,coherent_a_etalonner,TH2 vers +5V ; R40=2k vers GND2. Loi NTC et seuil a valider.
+6,TFB2,/TFB2,/TFB2,True,coherent_a_etalonner,TH3 vers +5V ; R42=6.2k vers GND2. Loi differente de TFB1.
+7,+5V,/+5V,/+5V,True,coherent_a_mesurer,Alimentation +5V fournie par U6.
+8,+15V,/+15V,/+15V,True,coherent_a_mesurer,"Rail U4 nomme +15V, cible ideale 12.09V ; notice module test 12-15V. Verifier marge bootstrap et GaN."
+9,NC,unconnected-(J5-Pin_9-Pad9),unconnected-(J5-Pin_9-Pad9),True,coherent,NC sur les deux interfaces.
+10,2HO,/OUT_HS2_P,/OUT_HS2_P,True,coherent,"Commande PWM Q14-8, interrupteur haut du bras 2."
+11,SDH2,/DESAT2_P,/DESAT2_P,True,coherent_a_valider,R57-1 / source Q14-12 ; R57-2 sur VS2. Retour positif shunt haut bras 2.
+12,VS2,/OUT_HS2_N,/OUT_HS2_N,True,coherent,R57-2 / drain Q15-1 / T5-4 : noeud de commutation bras 2.
+13,NC,unconnected-(J5-Pin_13-Pad13),unconnected-(J5-Pin_13-Pad13),True,coherent,NC laisse ouverte.
+14,2LO,/OUT_LS2_P,/OUT_LS2_P,True,coherent_mesure_a_valider,"PWM Q15 correct ; source, SGND/PGND et retours C52/C53 maintenant sur ISENSE3_P. Deux shunts de bras distincts ; protection a valider."
+15,IFB2P,/ISENSE3_P,/ISENSE3_P,True,mesure_par_bras_a_valider,IFB2P mesure ISENSE3_P via R59=10mOhm ; distinct du bras 1.
+16,IFB2N,/ISENSE1_N,/ISENSE1_N,True,coherent_a_valider,R59-2 / R60-2 / R52-1 : retour commun des deux shunts bas.
+17,GND,unconnected-(J5-Pin_17-Pad17),unconnected-(J5-Pin_17-Pad17),True,ancien_contact_supprime,"Anciens segments +15V retires ; aucun shorting_items DRC courant. Pad NC ; P3-17 module GND2, autres masses via J5-3/27."
+18,NC,GND2,GND2,True,nc_a_revoir,"NC sur le module, GND2 sur le PCB ; verifier degagement et isolation."
+19,1HO,/OUT_HS1_P,/OUT_HS1_P,True,coherent,"Commande PWM Q16-8, interrupteur haut du bras 1."
+20,SDH1,/DESAT1_P,/DESAT1_P,True,coherent_a_valider,R58-1 / source Q16-12 ; R58-2 sur VS1. Retour positif shunt haut bras 1.
+21,VS1,/OUT_HS1_N,/OUT_HS1_N,True,coherent,R58-2 / drain Q17-1 / T5-1 : noeud de commutation bras 1.
+22,NC,unconnected-(J5-Pin_22-Pad22),unconnected-(J5-Pin_22-Pad22),True,coherent,NC laisse ouverte.
+23,1LO,/OUT_LS1_P,/OUT_LS1_P,True,coherent,"Commande PWM Q17-8, interrupteur bas du bras 1."
+24,IFB1P,/ISENSE1_P,/ISENSE1_P,True,mesure_par_bras_a_valider,IFB1P mesure ISENSE1_P via R60=10mOhm ; distinct du bras 2.
+25,IFB1N,/ISENSE1_N,/ISENSE1_N,True,coherent_a_valider,R60-2 / R59-2 / R52-1 : retour commun des deux shunts bas.
+26,IFBCOM,/ISENSE1_N,/ISENSE1_N,True,raccordee_a_valider,"IFBCOM reliee a ISENSE1_N, au-dessus de R52=10mOhm. Seuil, signe et dynamique a valider."
+27,GND,GND2,GND2,True,coherent,Masse secondaire GND2.
+28,OUTL,/OUT_P,/OUT_P,True,coherent_a_valider,"OUT_P / T5-3 / C57-2 / J7-3 : mesure apres filtre, bras 2 cote OUTL, HM=0 a valider."
+29,OUTN,/OUT_N,/OUT_N,True,coherent_a_valider,"OUT_N / T5-2 / C57-1 / J7-2 : mesure apres filtre, bras 1 cote OUTN."

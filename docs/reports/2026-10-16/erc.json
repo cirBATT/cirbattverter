@@ -1,0 +1,3077 @@
+{
+  "$schema": "https://schemas.kicad.org/erc.v1.json",
+  "coordinate_units": "mm",
+  "date": "2026-10-16T09:49:32",
+  "ignored_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ],
+  "included_severities": [
+    "error",
+    "warning",
+    "exclusion"
+  ],
+  "kicad_version": "10.0.5",
+  "sheets": [
+    {
+      "path": "/",
+      "uuid_path": "/1f070434-494f-429c-a473-fb8aa736b858",
+      "violations": [
+        {
+          "description": "Pins of type Open emitter and Output are connected",
+          "items": [
+            {
+              "description": "Symbol Q13 Pin 3 [E, Open emitter, Line]",
+              "pos": {
+                "x": 0.9525,
+                "y": 2.667
+              },
+              "uuid": "ce4835a0-a8c5-442d-ac78-e3e77a7ff5a1"
+            },
+            {
+              "description": "Symbol U3 Pin 6 [PGOOD, Output, Line]",
+              "pos": {
+                "x": 1.7145,
+                "y": 1.8796
+              },
+              "uuid": "003ac945-3311-444c-b75f-ac0e9466ac27"
+            }
+          ],
+          "severity": "error",
+          "type": "pin_to_pin"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR01 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 1.5748,
+                "y": 1.5367
+              },
+              "uuid": "493babd9-8f45-4ede-abe6-2024ba192efa"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol U3 Pin 8 [SW, Power input, Line]",
+              "pos": {
+                "x": 1.7145,
+                "y": 1.7526
+              },
+              "uuid": "0f595819-c183-4c6a-a1c0-118ac6683072"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR06 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 1.7653,
+                "y": 2.8194
+              },
+              "uuid": "90428390-fc13-4752-8bae-000638b673aa"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR016 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 1.8415,
+                "y": 3.6957
+              },
+              "uuid": "44397bd0-b445-48ac-8130-4de8851cd7cc"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol U4 Pin 8 [SW, Power input, Line]",
+              "pos": {
+                "x": 4.5593,
+                "y": 2.5781
+              },
+              "uuid": "f2579879-fad7-427e-b80b-e922ffddd71b"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol U6 Pin 1 [IN, Power input, Line]",
+              "pos": {
+                "x": 5.0419,
+                "y": 2.3749
+              },
+              "uuid": "4a28dc64-3f31-43d5-a6ee-45a98c0df5a3"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R39 [R]",
+              "pos": {
+                "x": 0.7874,
+                "y": 2.7305
+              },
+              "uuid": "fdec5cdd-ffee-4316-9f29-ca207cca3917"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R50 [R]",
+              "pos": {
+                "x": 0.8636,
+                "y": 2.7305
+              },
+              "uuid": "c196ce68-17b9-40b4-a918-9d10f36230d2"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR037 [GND2]",
+              "pos": {
+                "x": 0.9144,
+                "y": 3.7211
+              },
+              "uuid": "1e7aea40-4d2b-4850-a970-4577d3627d7a"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR03 [GND1]",
+              "pos": {
+                "x": 0.9525,
+                "y": 2.667
+              },
+              "uuid": "59c1af5f-be8e-406d-a974-1f898ba4c462"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Connector_Generic' was not found at '${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol J4 [Conn_01x14]",
+              "pos": {
+                "x": 0.9652,
+                "y": 2.8956
+              },
+              "uuid": "7ca9aca8-37d6-49f1-a62c-7348e4304f72"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Simulation_SPICE' was not found at '${KICAD10_SYMBOL_DIR}/Simulation_SPICE.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol Q13 [NPN]",
+              "pos": {
+                "x": 0.9779,
+                "y": 2.6162
+              },
+              "uuid": "41994052-b4dd-4491-a054-f3dcff1d551d"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR027 [GND1]",
+              "pos": {
+                "x": 0.9906,
+                "y": 2.8448
+              },
+              "uuid": "3571c8b5-685d-4ca0-9b03-7d8d3e018cae"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Connector_Generic' was not found at '${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol J1 [Conn_01x01]",
+              "pos": {
+                "x": 1.0033,
+                "y": 0.508
+              },
+              "uuid": "ff0d56e2-1a7e-420c-9742-a83b6c2aefd4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Connector_Generic' was not found at '${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol J2 [Conn_01x01]",
+              "pos": {
+                "x": 1.0033,
+                "y": 0.7239
+              },
+              "uuid": "40ab6316-2aa4-475d-9368-e02e5460b3b2"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C47 [C]",
+              "pos": {
+                "x": 1.0033,
+                "y": 3.2766
+              },
+              "uuid": "c739128b-1442-497b-a588-bd6a9ccc985a"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C46 [C]",
+              "pos": {
+                "x": 1.0033,
+                "y": 3.3782
+              },
+              "uuid": "e27ba049-aec6-47a5-9ff4-a4b0a63b0955"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C45 [C]",
+              "pos": {
+                "x": 1.0033,
+                "y": 3.4925
+              },
+              "uuid": "189b31bc-a369-49e0-be60-c38913cb43b6"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C44 [C]",
+              "pos": {
+                "x": 1.0033,
+                "y": 3.6068
+              },
+              "uuid": "90a38fd4-1018-42da-a0c8-6d30515f4e68"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C43 [C]",
+              "pos": {
+                "x": 1.0033,
+                "y": 3.7211
+              },
+              "uuid": "9305bbc5-005d-46aa-9473-568e7778f74b"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C48 [C]",
+              "pos": {
+                "x": 1.0033,
+                "y": 3.8354
+              },
+              "uuid": "94473823-c4f1-4bc7-adaa-ce8f47f3181b"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C49 [C]",
+              "pos": {
+                "x": 1.0033,
+                "y": 3.937
+              },
+              "uuid": "e8af2dca-2610-4793-b78e-dca04a4fcb87"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R1 [R]",
+              "pos": {
+                "x": 1.0287,
+                "y": 0.9779
+              },
+              "uuid": "db8b2019-578f-42cb-90f5-3ab9b24bfbac"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R8 [R]",
+              "pos": {
+                "x": 1.0287,
+                "y": 1.3208
+              },
+              "uuid": "27991b48-95d5-4df7-b802-3d235072707f"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Connector_Generic' was not found at '${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol FAN1 [Conn_01x02]",
+              "pos": {
+                "x": 1.0287,
+                "y": 2.4638
+              },
+              "uuid": "d038b68b-802f-4fe9-87f1-f5d82ddc8fc0"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R30 [R]",
+              "pos": {
+                "x": 1.0287,
+                "y": 2.6797
+              },
+              "uuid": "bc27ccbb-c4d8-45f0-b31d-50390aa1aa41"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Diode' was not found at '${KICAD10_SYMBOL_DIR}/Diode.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D1 [1N4148]",
+              "pos": {
+                "x": 1.0414,
+                "y": 1.0668
+              },
+              "uuid": "08980896-0494-48f4-90c4-dc289f3f7ede"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Diode' was not found at '${KICAD10_SYMBOL_DIR}/Diode.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D5 [1N4148]",
+              "pos": {
+                "x": 1.0414,
+                "y": 1.4097
+              },
+              "uuid": "92b0e46c-1e5e-464b-bbb7-fae3e48058e2"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Diode' was not found at '${KICAD10_SYMBOL_DIR}/Diode.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D17 [1N4148]",
+              "pos": {
+                "x": 1.0795,
+                "y": 2.6162
+              },
+              "uuid": "d76a0121-97a4-4e9c-81e3-37926ea52dce"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R2 [R]",
+              "pos": {
+                "x": 1.1049,
+                "y": 1.1557
+              },
+              "uuid": "899315a2-c5d2-436e-811c-e4f85772f912"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R9 [R]",
+              "pos": {
+                "x": 1.1049,
+                "y": 1.4986
+              },
+              "uuid": "e30b033d-af31-4017-a3f6-02f8f052221e"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C33 [C]",
+              "pos": {
+                "x": 1.1049,
+                "y": 1.8415
+              },
+              "uuid": "097ea0c1-d3ca-4b1f-8de1-780393bc155e"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR09 [GND1]",
+              "pos": {
+                "x": 1.1049,
+                "y": 1.8796
+              },
+              "uuid": "f9af5def-e5b7-456c-af96-964947aba2ab"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR038 [GND3]",
+              "pos": {
+                "x": 1.1049,
+                "y": 3.7084
+              },
+              "uuid": "eb43c1e5-0767-4e4f-bf23-d1885d6f566f"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol BZ1 [Buzzer]",
+              "pos": {
+                "x": 1.1176,
+                "y": 2.7559
+              },
+              "uuid": "d6904b0a-f549-4883-bbd8-c1504d1c13b6"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Transistor_FET' was not found at '${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol Q1 [Q_NMOS_GDS]",
+              "pos": {
+                "x": 1.1557,
+                "y": 0.9779
+              },
+              "uuid": "bf01c7d1-1cfb-4da3-bcea-34f0807e71c1"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Transistor_FET' was not found at '${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol Q4 [Q_NMOS_GDS]",
+              "pos": {
+                "x": 1.1557,
+                "y": 1.3208
+              },
+              "uuid": "5239bc87-cb06-42f8-a760-8574df37a7a3"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C1 [C]",
+              "pos": {
+                "x": 1.1684,
+                "y": 0.6096
+              },
+              "uuid": "3d167f22-cc32-4952-af61-7ec6115e9b04"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C12 [C]",
+              "pos": {
+                "x": 1.2319,
+                "y": 1.8415
+              },
+              "uuid": "b57b92fd-1ce1-4b30-82cb-638f4542a6be"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR010 [GND1]",
+              "pos": {
+                "x": 1.2319,
+                "y": 1.8796
+              },
+              "uuid": "714c1972-b065-40ba-8fd3-db245865736c"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R31 [R]",
+              "pos": {
+                "x": 1.2446,
+                "y": 2.5146
+              },
+              "uuid": "7df2505f-6f39-4495-9ac1-b1743435c3f4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R32 [R]",
+              "pos": {
+                "x": 1.2446,
+                "y": 2.6924
+              },
+              "uuid": "87a87103-8be7-4b36-9c83-d11e1dd760df"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol TH4 [Thermistor_NTC]",
+              "pos": {
+                "x": 1.2446,
+                "y": 2.8321
+              },
+              "uuid": "e9f7597b-a21b-40af-a2cd-cec80e5bfd61"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C11 [C]",
+              "pos": {
+                "x": 1.2446,
+                "y": 2.9591
+              },
+              "uuid": "0e903f5a-74af-4fda-bf24-a04781ed6493"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C22 [C]",
+              "pos": {
+                "x": 1.27,
+                "y": 0.6096
+              },
+              "uuid": "b9987946-bc44-40e6-9cba-f4fc492dd1fd"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR031 [GND2]",
+              "pos": {
+                "x": 1.27,
+                "y": 3.7084
+              },
+              "uuid": "f164adaf-6f7f-4463-9574-14325a6f0abc"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R41 [R]",
+              "pos": {
+                "x": 1.3208,
+                "y": 2.0066
+              },
+              "uuid": "b39f8580-d7bb-406b-9be2-0473aa4140b9"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR011 [GND1]",
+              "pos": {
+                "x": 1.3208,
+                "y": 2.0447
+              },
+              "uuid": "a2ee43da-ea78-4512-8f51-4f9ffcf27cc7"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR04 [GND1]",
+              "pos": {
+                "x": 1.3335,
+                "y": 2.8956
+              },
+              "uuid": "0d7bc3fd-4e21-4239-8b14-a76cd010155c"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR05 [GND1]",
+              "pos": {
+                "x": 1.3589,
+                "y": 2.7559
+              },
+              "uuid": "10a0fe76-4980-4e72-9888-de16a60a684e"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C21 [C]",
+              "pos": {
+                "x": 1.3589,
+                "y": 3.5941
+              },
+              "uuid": "d835f8db-d127-46cd-a9d1-6e734de42c2b"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C17 [C]",
+              "pos": {
+                "x": 1.3589,
+                "y": 3.7084
+              },
+              "uuid": "b471a64c-3cd3-4fd3-a839-82ea3a168ea2"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C23 [C]",
+              "pos": {
+                "x": 1.3716,
+                "y": 0.6096
+              },
+              "uuid": "ff1746b8-b437-4537-bd06-12ddd882bec5"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C7 [C]",
+              "pos": {
+                "x": 1.4097,
+                "y": 2.6924
+              },
+              "uuid": "2d1abda6-e415-4c43-a6e4-36b020e8fd24"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R6 [R]",
+              "pos": {
+                "x": 1.4224,
+                "y": 0.9779
+              },
+              "uuid": "05d81bd0-8007-4dba-9c12-0e491c2d6f43"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R10 [R]",
+              "pos": {
+                "x": 1.4224,
+                "y": 1.3335
+              },
+              "uuid": "3172d44a-41ac-48a8-b3f8-9a9b33db66ff"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Diode' was not found at '${KICAD10_SYMBOL_DIR}/Diode.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D4 [1N4148]",
+              "pos": {
+                "x": 1.4351,
+                "y": 1.0668
+              },
+              "uuid": "8b861cbf-3d3b-4529-a00d-7d5ad26c000d"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Diode' was not found at '${KICAD10_SYMBOL_DIR}/Diode.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D6 [1N4148]",
+              "pos": {
+                "x": 1.4351,
+                "y": 1.4224
+              },
+              "uuid": "8f9d8efb-5a6c-41d6-879e-7002fc5b9973"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR035 [GND1]",
+              "pos": {
+                "x": 1.4605,
+                "y": 3.7084
+              },
+              "uuid": "732da915-6bc2-47f7-ba86-df81ae477127"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C24 [C]",
+              "pos": {
+                "x": 1.4732,
+                "y": 0.6096
+              },
+              "uuid": "347f5dba-7016-4c1c-926c-b00248a68138"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Isolator' was not found at '${KICAD10_SYMBOL_DIR}/Isolator.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol U1 [Optocoupler_DC_PhotoNPN_AKEC]",
+              "pos": {
+                "x": 1.4732,
+                "y": 2.54
+              },
+              "uuid": "0e6361e0-bccf-4b34-b1a5-5f888d041937"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Transistor_FET' was not found at '${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol Q2 [Q_NMOS_GDS]",
+              "pos": {
+                "x": 1.5494,
+                "y": 0.9779
+              },
+              "uuid": "e7a375f9-1b4f-42e8-b4cf-b21cc0ce03d4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Transistor_FET' was not found at '${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol Q5 [Q_NMOS_GDS]",
+              "pos": {
+                "x": 1.5494,
+                "y": 1.3335
+              },
+              "uuid": "97a16491-3c73-4e8a-904a-b2a6713c62dd"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C25 [C]",
+              "pos": {
+                "x": 1.5748,
+                "y": 0.6096
+              },
+              "uuid": "2864a11f-3de3-4ade-b0cd-5abf7d1cf603"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR020 [GND1]",
+              "pos": {
+                "x": 1.5748,
+                "y": 0.7366
+              },
+              "uuid": "c550423d-e8e9-4996-8fa5-b205d68cf562"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR01 [GND1]",
+              "pos": {
+                "x": 1.5748,
+                "y": 1.5367
+              },
+              "uuid": "9219dfb2-8149-4428-91ed-8a863f9563fb"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R33 [R]",
+              "pos": {
+                "x": 1.651,
+                "y": 2.54
+              },
+              "uuid": "4d588c44-87aa-461d-961c-d0f6a25b9ae9"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R34 [R]",
+              "pos": {
+                "x": 1.651,
+                "y": 2.6416
+              },
+              "uuid": "e32c72ba-de0e-4ec2-b1e4-92c4bbc19775"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Reference_Voltage' was not found at '${KICAD10_SYMBOL_DIR}/Reference_Voltage.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol U2 [TL431DBZ]",
+              "pos": {
+                "x": 1.651,
+                "y": 2.7432
+              },
+              "uuid": "dd07731a-c7d1-4c0c-a61d-0bddc96d814b"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR036 [GND1]",
+              "pos": {
+                "x": 1.651,
+                "y": 3.7084
+              },
+              "uuid": "5e59d03e-be8d-41d5-8a79-6906256bbc10"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C26 [C]",
+              "pos": {
+                "x": 1.6764,
+                "y": 0.6096
+              },
+              "uuid": "70e38395-6028-46c6-b592-5d8f8eea8c9e"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR014 [GND1]",
+              "pos": {
+                "x": 1.7399,
+                "y": 2.032
+              },
+              "uuid": "a2f8a320-1907-4fcb-8183-b5e27519210f"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C42 [C]",
+              "pos": {
+                "x": 1.7399,
+                "y": 3.2639
+              },
+              "uuid": "a322175e-18ed-46a3-8bd8-4fca691771d5"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C41 [C]",
+              "pos": {
+                "x": 1.7399,
+                "y": 3.3655
+              },
+              "uuid": "07dc7716-b3d4-4a45-b916-7032d352ca0d"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C40 [C]",
+              "pos": {
+                "x": 1.7399,
+                "y": 3.4798
+              },
+              "uuid": "1b9f9a6e-7fb3-4141-99dd-415d623dccb9"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C39 [C]",
+              "pos": {
+                "x": 1.7399,
+                "y": 3.5941
+              },
+              "uuid": "5fec41ed-f58b-487b-a56c-8f3dee6cc63b"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C38 [C]",
+              "pos": {
+                "x": 1.7399,
+                "y": 3.7084
+              },
+              "uuid": "aaf3008f-9a74-494d-a73c-2b05781fca8a"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C13 [C]",
+              "pos": {
+                "x": 1.7653,
+                "y": 1.778
+              },
+              "uuid": "e94a5a9e-793b-40c6-8863-959adf24ba0d"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "Label connected to only one pin",
+          "items": [
+            {
+              "description": "Label '400V'",
+              "pos": {
+                "x": 1.7653,
+                "y": 2.4511
+              },
+              "uuid": "1dd9d533-1cd0-4667-8a57-c2e55c00ea0f"
+            }
+          ],
+          "severity": "warning",
+          "type": "isolated_pin_label"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R35 [R]",
+              "pos": {
+                "x": 1.7653,
+                "y": 2.54
+              },
+              "uuid": "83003335-e644-4447-9a52-7697716cf118"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R36 [R]",
+              "pos": {
+                "x": 1.7653,
+                "y": 2.6416
+              },
+              "uuid": "eb53ef27-0563-4f12-9a23-d614a54970de"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R37 [R]",
+              "pos": {
+                "x": 1.7653,
+                "y": 2.7432
+              },
+              "uuid": "78b49889-aa86-4aa8-890d-708ce8722db5"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR06 [GND2]",
+              "pos": {
+                "x": 1.7653,
+                "y": 2.8194
+              },
+              "uuid": "0e2de7d8-a268-4059-a571-0544f297b8f7"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C27 [C]",
+              "pos": {
+                "x": 1.778,
+                "y": 0.6096
+              },
+              "uuid": "7524764f-5bec-4266-a181-3a7077850144"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R7 [R]",
+              "pos": {
+                "x": 1.8161,
+                "y": 0.9779
+              },
+              "uuid": "a66e9838-d6fd-40b2-bcda-3d410ea3f9a6"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R11 [R]",
+              "pos": {
+                "x": 1.8161,
+                "y": 1.3208
+              },
+              "uuid": "33370acd-3fb8-4ed4-b18a-a2e2f126816a"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Diode' was not found at '${KICAD10_SYMBOL_DIR}/Diode.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D7 [1N4148]",
+              "pos": {
+                "x": 1.8288,
+                "y": 1.0668
+              },
+              "uuid": "c5dcc394-96c9-42a8-b125-34a9120753ae"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Diode' was not found at '${KICAD10_SYMBOL_DIR}/Diode.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D8 [1N4148]",
+              "pos": {
+                "x": 1.8288,
+                "y": 1.4097
+              },
+              "uuid": "e78051a6-394c-4556-8443-a4fb85179afc"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR016 [GND3]",
+              "pos": {
+                "x": 1.8415,
+                "y": 3.6957
+              },
+              "uuid": "c6e33eb6-d33e-4143-a2c3-5fd3ac44875e"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R38 [R]",
+              "pos": {
+                "x": 1.8542,
+                "y": 2.7432
+              },
+              "uuid": "cf5189b1-9c96-47ec-9ac0-3ce0f4b0beb4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C28 [C]",
+              "pos": {
+                "x": 1.8796,
+                "y": 0.6096
+              },
+              "uuid": "7a979512-7203-49b1-a9f3-133e8c3384d7"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D19 [D]",
+              "pos": {
+                "x": 1.8796,
+                "y": 1.778
+              },
+              "uuid": "d3d994ad-6404-4673-8a0c-5ee0ca3c41aa"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR012 [GND1]",
+              "pos": {
+                "x": 1.8796,
+                "y": 1.8288
+              },
+              "uuid": "8c22403c-6e21-4cce-915f-b7515611e4e0"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R12 [R]",
+              "pos": {
+                "x": 1.8923,
+                "y": 1.1557
+              },
+              "uuid": "49470d10-b469-4096-9172-8c85cfb4f6b4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R13 [R]",
+              "pos": {
+                "x": 1.8923,
+                "y": 1.4986
+              },
+              "uuid": "25d4e841-44b9-46ec-af5a-fda558fa1e81"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Transistor_FET' was not found at '${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol Q6 [Q_NMOS_GDS]",
+              "pos": {
+                "x": 1.9431,
+                "y": 0.9779
+              },
+              "uuid": "d3d1010a-cbbf-4745-9dcb-47b5177f7111"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Transistor_FET' was not found at '${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol Q7 [Q_NMOS_GDS]",
+              "pos": {
+                "x": 1.9431,
+                "y": 1.3208
+              },
+              "uuid": "4154ac47-d9f7-43fe-9cbf-414f5ee47eed"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C8 [C]",
+              "pos": {
+                "x": 1.9558,
+                "y": 2.7432
+              },
+              "uuid": "d6aa7756-0151-41da-8a69-0eb8914cb2c0"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C29 [C]",
+              "pos": {
+                "x": 1.9812,
+                "y": 0.6096
+              },
+              "uuid": "9b8b205c-a262-4da2-b2ae-aab96e0bc899"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R43 [R]",
+              "pos": {
+                "x": 1.9939,
+                "y": 1.8034
+              },
+              "uuid": "529e5099-5946-4634-abe6-cdb2939ff0bc"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol L2 [L]",
+              "pos": {
+                "x": 2.0574,
+                "y": 1.7399
+              },
+              "uuid": "ef69b044-e4b4-4e3c-929f-d3ee3afd0534"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C15 [C]",
+              "pos": {
+                "x": 2.0701,
+                "y": 1.8542
+              },
+              "uuid": "714145f9-4ffd-4a66-a498-fdeb9b57765c"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C30 [C]",
+              "pos": {
+                "x": 2.0828,
+                "y": 0.6096
+              },
+              "uuid": "f6f7ec62-707c-4c26-8a30-cd18897101e8"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C14 [C]",
+              "pos": {
+                "x": 2.1336,
+                "y": 1.8034
+              },
+              "uuid": "b3a40b2b-60bc-431a-9587-46727b1a98c8"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R14 [R]",
+              "pos": {
+                "x": 2.2098,
+                "y": 0.9779
+              },
+              "uuid": "84745cdd-6497-499d-bd9d-8baa32fff258"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R15 [R]",
+              "pos": {
+                "x": 2.2098,
+                "y": 1.3335
+              },
+              "uuid": "3389d9a2-9973-4d35-a893-43ec6680852d"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Diode' was not found at '${KICAD10_SYMBOL_DIR}/Diode.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D9 [1N4148]",
+              "pos": {
+                "x": 2.2225,
+                "y": 1.0668
+              },
+              "uuid": "83140a88-8132-4009-bf6b-ce26268d11ac"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Diode' was not found at '${KICAD10_SYMBOL_DIR}/Diode.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D10 [1N4148]",
+              "pos": {
+                "x": 2.2225,
+                "y": 1.4224
+              },
+              "uuid": "1b39f08c-545d-401d-9bab-76d1d33df08f"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R44 [R]",
+              "pos": {
+                "x": 2.2225,
+                "y": 1.778
+              },
+              "uuid": "b1cbfd31-2d51-4beb-9e49-5f95f5b16aba"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R45 [R]",
+              "pos": {
+                "x": 2.2225,
+                "y": 1.9939
+              },
+              "uuid": "495e5ffb-a6f3-42d6-b651-50f1602beb74"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR013 [GND1]",
+              "pos": {
+                "x": 2.2225,
+                "y": 2.032
+              },
+              "uuid": "559b486a-82c7-4424-81a3-f06587c3b50e"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Transistor_FET' was not found at '${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol Q8 [Q_NMOS_GDS]",
+              "pos": {
+                "x": 2.3368,
+                "y": 0.9779
+              },
+              "uuid": "36bf195d-f609-4812-beba-2af6757d9de7"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Transistor_FET' was not found at '${KICAD10_SYMBOL_DIR}/Transistor_FET.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol Q9 [Q_NMOS_GDS]",
+              "pos": {
+                "x": 2.3368,
+                "y": 1.3335
+              },
+              "uuid": "ebaed022-b5ba-4268-ac4a-e5a0049e35f3"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR02 [GND1]",
+              "pos": {
+                "x": 2.3622,
+                "y": 1.5367
+              },
+              "uuid": "453358d4-6004-427f-9b45-f9cfbc9fc979"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C16 [C]",
+              "pos": {
+                "x": 2.3622,
+                "y": 1.8161
+              },
+              "uuid": "d5268ba3-30c9-4833-bf5a-5ff2c815f46c"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR015 [GND1]",
+              "pos": {
+                "x": 2.3622,
+                "y": 1.8542
+              },
+              "uuid": "ea7f1eb8-b449-4556-bdf6-cba58cda424b"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C9 [C]",
+              "pos": {
+                "x": 2.3622,
+                "y": 3.302
+              },
+              "uuid": "a3641ed3-7c40-410f-b48f-6f153704fbdf"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol TH2 [Thermistor_NTC]",
+              "pos": {
+                "x": 2.4511,
+                "y": 3.2004
+              },
+              "uuid": "120f7fd8-9672-434b-9529-976d192c8d7b"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R40 [R]",
+              "pos": {
+                "x": 2.4511,
+                "y": 3.302
+              },
+              "uuid": "3b83c52d-4868-4bcf-a9f7-f8db3f24ad62"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR07 [GND2]",
+              "pos": {
+                "x": 2.4511,
+                "y": 3.3655
+              },
+              "uuid": "79742dd1-32c1-42ad-813f-4ac7da0be758"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C10 [C]",
+              "pos": {
+                "x": 2.5908,
+                "y": 3.302
+              },
+              "uuid": "a84d757e-0c59-4238-b79d-c31118ff4e39"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR028 [GND2]",
+              "pos": {
+                "x": 2.6035,
+                "y": 3.4671
+              },
+              "uuid": "28e7a557-ca76-420a-bd8e-c222b62bf208"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol TH3 [Thermistor_NTC]",
+              "pos": {
+                "x": 2.6797,
+                "y": 3.2004
+              },
+              "uuid": "2f2d2e1f-0822-475d-acc7-c5d1a1393c5e"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R42 [R]",
+              "pos": {
+                "x": 2.6797,
+                "y": 3.302
+              },
+              "uuid": "8949f525-6a9b-4f56-a146-3498988fa721"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR08 [GND2]",
+              "pos": {
+                "x": 2.6797,
+                "y": 3.3655
+              },
+              "uuid": "42984cff-9495-40a0-a306-98177f184623"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol T1 [Transformer_1P_2S]",
+              "pos": {
+                "x": 2.7305,
+                "y": 1.2192
+              },
+              "uuid": "385ef9b9-bbbd-4760-a048-8fbb0ff46562"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol L1 [L]",
+              "pos": {
+                "x": 2.9083,
+                "y": 0.9525
+              },
+              "uuid": "d3795a27-1776-4c88-8c8c-ac19ab3e89b3"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "Both ISENSE1_P and ISENSE3_P are attached to the same items; ISENSE1_P will be used in the netlist",
+          "items": [
+            {
+              "description": "Label 'ISENSE1_P'",
+              "pos": {
+                "x": 4.9911,
+                "y": 1.8542
+              },
+              "uuid": "67c0cbde-fcb3-4ad6-bd40-b44524bd7ab7"
+            },
+            {
+              "description": "Label 'ISENSE3_P'",
+              "pos": {
+                "x": 2.9083,
+                "y": 3.4925
+              },
+              "uuid": "3a180dd3-49e3-43be-a70b-763d102f9101"
+            }
+          ],
+          "severity": "warning",
+          "type": "multiple_net_names"
+        },
+        {
+          "description": "The symbol library 'Connector_Generic' was not found at '${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol J5 [Conn_01x29]",
+              "pos": {
+                "x": 2.9083,
+                "y": 3.556
+              },
+              "uuid": "b63340cc-ffe3-4d16-9065-66503297807a"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR029 [GND2]",
+              "pos": {
+                "x": 2.9845,
+                "y": 3.5052
+              },
+              "uuid": "6459a3a0-77f5-4804-a621-65c66d17bec0"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D18 [D]",
+              "pos": {
+                "x": 2.9972,
+                "y": 1.6256
+              },
+              "uuid": "2c788329-c17f-44e7-9984-70729f4e3b85"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D21 [D]",
+              "pos": {
+                "x": 2.9972,
+                "y": 1.7272
+              },
+              "uuid": "5d902083-b115-48d8-86d6-686cdd6b50aa"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R25 [R]",
+              "pos": {
+                "x": 3.0607,
+                "y": 1.8034
+              },
+              "uuid": "075b6ba4-bcd5-4ad7-ad5d-176a7203a471"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D20 [D]",
+              "pos": {
+                "x": 3.1115,
+                "y": 1.6256
+              },
+              "uuid": "1ec5a170-41d9-48dc-bbb5-f5e9358c3064"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D22 [D]",
+              "pos": {
+                "x": 3.1115,
+                "y": 1.7272
+              },
+              "uuid": "c4a75ca8-3dd0-467a-acd6-c5f4e1607bda"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C2 [C]",
+              "pos": {
+                "x": 3.175,
+                "y": 0.9525
+              },
+              "uuid": "18c03168-0784-4308-960f-0b5e17b362d3"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR030 [GND1]",
+              "pos": {
+                "x": 3.1877,
+                "y": 1.6764
+              },
+              "uuid": "9dc463b0-5a9b-4c10-9337-bec78604b8ca"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "Both ISENSE1_N and ISENSE3_N are attached to the same items; ISENSE1_N will be used in the netlist",
+          "items": [
+            {
+              "description": "Label 'ISENSE1_N'",
+              "pos": {
+                "x": 3.1623,
+                "y": 3.5052
+              },
+              "uuid": "fb39f145-ce04-43a8-b209-1160337354b5"
+            },
+            {
+              "description": "Label 'ISENSE3_N'",
+              "pos": {
+                "x": 3.1877,
+                "y": 3.5052
+              },
+              "uuid": "6c787952-7cd3-4348-9013-4e7b9d4852fe"
+            }
+          ],
+          "severity": "warning",
+          "type": "multiple_net_names"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR032 [GND2]",
+              "pos": {
+                "x": 3.2131,
+                "y": 3.4036
+              },
+              "uuid": "b3562c1f-002e-400c-ac4c-d8e9c88c7001"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D3 [D]",
+              "pos": {
+                "x": 3.2639,
+                "y": 1.0541
+              },
+              "uuid": "97df5d2a-d62f-4809-99e7-39f075c30e34"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D11 [D]",
+              "pos": {
+                "x": 3.2639,
+                "y": 1.2827
+              },
+              "uuid": "9fc5b790-7590-4eac-aedc-1d48451c8deb"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D13 [D]",
+              "pos": {
+                "x": 3.3528,
+                "y": 1.0541
+              },
+              "uuid": "ce388dca-363d-430b-a1b1-3570c2c42115"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D12 [D]",
+              "pos": {
+                "x": 3.3528,
+                "y": 1.2827
+              },
+              "uuid": "f289d6f2-af11-4649-8cf6-dac410bd06ee"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR025 [GND2]",
+              "pos": {
+                "x": 3.3528,
+                "y": 1.3716
+              },
+              "uuid": "cd294b8d-fcde-4ab5-814f-701901e52f84"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C3 [C_Polarized]",
+              "pos": {
+                "x": 3.4163,
+                "y": 1.1684
+              },
+              "uuid": "26e554f5-3e35-499d-a132-30b1450c0f51"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D25 [D]",
+              "pos": {
+                "x": 3.6957,
+                "y": 2.5908
+              },
+              "uuid": "27bb109d-2500-466a-96f3-83ee87e8514c"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D27 [D]",
+              "pos": {
+                "x": 3.6957,
+                "y": 2.7813
+              },
+              "uuid": "659f0172-b4a3-4e2f-93f8-10991ef5939b"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C51 [C_Small]",
+              "pos": {
+                "x": 3.7465,
+                "y": 1.1049
+              },
+              "uuid": "66bed1bb-40d6-44a8-b8dd-2f3a4d423ab2"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C52 [C_Small]",
+              "pos": {
+                "x": 3.7465,
+                "y": 1.6383
+              },
+              "uuid": "79f01dd0-5658-40f5-9c38-8dffb04fc43c"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D101 [D]",
+              "pos": {
+                "x": 3.81,
+                "y": 1.0922
+              },
+              "uuid": "1a53d820-2698-426c-a052-5f2d56758ce9"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R102 [R_Small]",
+              "pos": {
+                "x": 3.81,
+                "y": 1.1684
+              },
+              "uuid": "844f9d6b-7320-4cba-be3e-54bdecc34814"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C101 [C_Small]",
+              "pos": {
+                "x": 3.81,
+                "y": 1.2827
+              },
+              "uuid": "42fd67f7-9e82-4b3a-a906-bcdbc2c92b98"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C53 [C_Small]",
+              "pos": {
+                "x": 3.8227,
+                "y": 1.7653
+              },
+              "uuid": "b276ca38-c8f2-48d8-b565-ee7dd368df81"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D26 [D]",
+              "pos": {
+                "x": 3.8354,
+                "y": 2.5908
+              },
+              "uuid": "b9d54e4a-934f-4816-b199-4c5bda3c9cff"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D28 [D]",
+              "pos": {
+                "x": 3.8354,
+                "y": 2.7813
+              },
+              "uuid": "fed6e446-e6bc-4d13-9204-a59d38927a0f"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C37 [C]",
+              "pos": {
+                "x": 3.9116,
+                "y": 2.667
+              },
+              "uuid": "06aca6bd-c66a-4194-8d0f-65c5453be4f9"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C34 [C]",
+              "pos": {
+                "x": 3.9878,
+                "y": 2.7051
+              },
+              "uuid": "0efe9e4a-bf40-4eef-805c-4e7a0076386e"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C18 [C]",
+              "pos": {
+                "x": 4.0767,
+                "y": 2.7051
+              },
+              "uuid": "50277c52-2e70-419e-ba7f-49270cb29bf8"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R46 [R]",
+              "pos": {
+                "x": 4.1656,
+                "y": 2.7686
+              },
+              "uuid": "becf0a16-21db-49e8-8397-819d1f4e9811"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR023 [GND2]",
+              "pos": {
+                "x": 4.1656,
+                "y": 2.8575
+              },
+              "uuid": "c9934e7d-2c92-4ad4-b39c-b52f74c3d50e"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R26 [R_Small]",
+              "pos": {
+                "x": 4.2672,
+                "y": 1.2954
+              },
+              "uuid": "0689fb4c-d501-4f4d-ac71-180007f66c6d"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R27 [R_Small]",
+              "pos": {
+                "x": 4.2672,
+                "y": 1.8288
+              },
+              "uuid": "975a2367-66fe-4841-9978-5252c7fc2df7"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R57 [R]",
+              "pos": {
+                "x": 4.3307,
+                "y": 1.3843
+              },
+              "uuid": "78ee36ef-8b79-4256-a68a-2278ae1c98d4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R59 [R]",
+              "pos": {
+                "x": 4.3307,
+                "y": 1.9939
+              },
+              "uuid": "9801597d-8bc3-4ca9-ab37-9537384e4bc6"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C54 [C_Small]",
+              "pos": {
+                "x": 4.4196,
+                "y": 1.0922
+              },
+              "uuid": "76b842bb-ac73-45b7-86ee-ac3e6c2c17d7"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C55 [C_Small]",
+              "pos": {
+                "x": 4.4196,
+                "y": 1.6383
+              },
+              "uuid": "4145126d-5245-41ba-93b2-f2cb3aa38b22"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D102 [D]",
+              "pos": {
+                "x": 4.4831,
+                "y": 1.1049
+              },
+              "uuid": "3a7c32b8-c352-4d23-8c86-4be7268240c2"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R103 [R_Small]",
+              "pos": {
+                "x": 4.4831,
+                "y": 1.1811
+              },
+              "uuid": "3a5da00d-173c-4bb9-95a2-b337c67ee13b"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C102 [C_Small]",
+              "pos": {
+                "x": 4.4831,
+                "y": 1.2573
+              },
+              "uuid": "ac8ef5b3-7f19-46a9-9e1b-81041d25ca43"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C56 [C_Small]",
+              "pos": {
+                "x": 4.4958,
+                "y": 1.7526
+              },
+              "uuid": "9052d501-efdd-4e04-821c-838f1b09d053"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR024 [GND2]",
+              "pos": {
+                "x": 4.5847,
+                "y": 2.8575
+              },
+              "uuid": "aba50a2a-3a33-4428-a110-8e98b8f5d106"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C19 [C]",
+              "pos": {
+                "x": 4.6101,
+                "y": 2.6035
+              },
+              "uuid": "11f8ad40-db4d-4c1c-96e6-b8c3ed9ff0b5"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol D23 [D]",
+              "pos": {
+                "x": 4.699,
+                "y": 2.6035
+              },
+              "uuid": "85f941e3-deb2-411c-86c5-5e5e772d2ce4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR033 [GND2]",
+              "pos": {
+                "x": 4.699,
+                "y": 2.6416
+              },
+              "uuid": "32b16759-dd34-4b49-8d26-fa2780909cc6"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R52 [R]",
+              "pos": {
+                "x": 4.8006,
+                "y": 2.159
+              },
+              "uuid": "318f00c0-b0cf-43b0-8c72-dbc7ccbfe1a5"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR040 [GND2]",
+              "pos": {
+                "x": 4.8006,
+                "y": 2.2352
+              },
+              "uuid": "743e1bc2-a92e-4a7c-90bc-803065292cc8"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R47 [R]",
+              "pos": {
+                "x": 4.8133,
+                "y": 2.6289
+              },
+              "uuid": "13336cb1-3a6e-437a-ae9d-a3f58239dca6"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol L3 [L]",
+              "pos": {
+                "x": 4.8768,
+                "y": 2.5654
+              },
+              "uuid": "17c65140-082d-408f-9605-eb0fa5e1b166"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C20 [C]",
+              "pos": {
+                "x": 4.8895,
+                "y": 2.6797
+              },
+              "uuid": "a22d58ba-9753-4549-a773-6931e95ee30d"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R28 [R_Small]",
+              "pos": {
+                "x": 4.9276,
+                "y": 1.2827
+              },
+              "uuid": "d4967baf-4d93-4f0c-9980-65108d3dfdc0"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R51 [R_Small]",
+              "pos": {
+                "x": 4.9276,
+                "y": 1.8288
+              },
+              "uuid": "538c64b3-033a-45c4-9992-b5ec431b7a8a"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C31 [C]",
+              "pos": {
+                "x": 4.953,
+                "y": 2.6289
+              },
+              "uuid": "9ecd8469-0d71-4250-a022-bdbb2a61191f"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R58 [R]",
+              "pos": {
+                "x": 4.9911,
+                "y": 1.3843
+              },
+              "uuid": "a72c91d0-a68c-4f14-9736-ed115658d8ae"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R60 [R]",
+              "pos": {
+                "x": 4.9911,
+                "y": 1.9939
+              },
+              "uuid": "a43894c8-7f47-4abc-8e33-e1613c1f1e35"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R48 [R]",
+              "pos": {
+                "x": 5.0419,
+                "y": 2.6035
+              },
+              "uuid": "d5f4a8b1-1dd2-4346-ae41-8e530a3e94f2"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol R49 [R]",
+              "pos": {
+                "x": 5.0419,
+                "y": 2.8194
+              },
+              "uuid": "46923fdf-e3c5-4c1c-a89f-f3a07c659372"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR021 [GND2]",
+              "pos": {
+                "x": 5.0419,
+                "y": 2.8575
+              },
+              "uuid": "cbd721cd-04c0-4d8d-94ee-7b7b03aa14e4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Regulator_Linear' was not found at '${KICAD10_SYMBOL_DIR}/Regulator_Linear.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol U6 [L7805]",
+              "pos": {
+                "x": 5.1181,
+                "y": 2.3749
+              },
+              "uuid": "bce8badb-6a5f-4860-93d3-5225b35f0b72"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR018 [GND2]",
+              "pos": {
+                "x": 5.1181,
+                "y": 2.4511
+              },
+              "uuid": "7da05eb5-c511-4a56-adbf-59fca42205b1"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C32 [C]",
+              "pos": {
+                "x": 5.1308,
+                "y": 2.6543
+              },
+              "uuid": "083eaf05-6287-4ec1-a88b-9743477e04d5"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR019 [GND2]",
+              "pos": {
+                "x": 5.1308,
+                "y": 2.6797
+              },
+              "uuid": "8856e29d-a7d5-4b3c-991d-b7bb37afca43"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C50 [C]",
+              "pos": {
+                "x": 5.207,
+                "y": 1.397
+              },
+              "uuid": "b3eaaed2-5314-4b43-9dd4-f9becaf59f67"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C36 [C]",
+              "pos": {
+                "x": 5.2197,
+                "y": 2.6543
+              },
+              "uuid": "19407702-4a54-4fbc-a4aa-cdc01745b4c8"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR026 [GND2]",
+              "pos": {
+                "x": 5.2197,
+                "y": 2.6924
+              },
+              "uuid": "65b87264-bb5d-48e1-8805-91903266c4b4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C35 [C]",
+              "pos": {
+                "x": 5.2324,
+                "y": 2.4384
+              },
+              "uuid": "25c41f8f-bce3-4db9-a58f-a2855be95a37"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR017 [GND2]",
+              "pos": {
+                "x": 5.2324,
+                "y": 2.4892
+              },
+              "uuid": "305f59d1-8f86-439a-acce-2f675f8e7f3f"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol T5 [Transformer_1P_1S]",
+              "pos": {
+                "x": 5.3975,
+                "y": 1.397
+              },
+              "uuid": "84265376-4680-4113-a4b0-a8a95b7580ec"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Device' was not found at '${KICAD10_SYMBOL_DIR}/Device.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol C57 [C]",
+              "pos": {
+                "x": 5.5245,
+                "y": 1.3716
+              },
+              "uuid": "edc97b80-d2a2-4e2d-9e16-fe106f7829a9"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'power' was not found at '${KICAD10_SYMBOL_DIR}/power.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol #PWR041 [GND3]",
+              "pos": {
+                "x": 5.6007,
+                "y": 1.3462
+              },
+              "uuid": "02c61245-7355-4571-adef-c9d5efdddfff"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "The symbol library 'Connector_Generic' was not found at '${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym'",
+          "items": [
+            {
+              "description": "Symbol J7 [Conn_01x03]",
+              "pos": {
+                "x": 5.6515,
+                "y": 1.3208
+              },
+              "uuid": "2ef1089b-6929-4e30-a43c-d59733da8313"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        }
+      ]
+    }
+  ],
+  "source": "hardware/inverter/cirBATTverter_1KWH.kicad_sch"
+}

@@ -1,0 +1,647 @@
+{
+  "$schema": "https://schemas.kicad.org/erc.v1.json",
+  "coordinate_units": "mm",
+  "date": "2026-10-14T16:18:40",
+  "ignored_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ],
+  "included_severities": [
+    "error",
+    "warning",
+    "exclusion"
+  ],
+  "kicad_version": "10.0.5",
+  "sheets": [
+    {
+      "path": "/",
+      "uuid_path": "/1f070434-494f-429c-a473-fb8aa736b858",
+      "violations": [
+        {
+          "description": "Les pins de type Open emitter et Output sont connectÃ©es",
+          "items": [
+            {
+              "description": "Symbol Q13 Pin 3 [E, Open emitter, Line]",
+              "pos": {
+                "x": 0.9525,
+                "y": 2.667
+              },
+              "uuid": "ce4835a0-a8c5-442d-ac78-e3e77a7ff5a1"
+            },
+            {
+              "description": "Symbol U3 Pin 6 [PGOOD, Output, Line]",
+              "pos": {
+                "x": 1.7145,
+                "y": 1.8796
+              },
+              "uuid": "003ac945-3311-444c-b75f-ac0e9466ac27"
+            }
+          ],
+          "severity": "error",
+          "type": "pin_to_pin"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR01 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 1.5748,
+                "y": 1.5367
+              },
+              "uuid": "493babd9-8f45-4ede-abe6-2024ba192efa"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol U3 Pin 8 [SW, Power input, Line]",
+              "pos": {
+                "x": 1.7145,
+                "y": 1.7526
+              },
+              "uuid": "0f595819-c183-4c6a-a1c0-118ac6683072"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR06 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 1.7653,
+                "y": 2.8194
+              },
+              "uuid": "90428390-fc13-4752-8bae-000638b673aa"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol #PWR016 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 1.8415,
+                "y": 3.6957
+              },
+              "uuid": "44397bd0-b445-48ac-8130-4de8851cd7cc"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol U4 Pin 8 [SW, Power input, Line]",
+              "pos": {
+                "x": 4.5593,
+                "y": 2.5781
+              },
+              "uuid": "f2579879-fad7-427e-b80b-e922ffddd71b"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "Input Power pin not driven by any Output Power pins",
+          "items": [
+            {
+              "description": "Symbol U6 Pin 1 [IN, Power input, Line]",
+              "pos": {
+                "x": 5.0419,
+                "y": 2.3749
+              },
+              "uuid": "4a28dc64-3f31-43d5-a6ee-45a98c0df5a3"
+            }
+          ],
+          "severity": "error",
+          "type": "power_pin_not_driven"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'XFCN TR34070'",
+          "items": [
+            {
+              "description": "Symbole J1 [Conn_01x01]",
+              "pos": {
+                "x": 1.0033,
+                "y": 0.508
+              },
+              "uuid": "ff0d56e2-1a7e-420c-9742-a83b6c2aefd4"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'XFCN TR34070'",
+          "items": [
+            {
+              "description": "Symbole J2 [Conn_01x01]",
+              "pos": {
+                "x": 1.0033,
+                "y": 0.7239
+              },
+              "uuid": "40ab6316-2aa4-475d-9368-e02e5460b3b2"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'buzzer'",
+          "items": [
+            {
+              "description": "Symbole BZ1 [Buzzer]",
+              "pos": {
+                "x": 1.1176,
+                "y": 2.7559
+              },
+              "uuid": "d6904b0a-f549-4883-bbd8-c1504d1c13b6"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'LM5013'",
+          "items": [
+            {
+              "description": "Symbole U3 [LM5013DDAR]",
+              "pos": {
+                "x": 1.5367,
+                "y": 1.8542
+              },
+              "uuid": "de5fb4bd-4356-4ac1-9a37-95c3ae7f7261"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "Label connected to only one pin",
+          "items": [
+            {
+              "description": "Label '400V'",
+              "pos": {
+                "x": 1.7653,
+                "y": 2.4511
+              },
+              "uuid": "1dd9d533-1cd0-4667-8a57-c2e55c00ea0f"
+            }
+          ],
+          "severity": "warning",
+          "type": "isolated_pin_label"
+        },
+        {
+          "description": "Le symbole 'D' ne correspond pas Ã  la copie en librairie 'Device'",
+          "items": [
+            {
+              "description": "Symbole D19 [D]",
+              "pos": {
+                "x": 1.8796,
+                "y": 1.778
+              },
+              "uuid": "d3d994ad-6404-4673-8a0c-5ee0ca3c41aa"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Empreinte 'IND-SMD_L12.3-W12.3_SMDRI127' introuvable dans la librairie 'APS1040M220A'",
+          "items": [
+            {
+              "description": "Symbole L2 [L]",
+              "pos": {
+                "x": 2.0574,
+                "y": 1.7399
+              },
+              "uuid": "ef69b044-e4b4-4e3c-929f-d3ee3afd0534"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'PCB_transformer'",
+          "items": [
+            {
+              "description": "Symbole T1 [Transformer_1P_2S]",
+              "pos": {
+                "x": 2.7305,
+                "y": 1.2192
+              },
+              "uuid": "385ef9b9-bbbd-4760-a048-8fbb0ff46562"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'Shun Xiang Nuo SMMS1770-330M'",
+          "items": [
+            {
+              "description": "Symbole L1 [L]",
+              "pos": {
+                "x": 2.9083,
+                "y": 0.9525
+              },
+              "uuid": "d3795a27-1776-4c88-8c8c-ac19ab3e89b3"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "GND2 et OUT_LS1_N sont attachÃ©s aux mÃªmes Ã©lÃ©ments.  GND2 a Ã©tÃ© choisi comme label  en netliste",
+          "items": [
+            {
+              "description": "Symbol #PWR06 Pin 1 [Power input, Line]",
+              "pos": {
+                "x": 1.7653,
+                "y": 2.8194
+              },
+              "uuid": "90428390-fc13-4752-8bae-000638b673aa"
+            },
+            {
+              "description": "Label 'OUT_LS1_N'",
+              "pos": {
+                "x": 3.0861,
+                "y": 3.3401
+              },
+              "uuid": "23cc586f-6078-46e1-a125-2ecf9245213a"
+            }
+          ],
+          "severity": "warning",
+          "type": "multiple_net_names"
+        },
+        {
+          "description": "Le symbole 'D' ne correspond pas Ã  la copie en librairie 'Device'",
+          "items": [
+            {
+              "description": "Symbole D3 [D]",
+              "pos": {
+                "x": 3.2639,
+                "y": 1.0541
+              },
+              "uuid": "97df5d2a-d62f-4809-99e7-39f075c30e34"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Le symbole 'D' ne correspond pas Ã  la copie en librairie 'Device'",
+          "items": [
+            {
+              "description": "Symbole D11 [D]",
+              "pos": {
+                "x": 3.2639,
+                "y": 1.2827
+              },
+              "uuid": "9fc5b790-7590-4eac-aedc-1d48451c8deb"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Le symbole 'D' ne correspond pas Ã  la copie en librairie 'Device'",
+          "items": [
+            {
+              "description": "Symbole D13 [D]",
+              "pos": {
+                "x": 3.3528,
+                "y": 1.0541
+              },
+              "uuid": "ce388dca-363d-430b-a1b1-3570c2c42115"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Le symbole 'D' ne correspond pas Ã  la copie en librairie 'Device'",
+          "items": [
+            {
+              "description": "Symbole D12 [D]",
+              "pos": {
+                "x": 3.3528,
+                "y": 1.2827
+              },
+              "uuid": "f289d6f2-af11-4649-8cf6-dac410bd06ee"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Le symbole 'D' ne correspond pas Ã  la copie en librairie 'Device'",
+          "items": [
+            {
+              "description": "Symbole D25 [D]",
+              "pos": {
+                "x": 3.6957,
+                "y": 2.5908
+              },
+              "uuid": "27bb109d-2500-466a-96f3-83ee87e8514c"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Le symbole 'D' ne correspond pas Ã  la copie en librairie 'Device'",
+          "items": [
+            {
+              "description": "Symbole D27 [D]",
+              "pos": {
+                "x": 3.6957,
+                "y": 2.7813
+              },
+              "uuid": "659f0172-b4a3-4e2f-93f8-10991ef5939b"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'circBatt_footprints'",
+          "items": [
+            {
+              "description": "Symbole D101 [D]",
+              "pos": {
+                "x": 3.81,
+                "y": 1.0922
+              },
+              "uuid": "1a53d820-2698-426c-a052-5f2d56758ce9"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "Le symbole 'D' ne correspond pas Ã  la copie en librairie 'Device'",
+          "items": [
+            {
+              "description": "Symbole D26 [D]",
+              "pos": {
+                "x": 3.8354,
+                "y": 2.5908
+              },
+              "uuid": "b9d54e4a-934f-4816-b199-4c5bda3c9cff"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Le symbole 'D' ne correspond pas Ã  la copie en librairie 'Device'",
+          "items": [
+            {
+              "description": "Symbole D28 [D]",
+              "pos": {
+                "x": 3.8354,
+                "y": 2.7813
+              },
+              "uuid": "fed6e446-e6bc-4d13-9204-a59d38927a0f"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'circBatt_footprints'",
+          "items": [
+            {
+              "description": "Symbole Q14 [CID12N65D]",
+              "pos": {
+                "x": 4.2291,
+                "y": 1.1049
+              },
+              "uuid": "f8b08b3f-0234-4781-9342-b91d2f99b002"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie de symboles 'Symbols'",
+          "items": [
+            {
+              "description": "Symbole Q14 [CID12N65D]",
+              "pos": {
+                "x": 4.2291,
+                "y": 1.1049
+              },
+              "uuid": "f8b08b3f-0234-4781-9342-b91d2f99b002"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'circBatt_footprints'",
+          "items": [
+            {
+              "description": "Symbole Q15 [CID12N65D]",
+              "pos": {
+                "x": 4.2291,
+                "y": 1.6383
+              },
+              "uuid": "eec8f3b4-8b29-4ff9-9a87-ce4292c481bd"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie de symboles 'Symbols'",
+          "items": [
+            {
+              "description": "Symbole Q15 [CID12N65D]",
+              "pos": {
+                "x": 4.2291,
+                "y": 1.6383
+              },
+              "uuid": "eec8f3b4-8b29-4ff9-9a87-ce4292c481bd"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "ISENSE1_N et ISENSE3_N sont attachÃ©s aux mÃªmes Ã©lÃ©ments.  ISENSE1_N a Ã©tÃ© choisi comme label  en netliste",
+          "items": [
+            {
+              "description": "Label 'ISENSE1_N'",
+              "pos": {
+                "x": 5.207,
+                "y": 2.0701
+              },
+              "uuid": "febca610-6ff7-4df5-8ca1-4fc934c8bd37"
+            },
+            {
+              "description": "Label 'ISENSE3_N'",
+              "pos": {
+                "x": 4.3307,
+                "y": 2.0701
+              },
+              "uuid": "79344afa-9e21-4197-85eb-a6a79e2562e7"
+            }
+          ],
+          "severity": "warning",
+          "type": "multiple_net_names"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'LM5013'",
+          "items": [
+            {
+              "description": "Symbole U4 [LM5013DDAR]",
+              "pos": {
+                "x": 4.3815,
+                "y": 2.6797
+              },
+              "uuid": "728151ce-8853-4e9a-84b9-391bdea23cda"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'circBatt_footprints'",
+          "items": [
+            {
+              "description": "Symbole D102 [D]",
+              "pos": {
+                "x": 4.4831,
+                "y": 1.1049
+              },
+              "uuid": "3a7c32b8-c352-4d23-8c86-4be7268240c2"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "Le symbole 'D' ne correspond pas Ã  la copie en librairie 'Device'",
+          "items": [
+            {
+              "description": "Symbole D23 [D]",
+              "pos": {
+                "x": 4.699,
+                "y": 2.6035
+              },
+              "uuid": "85f941e3-deb2-411c-86c5-5e5e772d2ce4"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_mismatch"
+        },
+        {
+          "description": "Empreinte 'IND-SMD_L12.3-W12.3_SMDRI127' introuvable dans la librairie 'APS1040M220A'",
+          "items": [
+            {
+              "description": "Symbole L3 [L]",
+              "pos": {
+                "x": 4.8768,
+                "y": 2.5654
+              },
+              "uuid": "17c65140-082d-408f-9605-eb0fa5e1b166"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'circBatt_footprints'",
+          "items": [
+            {
+              "description": "Symbole Q16 [CID12N65D]",
+              "pos": {
+                "x": 4.8895,
+                "y": 1.0922
+              },
+              "uuid": "3bab6d7e-19b8-4313-816c-890136c0639c"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie de symboles 'Symbols'",
+          "items": [
+            {
+              "description": "Symbole Q16 [CID12N65D]",
+              "pos": {
+                "x": 4.8895,
+                "y": 1.0922
+              },
+              "uuid": "3bab6d7e-19b8-4313-816c-890136c0639c"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie d'empreintes 'circBatt_footprints'",
+          "items": [
+            {
+              "description": "Symbole Q17 [CID12N65D]",
+              "pos": {
+                "x": 4.8895,
+                "y": 1.6383
+              },
+              "uuid": "6d29e3bd-b0fd-4f27-8a90-cebf4cd546d6"
+            }
+          ],
+          "severity": "warning",
+          "type": "footprint_link_issues"
+        },
+        {
+          "description": "La configuration actuelle n'inclut pas la librairie de symboles 'Symbols'",
+          "items": [
+            {
+              "description": "Symbole Q17 [CID12N65D]",
+              "pos": {
+                "x": 4.8895,
+                "y": 1.6383
+              },
+              "uuid": "6d29e3bd-b0fd-4f27-8a90-cebf4cd546d6"
+            }
+          ],
+          "severity": "warning",
+          "type": "lib_symbol_issues"
+        }
+      ]
+    }
+  ],
+  "source": "cirBATTverter_1KWH.kicad_sch"
+}

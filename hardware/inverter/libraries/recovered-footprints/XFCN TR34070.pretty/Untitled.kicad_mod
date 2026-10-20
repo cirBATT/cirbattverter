@@ -1,0 +1,156 @@
+(footprint "Untitled"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 3.573 -11.627 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ebe89f33-5acb-4cd4-ab98-d834f977cbf0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Conn_01x01"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d8b06c10-7a33-4912-b1a2-0de38662dd61")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9be5ffce-a438-4550-be04-07313c35d895")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae25fc19-7dac-496e-94f8-cad9aa8e5d95")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C962334"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2cd63e05-1c00-4eb6-998e-1bd75b1f14d6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "Connector*:*_1x??_*")
+	(sheetname "/")
+	(sheetfile "cirBATTverter_1KWH.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -0.02 -10.055)
+		(end 7.33 -0.005)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "77c46e7d-dbe2-4eef-b4af-28ec029dd916")
+	)
+	(fp_rect
+		(start -0.25 -10.255)
+		(end 7.51 0.175)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "53230476-23b1-4b63-9e91-2b97feeedb53")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8d2316f9-782f-4b1d-a255-4831167658a3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 1.15 -8.86)
+		(size 2.2 2.2)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "99654271-5495-45c0-8e3d-0c5c43f598ea")
+	)
+	(pad "1" thru_hole roundrect
+		(at 1.15 -1.16)
+		(size 2.2 2.2)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "b795adf9-905c-4070-a3af-099fe094c2b5")
+	)
+	(pad "1" thru_hole roundrect
+		(at 6.15 -8.86)
+		(size 2.2 2.2)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "8c1d582e-9d7b-4a6a-b854-55228ff08e85")
+	)
+	(pad "1" thru_hole roundrect
+		(at 6.15 -1.16)
+		(size 2.2 2.2)
+		(drill 1.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "0efd6aa6-452e-44d9-a360-e886288c758b")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d/7762-SEMS--3DModel-STEP-630548.STEP"
+		(offset
+			(xyz 1.5 7 2)
+		)
+		(scale
+			(xyz 0.9 0.7 1.1)
+		)
+		(rotate
+			(xyz -90 -0 90)
+		)
+	)
+)

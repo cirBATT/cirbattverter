@@ -1,0 +1,3936 @@
+{
+  "$schema": "https://schemas.kicad.org/drc.v1.json",
+  "coordinate_units": "mm",
+  "date": "2026-10-14T16:31:31",
+  "ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Footprint has malformed courtyard",
+      "key": "malformed_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "included_severities": [
+    "error",
+    "warning",
+    "exclusion"
+  ],
+  "kicad_version": "10.0.5",
+  "schematic_parity": [
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 105.78
+          },
+          "uuid": "130fc08f-ad38-4e31-8d75-f9313f143e40"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 202.5
+          },
+          "uuid": "378ae25b-01f4-4466-b1ce-d96201c57ca5"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 290.466667,
+            "y": 105.78
+          },
+          "uuid": "5c8268b5-9cc7-4d69-a1ac-56540ef1116c"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 168.403333,
+            "y": 202.5
+          },
+          "uuid": "886c6849-7901-418b-9ee4-9d69a0c9f697"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 152.55
+          },
+          "uuid": "9122fef6-bbc3-4d79-aaef-16534fcd8394"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 168.403333,
+            "y": 105.78
+          },
+          "uuid": "ab62f20f-8965-4cc5-8830-20ce6cead506"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 290.466667,
+            "y": 202.5
+          },
+          "uuid": "b2a5402a-6ecf-4dd1-b540-9762b15c2eae"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 202.5
+          },
+          "uuid": "bc00ee57-d4e6-412c-b2d0-23c9f6ce659d"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Le champ 'LCSC' diffÃ¨re (PCB: 'C158012', SchÃ©matique 'C49577277')",
+      "items": [
+        {
+          "description": "Empreinte FAN1",
+          "pos": {
+            "x": 118.49,
+            "y": 195.75
+          },
+          "uuid": "c5f897d0-756b-4940-8caa-5e12e2cf4bea"
+        }
+      ],
+      "severity": "warning",
+      "type": "footprint_symbol_field_mismatch"
+    },
+    {
+      "description": "Aucune pin correspondante trouvÃ©e dans le schÃ©ma",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 10 [GND2] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 177.808
+          },
+          "uuid": "70773dcf-f8a0-4deb-bc67-891ac3da3a6b"
+        }
+      ],
+      "severity": "warning",
+      "type": "net_conflict"
+    },
+    {
+      "description": "Aucune pin correspondante trouvÃ©e dans le schÃ©ma",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 11 [GND2] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 177.808
+          },
+          "uuid": "758cf721-a3bc-430b-8521-3f0d4a594bba"
+        }
+      ],
+      "severity": "warning",
+      "type": "net_conflict"
+    },
+    {
+      "description": "Aucune pin correspondante trouvÃ©e dans le schÃ©ma",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 12 [GND2] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 179.108
+          },
+          "uuid": "a31803c2-cd63-48fb-8925-7066c4fe8d4d"
+        }
+      ],
+      "severity": "warning",
+      "type": "net_conflict"
+    },
+    {
+      "description": "Aucune pin correspondante trouvÃ©e dans le schÃ©ma",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 13 [GND2] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 179.108
+          },
+          "uuid": "dfbed2dd-4673-4295-aad2-afedae52a975"
+        }
+      ],
+      "severity": "warning",
+      "type": "net_conflict"
+    },
+    {
+      "description": "Aucune pin correspondante trouvÃ©e dans le schÃ©ma",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 14 [GND2] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 180.408
+          },
+          "uuid": "68b92dbb-766c-477e-9810-056f82af3d38"
+        }
+      ],
+      "severity": "warning",
+      "type": "net_conflict"
+    },
+    {
+      "description": "Aucune pin correspondante trouvÃ©e dans le schÃ©ma",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 15 [GND2] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 180.408
+          },
+          "uuid": "799798ee-3bbe-4d1e-a376-1b164c027922"
+        }
+      ],
+      "severity": "warning",
+      "type": "net_conflict"
+    },
+    {
+      "description": "Aucune pin correspondante trouvÃ©e dans le schÃ©ma",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 16 [GND2] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 181.708
+          },
+          "uuid": "e703589d-28cc-4756-b4eb-859c79e0fac9"
+        }
+      ],
+      "severity": "warning",
+      "type": "net_conflict"
+    },
+    {
+      "description": "Aucune pin correspondante trouvÃ©e dans le schÃ©ma",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 17 [GND2] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 181.708
+          },
+          "uuid": "224b9245-c8e9-4d69-b332-086856aa556a"
+        }
+      ],
+      "severity": "warning",
+      "type": "net_conflict"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 105.78
+          },
+          "uuid": "130fc08f-ad38-4e31-8d75-f9313f143e40"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 202.5
+          },
+          "uuid": "378ae25b-01f4-4466-b1ce-d96201c57ca5"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 290.466667,
+            "y": 105.78
+          },
+          "uuid": "5c8268b5-9cc7-4d69-a1ac-56540ef1116c"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 168.403333,
+            "y": 202.5
+          },
+          "uuid": "886c6849-7901-418b-9ee4-9d69a0c9f697"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 152.55
+          },
+          "uuid": "9122fef6-bbc3-4d79-aaef-16534fcd8394"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 168.403333,
+            "y": 105.78
+          },
+          "uuid": "ab62f20f-8965-4cc5-8830-20ce6cead506"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 290.466667,
+            "y": 202.5
+          },
+          "uuid": "b2a5402a-6ecf-4dd1-b540-9762b15c2eae"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 202.5
+          },
+          "uuid": "bc00ee57-d4e6-412c-b2d0-23c9f6ce659d"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    }
+  ],
+  "source": "hardware/inverter/cirBATTverter_1KWH.kicad_pcb",
+  "unconnected_items": [],
+  "violations": [
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 10 [<no net>] de U3",
+          "pos": {
+            "x": 168.715,
+            "y": 188.46
+          },
+          "uuid": "982fadc8-812d-4f77-bb1d-fc46fe199435"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 11 [<no net>] de U3",
+          "pos": {
+            "x": 168.715,
+            "y": 187.16
+          },
+          "uuid": "56cacd45-daa6-4158-9a48-7480818c1d60"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 12 [<no net>] de U3",
+          "pos": {
+            "x": 170.015,
+            "y": 188.46
+          },
+          "uuid": "a30bb42b-1541-41f2-b8fe-1c36689c692e"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 13 [<no net>] de U3",
+          "pos": {
+            "x": 170.015,
+            "y": 187.16
+          },
+          "uuid": "9aa7e275-1dcf-4915-b87d-eef4d04985cf"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 14 [<no net>] de U3",
+          "pos": {
+            "x": 171.315,
+            "y": 188.46
+          },
+          "uuid": "98fc54d6-0fd3-4bd2-bc56-e38616ff2f44"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 15 [<no net>] de U3",
+          "pos": {
+            "x": 171.315,
+            "y": 187.16
+          },
+          "uuid": "f40fbfd8-bf78-4d38-bdba-5b71ead42e1c"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 16 [<no net>] de U3",
+          "pos": {
+            "x": 172.615,
+            "y": 188.46
+          },
+          "uuid": "6f8e1188-77ae-4fae-88e8-57084f788f4a"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 17 [<no net>] de U3",
+          "pos": {
+            "x": 172.615,
+            "y": 187.16
+          },
+          "uuid": "829a9a6e-9c5c-490b-be41-e4d63f171bcd"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 10 [GND2] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 177.808
+          },
+          "uuid": "70773dcf-f8a0-4deb-bc67-891ac3da3a6b"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 11 [GND2] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 177.808
+          },
+          "uuid": "758cf721-a3bc-430b-8521-3f0d4a594bba"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 12 [GND2] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 179.108
+          },
+          "uuid": "a31803c2-cd63-48fb-8925-7066c4fe8d4d"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 13 [GND2] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 179.108
+          },
+          "uuid": "dfbed2dd-4673-4295-aad2-afedae52a975"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 14 [GND2] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 180.408
+          },
+          "uuid": "68b92dbb-766c-477e-9810-056f82af3d38"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 15 [GND2] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 180.408
+          },
+          "uuid": "799798ee-3bbe-4d1e-a376-1b164c027922"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 16 [GND2] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 181.708
+          },
+          "uuid": "e703589d-28cc-4756-b4eb-859c79e0fac9"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 17 [GND2] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 181.708
+          },
+          "uuid": "224b9245-c8e9-4d69-b332-086856aa556a"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "ElÃ©ments court-circuitant deux nets (nets /+15V et  Net-(U4-FB))",
+      "items": [
+        {
+          "description": "Via [/+15V] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 266.09,
+            "y": 182.53
+          },
+          "uuid": "3dd2cbce-16dc-4480-8e01-e0e415ef4a89"
+        },
+        {
+          "description": "Piste [Net-(U4-FB)] sur In2.Cu, long. 7,1587 mm",
+          "pos": {
+            "x": 262.1,
+            "y": 179.02
+          },
+          "uuid": "997a2317-8953-4714-9dbe-4c0326b280e1"
+        }
+      ],
+      "severity": "error",
+      "type": "shorting_items"
+    },
+    {
+      "description": "ElÃ©ments court-circuitant deux nets (nets Net-(U4-FB) et  /+15V)",
+      "items": [
+        {
+          "description": "Piste [Net-(U4-FB)] sur In2.Cu, long. 7,1587 mm",
+          "pos": {
+            "x": 262.1,
+            "y": 179.02
+          },
+          "uuid": "997a2317-8953-4714-9dbe-4c0326b280e1"
+        },
+        {
+          "description": "Via [/+15V] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 265.0,
+            "y": 182.57
+          },
+          "uuid": "bf180889-7111-4c68-ae15-e6b76092e8c9"
+        }
+      ],
+      "severity": "error",
+      "type": "shorting_items"
+    },
+    {
+      "description": "ElÃ©ments court-circuitant deux nets (nets Net-(U4-FB) et  /+15V)",
+      "items": [
+        {
+          "description": "Piste [Net-(U4-FB)] sur In2.Cu, long. 7,1587 mm",
+          "pos": {
+            "x": 262.1,
+            "y": 179.02
+          },
+          "uuid": "997a2317-8953-4714-9dbe-4c0326b280e1"
+        },
+        {
+          "description": "Via [/+15V] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 265.59,
+            "y": 182.55
+          },
+          "uuid": "b523f84d-0757-4480-83f8-d4272676a5cf"
+        }
+      ],
+      "severity": "error",
+      "type": "shorting_items"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,1928 mm)",
+      "items": [
+        {
+          "description": "Piste [/DESAT1_P] sur In1.Cu, long. 0,1200 mm",
+          "pos": {
+            "x": 246.992938,
+            "y": 145.732352
+          },
+          "uuid": "1f9616d6-c040-449d-b8a6-e657aec6c3c8"
+        },
+        {
+          "description": "Via [/OUT_HS1_N] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 247.67,
+            "y": 145.62
+          },
+          "uuid": "3f20b425-9569-49b9-9514-7f89d2fb55bd"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 10 [<no net>] de U3",
+          "pos": {
+            "x": 168.715,
+            "y": 188.46
+          },
+          "uuid": "982fadc8-812d-4f77-bb1d-fc46fe199435"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 11 [<no net>] de U3",
+          "pos": {
+            "x": 168.715,
+            "y": 187.16
+          },
+          "uuid": "56cacd45-daa6-4158-9a48-7480818c1d60"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 13 [<no net>] de U3",
+          "pos": {
+            "x": 170.015,
+            "y": 187.16
+          },
+          "uuid": "9aa7e275-1dcf-4915-b87d-eef4d04985cf"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 12 [<no net>] de U3",
+          "pos": {
+            "x": 170.015,
+            "y": 188.46
+          },
+          "uuid": "a30bb42b-1541-41f2-b8fe-1c36689c692e"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 14 [<no net>] de U3",
+          "pos": {
+            "x": 171.315,
+            "y": 188.46
+          },
+          "uuid": "98fc54d6-0fd3-4bd2-bc56-e38616ff2f44"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 17 [<no net>] de U3",
+          "pos": {
+            "x": 172.615,
+            "y": 187.16
+          },
+          "uuid": "829a9a6e-9c5c-490b-be41-e4d63f171bcd"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 15 [<no net>] de U3",
+          "pos": {
+            "x": 171.315,
+            "y": 187.16
+          },
+          "uuid": "f40fbfd8-bf78-4d38-bdba-5b71ead42e1c"
+        },
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 16 [<no net>] de U3",
+          "pos": {
+            "x": 172.615,
+            "y": 188.46
+          },
+          "uuid": "6f8e1188-77ae-4fae-88e8-57084f788f4a"
+        },
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Track has unconnected end",
+      "items": [
+        {
+          "description": "Piste [/ISENSE1_P] sur F.Cu, long. 1,1314 mm",
+          "pos": {
+            "x": 248.4035,
+            "y": 158.343171
+          },
+          "uuid": "51ff417b-a60a-40a9-923f-04099f08ca4e"
+        }
+      ],
+      "severity": "warning",
+      "type": "track_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/IN_DRV2_P] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 140.965,
+            "y": 141.65
+          },
+          "uuid": "39a73c5e-a736-4b3a-8a43-8744d0e68657"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/+5V] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 194.11,
+            "y": 173.14
+          },
+          "uuid": "c39075ad-c8b2-4205-8fa7-f6ac016646d7"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Track has unconnected end",
+      "items": [
+        {
+          "description": "Piste [/ISENSE1_N] sur In1.Cu, long. 45,0300 mm",
+          "pos": {
+            "x": 249.260001,
+            "y": 195.690001
+          },
+          "uuid": "9e3cab75-3d56-4dc5-8e18-7f347708ce94"
+        }
+      ],
+      "severity": "warning",
+      "type": "track_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/DESAT1_P] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 252.913,
+            "y": 133.819
+          },
+          "uuid": "c3f5fa88-5efe-4718-80b5-7353a1f95625"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/OUT_P] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 260.58,
+            "y": 160.59
+          },
+          "uuid": "6392b581-b2d1-46e4-8c12-90484146b616"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Track has unconnected end",
+      "items": [
+        {
+          "description": "Piste [/+12V] sur In2.Cu, long. 0,4137 mm",
+          "pos": {
+            "x": 181.3275,
+            "y": 172.5
+          },
+          "uuid": "8022827e-d97c-4700-8154-b769723ad432"
+        }
+      ],
+      "severity": "warning",
+      "type": "track_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 116.019,
+            "y": 140.337
+          },
+          "uuid": "05512372-a283-432d-b07c-7d1ede5d6b68"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 114.89625,
+            "y": 140.337
+          },
+          "uuid": "0c0257f1-ca00-4e7d-b85a-9ae82c5c9203"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 120.577,
+            "y": 132.81225
+          },
+          "uuid": "199acb36-a81a-4005-8ba7-7ec181ac32a2"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 156.31,
+            "y": 147.133333
+          },
+          "uuid": "2572dce8-cfd1-4e83-b4b0-4e51c9a27d24"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 151.043333,
+            "y": 139.93
+          },
+          "uuid": "3edebd1b-9aea-4b2f-8c26-9a34e3270fd7"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 113.7735,
+            "y": 140.337
+          },
+          "uuid": "49736b55-32dd-4ba4-95b2-dce5a47a79d0"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 120.577,
+            "y": 133.935
+          },
+          "uuid": "6716d23f-b78f-4482-b586-3541931a217e"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 118.2645,
+            "y": 140.337
+          },
+          "uuid": "79e5d892-842c-4a6d-9f21-b9f524fc5578"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 158.05,
+            "y": 145.54
+          },
+          "uuid": "89ba8720-1abf-44c0-b399-071b83063b55"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 156.31,
+            "y": 145.54
+          },
+          "uuid": "9b1fca6a-41f4-49fb-a089-a6ec6f3bd20c"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 117.14175,
+            "y": 140.337
+          },
+          "uuid": "cab98dd8-0f92-4752-8f13-65b6d5e1f8ac"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 149.45,
+            "y": 139.93
+          },
+          "uuid": "cbbfd338-2209-44e4-b435-d3e5a94d6c6c"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 143.48,
+            "y": 162.42
+          },
+          "uuid": "d952fb7b-43c2-41de-9210-19d333dc94aa"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 158.05,
+            "y": 150.32
+          },
+          "uuid": "e48f40cd-200e-494e-904d-b9b15bb09907"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/BAT+] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 120.577,
+            "y": 131.6895
+          },
+          "uuid": "ffa7b72d-6dea-4001-9de3-4d37976f46ae"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/IN_DRV2_N] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 149.45,
+            "y": 141.67
+          },
+          "uuid": "5cb460c3-12f5-408b-b574-ae45d54f8787"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "items": [
+        {
+          "description": "Via [/IN_DRV2_N] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 154.23,
+            "y": 139.93
+          },
+          "uuid": "7d93810b-d017-404a-89c3-744fd5addf5a"
+        }
+      ],
+      "severity": "warning",
+      "type": "via_dangling"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/BAT+] sur F.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 109.99,
+            "y": 108.99
+          },
+          "uuid": "56c5a8a0-b8e7-4eb2-aea6-a8f337ffe8e9"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/+400V] sur F.Cu, prioritÃ© 4",
+          "pos": {
+            "x": 182.307,
+            "y": 154.763
+          },
+          "uuid": "b33a5486-f75c-4644-8590-9333bb418890"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur B.Cu, prioritÃ© 1",
+          "pos": {
+            "x": 159.4609,
+            "y": 171.136479
+          },
+          "uuid": "2ec413f9-2611-42ae-b6fb-a86e6488bba6"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur B.Cu, prioritÃ© 1",
+          "pos": {
+            "x": 159.4609,
+            "y": 171.136479
+          },
+          "uuid": "2ec413f9-2611-42ae-b6fb-a86e6488bba6"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur B.Cu, prioritÃ© 1",
+          "pos": {
+            "x": 159.4609,
+            "y": 171.136479
+          },
+          "uuid": "2ec413f9-2611-42ae-b6fb-a86e6488bba6"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND2] sur F.Cu, In1.Cu et In2.Cu, prioritÃ© 0",
+          "pos": {
+            "x": 159.45,
+            "y": 171.15
+          },
+          "uuid": "fefb5938-3507-4274-963d-7ace494ab53a"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND1] sur B.Cu, In1.Cu et In2.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 110.34,
+            "y": 109.15
+          },
+          "uuid": "3ef3aa1b-b4b0-4a47-95e0-8750bdede749"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND1] sur B.Cu, In1.Cu et In2.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 110.34,
+            "y": 109.15
+          },
+          "uuid": "3ef3aa1b-b4b0-4a47-95e0-8750bdede749"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [GND1] sur B.Cu, In1.Cu et In2.Cu, prioritÃ© 3",
+          "pos": {
+            "x": 110.34,
+            "y": 109.15
+          },
+          "uuid": "3ef3aa1b-b4b0-4a47-95e0-8750bdede749"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/IN_DRV2_N] sur B.Cu, prioritÃ© 5",
+          "pos": {
+            "x": 134.24,
+            "y": 119.94
+          },
+          "uuid": "8f5b2018-6bd2-4a47-81d8-b08cecef89a5"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/+400V] sur B.Cu, prioritÃ© 4",
+          "pos": {
+            "x": 182.303864,
+            "y": 154.765993
+          },
+          "uuid": "fe946c8d-3466-4251-bbd0-3fc904093668"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/+400V] sur B.Cu, prioritÃ© 4",
+          "pos": {
+            "x": 182.303864,
+            "y": 154.765993
+          },
+          "uuid": "fe946c8d-3466-4251-bbd0-3fc904093668"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/+400V] sur B.Cu, prioritÃ© 4",
+          "pos": {
+            "x": 182.303864,
+            "y": 154.765993
+          },
+          "uuid": "fe946c8d-3466-4251-bbd0-3fc904093668"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/+400V] sur B.Cu, prioritÃ© 4",
+          "pos": {
+            "x": 182.303864,
+            "y": 154.765993
+          },
+          "uuid": "fe946c8d-3466-4251-bbd0-3fc904093668"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "items": [
+        {
+          "description": "Zone [/+400V] sur B.Cu, prioritÃ© 4",
+          "pos": {
+            "x": 182.303864,
+            "y": 154.765993
+          },
+          "uuid": "fe946c8d-3466-4251-bbd0-3fc904093668"
+        }
+      ],
+      "severity": "warning",
+      "type": "isolated_copper"
+    },
+    {
+      "description": "Trou percÃ© trop prÃ¨s d'un autre trou (configuration des contraintes du PCB min 0,2495 mm; rÃ©el 0,2004 mm)",
+      "items": [
+        {
+          "description": "Via [/+15V] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 266.09,
+            "y": 182.53
+          },
+          "uuid": "3dd2cbce-16dc-4480-8e01-e0e415ef4a89"
+        },
+        {
+          "description": "Via [/+15V] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 265.59,
+            "y": 182.55
+          },
+          "uuid": "b523f84d-0757-4480-83f8-d4272676a5cf"
+        }
+      ],
+      "severity": "warning",
+      "type": "hole_to_hole"
+    },
+    {
+      "description": "Lâ€™empreinte 'TO-252-2' ne correspond pas Ã  la copie en librairie 'Package_TO_SOT_SMD'",
+      "items": [
+        {
+          "description": "Empreinte D19",
+          "pos": {
+            "x": 163.4325,
+            "y": 186.215
+          },
+          "uuid": "52a0a46e-70b7-438b-b35c-ac6c4cf24e0c"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'Untitled' ne correspond pas Ã  la copie en librairie 'XFCN TR34070'",
+      "items": [
+        {
+          "description": "Empreinte J1",
+          "pos": {
+            "x": 112.157,
+            "y": 138.447
+          },
+          "uuid": "651d159a-9b1a-47d3-8023-fc4a2f4b9ff3"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'CONV_LM5013DDAR' ne correspond pas Ã  la copie en librairie 'LM5013'",
+      "items": [
+        {
+          "description": "Empreinte U4",
+          "pos": {
+            "x": 237.922,
+            "y": 179.758
+          },
+          "uuid": "9c654fee-60a3-46d6-b3e4-2fde4e2ffd53"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'TO-252-2' ne correspond pas Ã  la copie en librairie 'Package_TO_SOT_SMD'",
+      "items": [
+        {
+          "description": "Empreinte D23",
+          "pos": {
+            "x": 248.377,
+            "y": 178.903
+          },
+          "uuid": "a35142b8-e09a-48f9-aaf9-2ef082a0a410"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'TO-277A' ne correspond pas Ã  la copie en librairie 'Package_TO_SOT_SMD'",
+      "items": [
+        {
+          "description": "Empreinte D25",
+          "pos": {
+            "x": 218.766,
+            "y": 167.309
+          },
+          "uuid": "309e5d3e-19b5-4227-b951-169d8ebb6809"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'Infineon_PG-TDSON-8_6.15x5.15mm' ne correspond pas Ã  la copie en librairie 'Package_SON'",
+      "items": [
+        {
+          "description": "Empreinte Q1",
+          "pos": {
+            "x": 144.845,
+            "y": 124.35
+          },
+          "uuid": "54a520aa-fc22-4c45-bbe6-566fad50f908"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'Infineon_PG-TDSON-8_6.15x5.15mm' ne correspond pas Ã  la copie en librairie 'Package_SON'",
+      "items": [
+        {
+          "description": "Empreinte Q2",
+          "pos": {
+            "x": 137.035,
+            "y": 124.35
+          },
+          "uuid": "87daa983-c9b8-456e-84ec-57d80f1922fc"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'TO-277A' ne correspond pas Ã  la copie en librairie 'Package_TO_SOT_SMD'",
+      "items": [
+        {
+          "description": "Empreinte D27",
+          "pos": {
+            "x": 215.601,
+            "y": 174.159
+          },
+          "uuid": "91136a0a-64bc-4ed7-b483-cef6e25734c0"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'Infineon_PG-TDSON-8_6.15x5.15mm' ne correspond pas Ã  la copie en librairie 'Package_SON'",
+      "items": [
+        {
+          "description": "Empreinte Q9",
+          "pos": {
+            "x": 144.945,
+            "y": 179.665
+          },
+          "uuid": "a33052c3-e6cf-4691-a841-b9aa5d8f6805"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'TO-277A' ne correspond pas Ã  la copie en librairie 'Package_TO_SOT_SMD'",
+      "items": [
+        {
+          "description": "Empreinte D28",
+          "pos": {
+            "x": 216.091,
+            "y": 189.299
+          },
+          "uuid": "ab57555a-3e39-4bba-bc77-22a8eb4fe821"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'Infineon_PG-TDSON-8_6.15x5.15mm' ne correspond pas Ã  la copie en librairie 'Package_SON'",
+      "items": [
+        {
+          "description": "Empreinte Q6",
+          "pos": {
+            "x": 137.435,
+            "y": 161.99
+          },
+          "uuid": "c117458d-b621-4678-8657-0bd164e2af6a"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'Infineon_PG-TDSON-8_6.15x5.15mm' ne correspond pas Ã  la copie en librairie 'Package_SON'",
+      "items": [
+        {
+          "description": "Empreinte Q8",
+          "pos": {
+            "x": 145.245,
+            "y": 161.99
+          },
+          "uuid": "d554d295-aebd-42e8-9a26-ab45903cbabc"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'Infineon_PG-TDSON-8_6.15x5.15mm' ne correspond pas Ã  la copie en librairie 'Package_SON'",
+      "items": [
+        {
+          "description": "Empreinte Q5",
+          "pos": {
+            "x": 145.405,
+            "y": 144.07
+          },
+          "uuid": "df07161c-1c5d-479b-aa7a-26fd89f09d51"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'Infineon_PG-TDSON-8_6.15x5.15mm' ne correspond pas Ã  la copie en librairie 'Package_SON'",
+      "items": [
+        {
+          "description": "Empreinte Q7",
+          "pos": {
+            "x": 137.405,
+            "y": 179.665
+          },
+          "uuid": "e704792c-6d63-4fd1-aece-412a454a84ea"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'TO-277A' ne correspond pas Ã  la copie en librairie 'Package_TO_SOT_SMD'",
+      "items": [
+        {
+          "description": "Empreinte D26",
+          "pos": {
+            "x": 218.061,
+            "y": 182.399
+          },
+          "uuid": "f70dd12f-56ff-421f-86bc-fe672afe1b5a"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Lâ€™empreinte 'Infineon_PG-TDSON-8_6.15x5.15mm' ne correspond pas Ã  la copie en librairie 'Package_SON'",
+      "items": [
+        {
+          "description": "Empreinte Q4",
+          "pos": {
+            "x": 137.745,
+            "y": 144.12
+          },
+          "uuid": "fcd42aa3-f29c-472b-b37a-c22fd52e840f"
+        }
+      ],
+      "severity": "warning",
+      "type": "lib_footprint_mismatch"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Cote '4' sur F.Silkscreen",
+          "pos": {
+            "x": 209.802,
+            "y": 178.096
+          },
+          "uuid": "55110aa8-cc36-42a9-afaf-c5f3759f6215"
+        },
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "6a68d0d1-a78c-49eb-a7f4-2b2485f93f36"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Cote '4' sur F.Silkscreen",
+          "pos": {
+            "x": 209.802,
+            "y": 178.096
+          },
+          "uuid": "55110aa8-cc36-42a9-afaf-c5f3759f6215"
+        },
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "8daaa1c1-5a04-4400-8f3e-0fee15390cd8"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Segment de R7 sur F.Silkscreen",
+          "pos": {
+            "x": 131.805,
+            "y": 163.752936
+          },
+          "uuid": "07bea2a6-db8e-4b19-9e2f-d7cd9c2eddca"
+        },
+        {
+          "description": "Segment sur F.Silkscreen",
+          "pos": {
+            "x": 122.04,
+            "y": 164.279
+          },
+          "uuid": "35290146-2290-4c8c-b96a-a5c2c47756bc"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Segment sur F.Silkscreen",
+          "pos": {
+            "x": 122.04,
+            "y": 164.279
+          },
+          "uuid": "35290146-2290-4c8c-b96a-a5c2c47756bc"
+        },
+        {
+          "description": "Segment de R7 sur F.Silkscreen",
+          "pos": {
+            "x": 130.335,
+            "y": 163.752936
+          },
+          "uuid": "edf61f19-f6fa-4ae9-8a84-e13e6cf7da87"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Segment sur F.Silkscreen",
+          "pos": {
+            "x": 122.04,
+            "y": 164.279
+          },
+          "uuid": "35290146-2290-4c8c-b96a-a5c2c47756bc"
+        },
+        {
+          "description": "Segment de D7 sur F.Silkscreen",
+          "pos": {
+            "x": 132.27,
+            "y": 160.95
+          },
+          "uuid": "6e457408-eac1-462a-8424-35a07a51057e"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "items": [
+        {
+          "description": "Segment sur F.Silkscreen",
+          "pos": {
+            "x": 122.04,
+            "y": 164.279
+          },
+          "uuid": "35290146-2290-4c8c-b96a-a5c2c47756bc"
+        },
+        {
+          "description": "Segment de D7 sur F.Silkscreen",
+          "pos": {
+            "x": 134.27,
+            "y": 160.95
+          },
+          "uuid": "93745cc8-c45f-4283-90b2-9341ca23c420"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Cote '4' sur F.Silkscreen",
+          "pos": {
+            "x": 209.802,
+            "y": 178.096
+          },
+          "uuid": "55110aa8-cc36-42a9-afaf-c5f3759f6215"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 5 [Net-(D25-A)] de T1",
+          "pos": {
+            "x": 208.932,
+            "y": 174.096
+          },
+          "uuid": "9aae78e4-8121-4cf5-b958-7674069f27ed"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de Q14 sur F.Silkscreen",
+          "pos": {
+            "x": 221.361,
+            "y": 126.2895
+          },
+          "uuid": "b1f862d1-0c47-4f3a-b160-da88ed0d1e12"
+        },
+        {
+          "description": "Pad 4 [unconnected-(Q14-NC-Pad4)] de Q14 sur F.Cu",
+          "pos": {
+            "x": 219.442,
+            "y": 126.2895
+          },
+          "uuid": "e7fd78c7-4da7-40c1-87c0-282948099fc0"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de Q15 sur F.Silkscreen",
+          "pos": {
+            "x": 219.842,
+            "y": 147.276
+          },
+          "uuid": "2f71f213-ba26-4e92-bba8-cfa100769bca"
+        },
+        {
+          "description": "Pad 4 [unconnected-(Q15-NC-Pad4)] de Q15 sur F.Cu",
+          "pos": {
+            "x": 217.923,
+            "y": 147.276
+          },
+          "uuid": "1c859716-ec14-42b9-94e2-a746313082fa"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "6a68d0d1-a78c-49eb-a7f4-2b2485f93f36"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 1 [/IN_DRV2_N] de T1",
+          "pos": {
+            "x": 151.882,
+            "y": 136.006
+          },
+          "uuid": "dabcf577-61c3-4753-aa93-7cdbe8b0aa68"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "6a68d0d1-a78c-49eb-a7f4-2b2485f93f36"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 2 [/IN_DRV1_N] de T1",
+          "pos": {
+            "x": 151.912,
+            "y": 174.016
+          },
+          "uuid": "5d9efe27-f2dd-418e-ac73-fdf7e2b70d03"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "8daaa1c1-5a04-4400-8f3e-0fee15390cd8"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 1 [/IN_DRV2_N] de T1",
+          "pos": {
+            "x": 151.882,
+            "y": 136.006
+          },
+          "uuid": "dabcf577-61c3-4753-aa93-7cdbe8b0aa68"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "8daaa1c1-5a04-4400-8f3e-0fee15390cd8"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 2 [/IN_DRV1_N] de T1",
+          "pos": {
+            "x": 151.912,
+            "y": 174.016
+          },
+          "uuid": "5d9efe27-f2dd-418e-ac73-fdf7e2b70d03"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "6a68d0d1-a78c-49eb-a7f4-2b2485f93f36"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 3 [Net-(T1-SA)] de T1",
+          "pos": {
+            "x": 208.942,
+            "y": 145.856
+          },
+          "uuid": "1995319a-abca-4aeb-913b-f84624f2a41d"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "6a68d0d1-a78c-49eb-a7f4-2b2485f93f36"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 4 [Net-(D12-K)] de T1",
+          "pos": {
+            "x": 208.942,
+            "y": 136.246
+          },
+          "uuid": "30ed742c-529e-43e1-aacf-8134ef900b54"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "6a68d0d1-a78c-49eb-a7f4-2b2485f93f36"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 5 [Net-(D25-A)] de T1",
+          "pos": {
+            "x": 208.932,
+            "y": 174.096
+          },
+          "uuid": "9aae78e4-8121-4cf5-b958-7674069f27ed"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "6a68d0d1-a78c-49eb-a7f4-2b2485f93f36"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 6 [Net-(D26-A)] de T1",
+          "pos": {
+            "x": 208.932,
+            "y": 164.106
+          },
+          "uuid": "ff9704e8-626d-4f34-8231-dfd38645eef6"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "8daaa1c1-5a04-4400-8f3e-0fee15390cd8"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 3 [Net-(T1-SA)] de T1",
+          "pos": {
+            "x": 208.942,
+            "y": 145.856
+          },
+          "uuid": "1995319a-abca-4aeb-913b-f84624f2a41d"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "8daaa1c1-5a04-4400-8f3e-0fee15390cd8"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 4 [Net-(D12-K)] de T1",
+          "pos": {
+            "x": 208.942,
+            "y": 136.246
+          },
+          "uuid": "30ed742c-529e-43e1-aacf-8134ef900b54"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "8daaa1c1-5a04-4400-8f3e-0fee15390cd8"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 5 [Net-(D25-A)] de T1",
+          "pos": {
+            "x": 208.932,
+            "y": 174.096
+          },
+          "uuid": "9aae78e4-8121-4cf5-b958-7674069f27ed"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de T1 sur F.Silkscreen",
+          "pos": {
+            "x": 151.882,
+            "y": 178.096
+          },
+          "uuid": "8daaa1c1-5a04-4400-8f3e-0fee15390cd8"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 6 [Net-(D26-A)] de T1",
+          "pos": {
+            "x": 208.932,
+            "y": 164.106
+          },
+          "uuid": "ff9704e8-626d-4f34-8231-dfd38645eef6"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Polygone de FAN1 sur F.Silkscreen",
+          "pos": {
+            "x": 118.49,
+            "y": 199.47
+          },
+          "uuid": "960b2efb-8bc3-4d69-bd8a-8d06e5b780be"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.72,
+            "y": 102.98
+          },
+          "uuid": "b07abe7a-3e10-4234-938f-1d3a8f027f70"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Polygone de FAN1 sur F.Silkscreen",
+          "pos": {
+            "x": 118.49,
+            "y": 199.47
+          },
+          "uuid": "960b2efb-8bc3-4d69-bd8a-8d06e5b780be"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de Q17 sur F.Silkscreen",
+          "pos": {
+            "x": 246.522,
+            "y": 147.346
+          },
+          "uuid": "6da14144-3db3-4a7c-9dfe-43be75423bd3"
+        },
+        {
+          "description": "Pad 4 [unconnected-(Q17-NC-Pad4)] de Q17 sur F.Cu",
+          "pos": {
+            "x": 244.603,
+            "y": 147.346
+          },
+          "uuid": "915f0ad6-45da-48b2-a218-89cbef2808ea"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 289.1475,
+            "y": 144.985
+          },
+          "uuid": "94acf66e-cacd-4432-b1cb-0e79f56b8c8e"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 289.1475,
+            "y": 144.985
+          },
+          "uuid": "94acf66e-cacd-4432-b1cb-0e79f56b8c8e"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.72,
+            "y": 102.98
+          },
+          "uuid": "b07abe7a-3e10-4234-938f-1d3a8f027f70"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 288.5275,
+            "y": 160.465
+          },
+          "uuid": "822a179f-b193-4575-ab92-438c4d218665"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.72,
+            "y": 102.98
+          },
+          "uuid": "b07abe7a-3e10-4234-938f-1d3a8f027f70"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 288.5275,
+            "y": 160.465
+          },
+          "uuid": "822a179f-b193-4575-ab92-438c4d218665"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 289.1475,
+            "y": 158.105
+          },
+          "uuid": "34aeb4dc-913c-4663-8f44-0df7d62312bf"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.72,
+            "y": 102.98
+          },
+          "uuid": "b07abe7a-3e10-4234-938f-1d3a8f027f70"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 289.1475,
+            "y": 158.105
+          },
+          "uuid": "34aeb4dc-913c-4663-8f44-0df7d62312bf"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 289.1475,
+            "y": 160.465
+          },
+          "uuid": "73e9b9ac-2248-412e-98c7-577ea1c0c7f1"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.72,
+            "y": 102.98
+          },
+          "uuid": "b07abe7a-3e10-4234-938f-1d3a8f027f70"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 289.1475,
+            "y": 160.465
+          },
+          "uuid": "73e9b9ac-2248-412e-98c7-577ea1c0c7f1"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Polygone de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 289.1475,
+            "y": 157.805
+          },
+          "uuid": "e8b917dd-f8a9-458b-a1a9-d7f6773bf260"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Polygone de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 289.1475,
+            "y": 157.805
+          },
+          "uuid": "e8b917dd-f8a9-458b-a1a9-d7f6773bf260"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.72,
+            "y": 102.98
+          },
+          "uuid": "b07abe7a-3e10-4234-938f-1d3a8f027f70"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Champ rÃ©fÃ©rence de D23",
+          "pos": {
+            "x": 246.377,
+            "y": 179.143
+          },
+          "uuid": "d4be1075-b125-4257-8d3e-a5335f3528cd"
+        },
+        {
+          "description": "Pad 3 [Net-(D23-K)] de D23 sur F.Cu",
+          "pos": {
+            "x": 248.377,
+            "y": 177.643
+          },
+          "uuid": "787878e8-9f6a-4533-97da-e37aac8040de"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment sur F.Silkscreen",
+          "pos": {
+            "x": 122.04,
+            "y": 164.279
+          },
+          "uuid": "35290146-2290-4c8c-b96a-a5c2c47756bc"
+        },
+        {
+          "description": "Pad 1 [/BAT+] de C25 sur F.Cu",
+          "pos": {
+            "x": 123.165,
+            "y": 162.174185
+          },
+          "uuid": "f10ced22-b034-49c7-956c-4bcface83e14"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment sur F.Silkscreen",
+          "pos": {
+            "x": 122.04,
+            "y": 164.279
+          },
+          "uuid": "35290146-2290-4c8c-b96a-a5c2c47756bc"
+        },
+        {
+          "description": "Pad 2 [GND1] de C25 sur F.Cu",
+          "pos": {
+            "x": 128.265,
+            "y": 162.174185
+          },
+          "uuid": "293df31b-7cb1-4fee-81fc-7ef73a396534"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de J1 sur F.Silkscreen",
+          "pos": {
+            "x": 112.157,
+            "y": 128.447
+          },
+          "uuid": "be54daf0-abf9-4d30-b946-b99d54748b71"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 1 [/BAT+] de J1",
+          "pos": {
+            "x": 113.307,
+            "y": 129.587
+          },
+          "uuid": "5d3644e1-bdcd-4fc3-b6bf-14c83e250d31"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Rectangle de J1 sur F.Silkscreen",
+          "pos": {
+            "x": 112.157,
+            "y": 128.447
+          },
+          "uuid": "be54daf0-abf9-4d30-b946-b99d54748b71"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 1 [/BAT+] de J1",
+          "pos": {
+            "x": 118.307,
+            "y": 129.587
+          },
+          "uuid": "884b085d-8822-4a04-9b87-6c20ec0b14b5"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Cote '' sur F.Silkscreen",
+          "pos": {
+            "x": 118.317,
+            "y": 129.577
+          },
+          "uuid": "0b2da16a-fb68-4bd5-bcbe-0a59aba8bebd"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 1 [/BAT+] de J1",
+          "pos": {
+            "x": 118.307,
+            "y": 129.587
+          },
+          "uuid": "884b085d-8822-4a04-9b87-6c20ec0b14b5"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 277.7075,
+            "y": 144.985
+          },
+          "uuid": "b06d604f-7186-46ba-9184-154b4b868f60"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.72,
+            "y": 102.98
+          },
+          "uuid": "b07abe7a-3e10-4234-938f-1d3a8f027f70"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de J7 sur F.Silkscreen",
+          "pos": {
+            "x": 277.7075,
+            "y": 144.985
+          },
+          "uuid": "b06d604f-7186-46ba-9184-154b4b868f60"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C3 sur F.Silkscreen",
+          "pos": {
+            "x": 276.568,
+            "y": 107.619935
+          },
+          "uuid": "ee60a236-2674-4fd1-a426-8dd486f2d4df"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.72,
+            "y": 102.98
+          },
+          "uuid": "b07abe7a-3e10-4234-938f-1d3a8f027f70"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C3 sur F.Silkscreen",
+          "pos": {
+            "x": 276.568,
+            "y": 107.619935
+          },
+          "uuid": "ee60a236-2674-4fd1-a426-8dd486f2d4df"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de Q16 sur F.Silkscreen",
+          "pos": {
+            "x": 246.862,
+            "y": 125.816
+          },
+          "uuid": "f89992c0-0698-4feb-a1b5-dbb8ac2c89f6"
+        },
+        {
+          "description": "Pad 4 [unconnected-(Q16-NC-Pad4)] de Q16 sur F.Cu",
+          "pos": {
+            "x": 244.943,
+            "y": 125.816
+          },
+          "uuid": "cdaa6950-0c56-4f09-b05a-d7903c54576c"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C42 sur B.Silkscreen",
+          "pos": {
+            "x": 110.651252,
+            "y": 117.708
+          },
+          "uuid": "52a58897-acf9-4758-a6b2-857475fdaf93"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C42 sur B.Silkscreen",
+          "pos": {
+            "x": 110.651252,
+            "y": 119.528
+          },
+          "uuid": "90f4a290-f5d7-44ec-9cb6-2616ca84544f"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C38 sur B.Silkscreen",
+          "pos": {
+            "x": 129.907,
+            "y": 198.408748
+          },
+          "uuid": "824a7574-0c99-4c39-8226-4518cea608e7"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C38 sur B.Silkscreen",
+          "pos": {
+            "x": 131.727,
+            "y": 198.408748
+          },
+          "uuid": "047c40c9-30b3-41b6-9184-43af9db6e5a0"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C40 sur B.Silkscreen",
+          "pos": {
+            "x": 110.691252,
+            "y": 194.58
+          },
+          "uuid": "98c850f8-d970-47b2-8b42-b8b0124cbd36"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C40 sur B.Silkscreen",
+          "pos": {
+            "x": 110.691252,
+            "y": 196.4
+          },
+          "uuid": "a16bc0ac-6133-42c1-82a1-c15339ef47bf"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C41 sur B.Silkscreen",
+          "pos": {
+            "x": 110.946252,
+            "y": 169.65
+          },
+          "uuid": "007e3016-6ec7-4655-a23d-0e9e3e07132e"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C41 sur B.Silkscreen",
+          "pos": {
+            "x": 110.946252,
+            "y": 171.47
+          },
+          "uuid": "5c2dfb95-410f-40d8-a16f-39d1d59ac4a0"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C43 sur B.Silkscreen",
+          "pos": {
+            "x": 177.37,
+            "y": 109.391252
+          },
+          "uuid": "aa4b18c1-bc89-4fed-9771-1aac4c2a254e"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C43 sur B.Silkscreen",
+          "pos": {
+            "x": 179.19,
+            "y": 109.391252
+          },
+          "uuid": "7a53a677-02ad-41e3-8a34-9468204a429c"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C39 sur B.Silkscreen",
+          "pos": {
+            "x": 129.907,
+            "y": 109.391252
+          },
+          "uuid": "99c9c244-0360-40ae-948a-70f2ffc700b0"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C39 sur B.Silkscreen",
+          "pos": {
+            "x": 131.727,
+            "y": 109.391252
+          },
+          "uuid": "c4774984-8d7d-485c-8b54-2e44c354fce3"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C49 sur B.Silkscreen",
+          "pos": {
+            "x": 195.7785,
+            "y": 198.408748
+          },
+          "uuid": "3b6be52d-fd58-4131-8863-78d00704ae5d"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C49 sur B.Silkscreen",
+          "pos": {
+            "x": 197.5985,
+            "y": 198.408748
+          },
+          "uuid": "04352d3f-c1f4-40ae-acec-f0011b6f1aa6"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C44 sur B.Silkscreen",
+          "pos": {
+            "x": 257.16,
+            "y": 109.631252
+          },
+          "uuid": "2c25df86-8c06-4a32-9f91-93dc311839f7"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C44 sur B.Silkscreen",
+          "pos": {
+            "x": 258.98,
+            "y": 109.631252
+          },
+          "uuid": "561735ed-5729-47f8-a5c5-e966c558380d"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C46 sur B.Silkscreen",
+          "pos": {
+            "x": 287.088748,
+            "y": 117.708
+          },
+          "uuid": "35a77aac-e17e-408b-8a3c-f2551cd0c8bc"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C46 sur B.Silkscreen",
+          "pos": {
+            "x": 287.088748,
+            "y": 119.528
+          },
+          "uuid": "5219a400-499a-4de6-a640-a4ea6c40385a"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C48 sur B.Silkscreen",
+          "pos": {
+            "x": 257.16,
+            "y": 198.648748
+          },
+          "uuid": "65766c8d-2b40-4667-a43b-969eeb33c26e"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C48 sur B.Silkscreen",
+          "pos": {
+            "x": 258.98,
+            "y": 198.648748
+          },
+          "uuid": "9e298cf9-9d5c-4d48-8b18-0d04e807bc0e"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Champ rÃ©fÃ©rence de C45",
+          "pos": {
+            "x": 287.665,
+            "y": 172.41
+          },
+          "uuid": "547372db-6968-4da9-8b22-95c35824644e"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C45 sur B.Silkscreen",
+          "pos": {
+            "x": 286.953748,
+            "y": 169.65
+          },
+          "uuid": "e1a28b67-c795-4f9a-9573-a94087dcf452"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C45 sur B.Silkscreen",
+          "pos": {
+            "x": 286.953748,
+            "y": 171.47
+          },
+          "uuid": "4f90f9f3-6e0d-456a-9306-dd613adf951c"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C47 sur B.Silkscreen",
+          "pos": {
+            "x": 287.128748,
+            "y": 194.58
+          },
+          "uuid": "b9662f0c-4fb2-4bd6-82a2-9ca242601c3e"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "items": [
+        {
+          "description": "Segment de C47 sur B.Silkscreen",
+          "pos": {
+            "x": 287.128748,
+            "y": 196.4
+          },
+          "uuid": "fb236c30-9c8e-48ef-b7a9-4335ffce280f"
+        },
+        {
+          "description": "Zone [<no net>] sur F.Mask et B.Mask, prioritÃ© 0",
+          "pos": {
+            "x": 103.68,
+            "y": 102.926109
+          },
+          "uuid": "d0fa14a0-53ce-4120-80c2-4b5e283f2aa1"
+        }
+      ],
+      "severity": "warning",
+      "type": "silk_over_copper"
+    }
+  ]
+}

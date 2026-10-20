@@ -1,0 +1,1017 @@
+{
+  "$schema": "https://schemas.kicad.org/drc.v1.json",
+  "coordinate_units": "mm",
+  "date": "2026-10-19T17:06:17",
+  "ignored_checks": [
+    {
+      "description": "Via is not connected or connected on only one layer",
+      "key": "via_dangling"
+    },
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Footprint has malformed courtyard",
+      "key": "malformed_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Silkscreen clearance",
+      "key": "silk_overlap"
+    },
+    {
+      "description": "Silkscreen clipped by solder mask",
+      "key": "silk_over_copper"
+    },
+    {
+      "description": "Isolated copper fill",
+      "key": "isolated_copper"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    },
+    {
+      "description": "Footprint not found in libraries",
+      "key": "lib_footprint_issues"
+    },
+    {
+      "description": "Footprint doesn't match copy in library",
+      "key": "lib_footprint_mismatch"
+    }
+  ],
+  "included_severities": [
+    "error",
+    "warning",
+    "exclusion"
+  ],
+  "kicad_version": "10.0.5",
+  "schematic_parity": [
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 105.78
+          },
+          "uuid": "130fc08f-ad38-4e31-8d75-f9313f143e40"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 202.5
+          },
+          "uuid": "378ae25b-01f4-4466-b1ce-d96201c57ca5"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 290.466667,
+            "y": 105.78
+          },
+          "uuid": "5c8268b5-9cc7-4d69-a1ac-56540ef1116c"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 168.403333,
+            "y": 202.5
+          },
+          "uuid": "886c6849-7901-418b-9ee4-9d69a0c9f697"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 152.55
+          },
+          "uuid": "9122fef6-bbc3-4d79-aaef-16534fcd8394"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 168.403333,
+            "y": 105.78
+          },
+          "uuid": "ab62f20f-8965-4cc5-8830-20ce6cead506"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 290.466667,
+            "y": 202.5
+          },
+          "uuid": "b2a5402a-6ecf-4dd1-b540-9762b15c2eae"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Duplicate footprints",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 202.5
+          },
+          "uuid": "bc00ee57-d4e6-412c-b2d0-23c9f6ce659d"
+        },
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "duplicate_footprints"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 105.78
+          },
+          "uuid": "0facacab-7e62-4064-b9ac-fe57440cb85b"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 105.78
+          },
+          "uuid": "130fc08f-ad38-4e31-8d75-f9313f143e40"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 229.418334,
+            "y": 202.5
+          },
+          "uuid": "378ae25b-01f4-4466-b1ce-d96201c57ca5"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 290.466667,
+            "y": 105.78
+          },
+          "uuid": "5c8268b5-9cc7-4d69-a1ac-56540ef1116c"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 168.403333,
+            "y": 202.5
+          },
+          "uuid": "886c6849-7901-418b-9ee4-9d69a0c9f697"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 152.55
+          },
+          "uuid": "9122fef6-bbc3-4d79-aaef-16534fcd8394"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 168.403333,
+            "y": 105.78
+          },
+          "uuid": "ab62f20f-8965-4cc5-8830-20ce6cead506"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 290.466667,
+            "y": 202.5
+          },
+          "uuid": "b2a5402a-6ecf-4dd1-b540-9762b15c2eae"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    },
+    {
+      "description": "Extra footprint",
+      "items": [
+        {
+          "description": "Empreinte REF**",
+          "pos": {
+            "x": 107.355,
+            "y": 202.5
+          },
+          "uuid": "bc00ee57-d4e6-412c-b2d0-23c9f6ce659d"
+        }
+      ],
+      "severity": "warning",
+      "type": "extra_footprint"
+    }
+  ],
+  "source": "hardware/inverter/cirBATTverter_1KWH.kicad_pcb",
+  "unconnected_items": [],
+  "violations": [
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 10 [<no net>] de U3",
+          "pos": {
+            "x": 168.715,
+            "y": 188.46
+          },
+          "uuid": "982fadc8-812d-4f77-bb1d-fc46fe199435"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 11 [<no net>] de U3",
+          "pos": {
+            "x": 168.715,
+            "y": 187.16
+          },
+          "uuid": "56cacd45-daa6-4158-9a48-7480818c1d60"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 12 [<no net>] de U3",
+          "pos": {
+            "x": 170.015,
+            "y": 188.46
+          },
+          "uuid": "a30bb42b-1541-41f2-b8fe-1c36689c692e"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 13 [<no net>] de U3",
+          "pos": {
+            "x": 170.015,
+            "y": 187.16
+          },
+          "uuid": "9aa7e275-1dcf-4915-b87d-eef4d04985cf"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 14 [<no net>] de U3",
+          "pos": {
+            "x": 171.315,
+            "y": 188.46
+          },
+          "uuid": "98fc54d6-0fd3-4bd2-bc56-e38616ff2f44"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 15 [<no net>] de U3",
+          "pos": {
+            "x": 171.315,
+            "y": 187.16
+          },
+          "uuid": "f40fbfd8-bf78-4d38-bdba-5b71ead42e1c"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 16 [<no net>] de U3",
+          "pos": {
+            "x": 172.615,
+            "y": 188.46
+          },
+          "uuid": "6f8e1188-77ae-4fae-88e8-57084f788f4a"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 17 [<no net>] de U3",
+          "pos": {
+            "x": 172.615,
+            "y": 187.16
+          },
+          "uuid": "829a9a6e-9c5c-490b-be41-e4d63f171bcd"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 10 [<no net>] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 177.808
+          },
+          "uuid": "70773dcf-f8a0-4deb-bc67-891ac3da3a6b"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 11 [<no net>] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 177.808
+          },
+          "uuid": "758cf721-a3bc-430b-8521-3f0d4a594bba"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 12 [<no net>] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 179.108
+          },
+          "uuid": "a31803c2-cd63-48fb-8925-7066c4fe8d4d"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 13 [<no net>] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 179.108
+          },
+          "uuid": "dfbed2dd-4673-4295-aad2-afedae52a975"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 14 [<no net>] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 180.408
+          },
+          "uuid": "68b92dbb-766c-477e-9810-056f82af3d38"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 15 [<no net>] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 180.408
+          },
+          "uuid": "799798ee-3bbe-4d1e-a376-1b164c027922"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 16 [<no net>] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 181.708
+          },
+          "uuid": "e703589d-28cc-4756-b4eb-859c79e0fac9"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Largeur des anneaux (configuration des contraintes du PCB largeur d'anneau min 0,1000 mm; rÃ©elle 0,0500 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 17 [<no net>] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 181.708
+          },
+          "uuid": "224b9245-c8e9-4d69-b332-086856aa556a"
+        }
+      ],
+      "severity": "error",
+      "type": "annular_width"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,1928 mm)",
+      "items": [
+        {
+          "description": "Piste [/DESAT1_P] sur In1.Cu, long. 0,1200 mm",
+          "pos": {
+            "x": 246.992938,
+            "y": 145.732352
+          },
+          "uuid": "1f9616d6-c040-449d-b8a6-e657aec6c3c8"
+        },
+        {
+          "description": "Via [/OUT_HS1_N] sur F.Cu - B.Cu",
+          "pos": {
+            "x": 247.67,
+            "y": 145.62
+          },
+          "uuid": "3f20b425-9569-49b9-9514-7f89d2fb55bd"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND2] de U4 sur F.Cu",
+          "pos": {
+            "x": 237.922,
+            "y": 179.758
+          },
+          "uuid": "ad53e266-edb1-4d1f-a3be-b9ffda81174a"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 14 [<no net>] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 180.408
+          },
+          "uuid": "68b92dbb-766c-477e-9810-056f82af3d38"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND2] de U4 sur F.Cu",
+          "pos": {
+            "x": 237.922,
+            "y": 179.758
+          },
+          "uuid": "ad53e266-edb1-4d1f-a3be-b9ffda81174a"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 15 [<no net>] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 180.408
+          },
+          "uuid": "799798ee-3bbe-4d1e-a376-1b164c027922"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND2] de U4 sur F.Cu",
+          "pos": {
+            "x": 237.922,
+            "y": 179.758
+          },
+          "uuid": "ad53e266-edb1-4d1f-a3be-b9ffda81174a"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 10 [<no net>] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 177.808
+          },
+          "uuid": "70773dcf-f8a0-4deb-bc67-891ac3da3a6b"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND2] de U4 sur F.Cu",
+          "pos": {
+            "x": 237.922,
+            "y": 179.758
+          },
+          "uuid": "ad53e266-edb1-4d1f-a3be-b9ffda81174a"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 11 [<no net>] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 177.808
+          },
+          "uuid": "758cf721-a3bc-430b-8521-3f0d4a594bba"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND2] de U4 sur F.Cu",
+          "pos": {
+            "x": 237.922,
+            "y": 179.758
+          },
+          "uuid": "ad53e266-edb1-4d1f-a3be-b9ffda81174a"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 12 [<no net>] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 179.108
+          },
+          "uuid": "a31803c2-cd63-48fb-8925-7066c4fe8d4d"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND2] de U4 sur F.Cu",
+          "pos": {
+            "x": 237.922,
+            "y": 179.758
+          },
+          "uuid": "ad53e266-edb1-4d1f-a3be-b9ffda81174a"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 13 [<no net>] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 179.108
+          },
+          "uuid": "dfbed2dd-4673-4295-aad2-afedae52a975"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND2] de U4 sur F.Cu",
+          "pos": {
+            "x": 237.922,
+            "y": 179.758
+          },
+          "uuid": "ad53e266-edb1-4d1f-a3be-b9ffda81174a"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 16 [<no net>] de U4",
+          "pos": {
+            "x": 237.272,
+            "y": 181.708
+          },
+          "uuid": "e703589d-28cc-4756-b4eb-859c79e0fac9"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND2] de U4 sur F.Cu",
+          "pos": {
+            "x": 237.922,
+            "y": 179.758
+          },
+          "uuid": "ad53e266-edb1-4d1f-a3be-b9ffda81174a"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 17 [<no net>] de U4",
+          "pos": {
+            "x": 238.572,
+            "y": 181.708
+          },
+          "uuid": "224b9245-c8e9-4d69-b332-086856aa556a"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 15 [<no net>] de U3",
+          "pos": {
+            "x": 171.315,
+            "y": 187.16
+          },
+          "uuid": "f40fbfd8-bf78-4d38-bdba-5b71ead42e1c"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 17 [<no net>] de U3",
+          "pos": {
+            "x": 172.615,
+            "y": 187.16
+          },
+          "uuid": "829a9a6e-9c5c-490b-be41-e4d63f171bcd"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 12 [<no net>] de U3",
+          "pos": {
+            "x": 170.015,
+            "y": 188.46
+          },
+          "uuid": "a30bb42b-1541-41f2-b8fe-1c36689c692e"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 10 [<no net>] de U3",
+          "pos": {
+            "x": 168.715,
+            "y": 188.46
+          },
+          "uuid": "982fadc8-812d-4f77-bb1d-fc46fe199435"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 11 [<no net>] de U3",
+          "pos": {
+            "x": 168.715,
+            "y": 187.16
+          },
+          "uuid": "56cacd45-daa6-4158-9a48-7480818c1d60"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,2557 mm)",
+      "items": [
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        },
+        {
+          "description": "Pad mÃ©tallisÃ© 16 [<no net>] de U3",
+          "pos": {
+            "x": 172.615,
+            "y": 188.46
+          },
+          "uuid": "6f8e1188-77ae-4fae-88e8-57084f788f4a"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 13 [<no net>] de U3",
+          "pos": {
+            "x": 170.015,
+            "y": 187.16
+          },
+          "uuid": "9aa7e275-1dcf-4915-b87d-eef4d04985cf"
+        },
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    },
+    {
+      "description": "Violation d'isolation ( isolation 0,2000 mm; rÃ©el 0,5807 mm)",
+      "items": [
+        {
+          "description": "Pad mÃ©tallisÃ© 14 [<no net>] de U3",
+          "pos": {
+            "x": 171.315,
+            "y": 188.46
+          },
+          "uuid": "98fc54d6-0fd3-4bd2-bc56-e38616ff2f44"
+        },
+        {
+          "description": "Pad 9 [GND1] de U3 sur F.Cu",
+          "pos": {
+            "x": 170.665,
+            "y": 187.81
+          },
+          "uuid": "28375aff-6919-4d63-b6dc-fad2fcb2a5cc"
+        }
+      ],
+      "severity": "error",
+      "type": "clearance"
+    }
+  ]
+}

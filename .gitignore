@@ -36,3 +36,6 @@ plot/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Local review outputs
+work/

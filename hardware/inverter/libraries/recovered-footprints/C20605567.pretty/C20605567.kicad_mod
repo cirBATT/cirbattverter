@@ -1,0 +1,146 @@
+(footprint "C20605567"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -6.233 1.039 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cba4f502-f5ec-4a9d-87b1-97064c7367f5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "D"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4fea238b-9629-440d-8af0-ef1a7d0f98ea")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17fa6f7b-4c08-46b5-a166-82c9c6ec0556")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Diode"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7e7ee2b7-3f77-4792-9240-cfd976bdfce9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Device" "D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b404520a-3e47-4ac6-a607-022cccdfe4f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sim.Pins" "1=K 2=A"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b75ad51-a895-4749-84f0-18dcfbf65024")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C20605567"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c6882d90-dc9d-4f3f-b38d-c232cb112fb5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
+	(sheetname "/")
+	(sheetfile "cirBATTverter_1KWH.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -20.86 -8.64)
+		(end -13.39 2.03)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "1e530b42-88fa-40f1-8fc6-e713e800590b")
+	)
+	(pad "1" smd roundrect
+		(at -14.9 -0.15)
+		(size 0.86 3.08)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "bfcde00b-e5ef-4073-8968-b6b284035fe7")
+	)
+	(pad "2" smd roundrect
+		(at -19.39 -0.15)
+		(size 0.86 3.08)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "51c817a6-d68c-4b9a-ad21-1a04b3467936")
+	)
+	(pad "2" smd roundrect
+		(at -17.145 -5.57)
+		(size 6.5 5.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "0b198650-1a15-441c-af3b-9aba50846d7a")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d/diode_smd.STEP"
+		(offset
+			(xyz -17 3.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -90)
+		)
+	)
+)

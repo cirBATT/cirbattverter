@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-19",
+  "source_date": "2026-10-17",
+  "kicad_version": "10.0.5",
+  "status": "not-approved-for-manufacture",
+  "component_net_mismatches": 0,
+  "electrical_components": 160,
+  "erc": {
+    "errors": 7,
+    "warnings": 11,
+    "library_access_warnings": 0,
+    "lib_symbol_mismatch": 10,
+    "multiple_net_names": 1
+  },
+  "drc_supplied_rules": {
+    "violations": 0,
+    "unconnected": 0,
+    "parity_warnings": 17,
+    "ignored_rule_count": 15
+  },
+  "drc_three_rules_enabled": {
+    "errors": 33,
+    "shorting_items": 0,
+    "clearance": 17,
+    "annular_width": 16,
+    "parity_warnings": 17
+  },
+  "planar": {
+    "changed": false,
+    "rerun": false,
+    "historical_errors": 40,
+    "historical_warnings": 10
+  },
+  "corrected": [
+    "former +15V copper contacts at J5-17 removed",
+    "R35 joins /+400V",
+    "separate 10 mOhm leg shunts restored",
+    "four copper layers and both masks supplied"
+  ],
+  "open_findings": [
+    "Q15 SGND/PGND on other leg source net",
+    "current sense and protection validation",
+    "clearance/thermal hole geometry/ERC/parity",
+    "35 vs 70 um copper intent",
+    "magnetics/filter/isolation/commissioning qualification"
+  ]
+}

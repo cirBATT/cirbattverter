@@ -1,0 +1,410 @@
+(footprint "CS4200V01L"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "CS4200V-01L-3")
+	(tags "Transformer")
+	(property "Reference" "REF**"
+		(at -17.116 -3.86 180)
+		(layer "F.SilkS")
+		(uuid "44c9d0c0-ad6c-4aa4-85bf-effd3e3177c3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "CS4200V-01L"
+		(at -7.62 4.66 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e0fd943c-144b-460f-929f-3407e2cdecb1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/CS4200V-01L.pdf"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04fbe6d8-7527-42bb-bda8-1b2e507ce71c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "TRANSFORMER, CURRENT SENSE, 1:200, 35A"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5a497d65-7bce-4e6c-83b0-c35c475429b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Height" "19.05"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8347f88f-f866-4c7f-b1cb-006164f2109b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "COILCRAFT"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b9036b6-5f5e-481a-9ba9-be2aa8ceed4e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "CS4200V-01L"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e23fd184-0cc4-493d-b82e-38f6ca8ea43b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "994-CS4200V-01L"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "07a9c6e9-40f1-43f9-99a2-0e3857b38195")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Coilcraft/CS4200V-01L?qs=ZYnrCdKdyefaFHHi0DBZHg%3D%3D"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "adf73964-163d-4e09-8b88-d370be128c67")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Part Number" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ee27ed5f-5a77-4040-903c-c7d138e5ff59")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Price/Stock" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "42f95cb1-67a9-4520-92e8-22cccc87d9ee")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C5441588"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "31a8360a-18a6-48ba-8eb9-98927b69ff03")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "/")
+	(sheetfile "cirBATTverter_1KWH.kicad_sch")
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -17.4 -2.16)
+		(end 2.16 -2.16)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "01a8d8ec-85cb-41ac-a632-e378241f58b3")
+	)
+	(fp_line
+		(start -17.4 12.32)
+		(end -17.4 -2.16)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8c668629-a6e0-4299-9615-0d689ef1d232")
+	)
+	(fp_line
+		(start -3.56 -3)
+		(end -3.56 -3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "96401205-ceb4-4c59-a10d-4ba681867dde")
+	)
+	(fp_line
+		(start -3.56 -3)
+		(end -3.56 -3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e833e701-bd60-4436-8cba-f45d1ffdab37")
+	)
+	(fp_line
+		(start -3.56 -2.9)
+		(end -3.56 -2.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0ddb7470-b511-4bd1-b440-ac5cb0e658f5")
+	)
+	(fp_line
+		(start 2.16 -2.16)
+		(end 2.16 12.32)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "045dce24-6792-4ad1-a362-5b8150400ae0")
+	)
+	(fp_line
+		(start 2.16 12.32)
+		(end -17.4 12.32)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "804a5307-1408-4119-a6f2-3035ac23b817")
+	)
+	(fp_arc
+		(start -3.56 -3)
+		(mid -3.51 -2.95)
+		(end -3.56 -2.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "312cae44-f47b-4988-91fd-faa47e2ca8e2")
+	)
+	(fp_arc
+		(start -3.56 -2.9)
+		(mid -3.61 -2.95)
+		(end -3.56 -3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0938d5f2-a843-4f3b-b404-784c5219ae21")
+	)
+	(fp_arc
+		(start -3.56 -2.9)
+		(mid -3.61 -2.95)
+		(end -3.56 -3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "99669c01-30aa-43af-9991-4ca78cc2a37b")
+	)
+	(fp_line
+		(start -18.4 -4)
+		(end 3.16 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f32cf5e2-40a0-46be-a6fd-eefe8c4b320c")
+	)
+	(fp_line
+		(start -18.4 13.32)
+		(end -18.4 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3979173a-2041-488a-bf4b-8aea65e6b4ba")
+	)
+	(fp_line
+		(start 3.16 -4)
+		(end 3.16 13.32)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "24c0badb-407b-4b87-8907-d779d056cd1f")
+	)
+	(fp_line
+		(start 3.16 13.32)
+		(end -18.4 13.32)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "714b5f07-b98b-45da-b40a-7d31df3beb73")
+	)
+	(fp_line
+		(start -17.4 -2.16)
+		(end -17.4 12.32)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "27eaa8be-95eb-4ffb-a539-21cc3bdafefb")
+	)
+	(fp_line
+		(start -17.4 12.32)
+		(end 2.16 12.32)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e83e3cf3-702b-4b7f-a16a-acf16ffd78fc")
+	)
+	(fp_line
+		(start 2.16 -2.16)
+		(end -17.4 -2.16)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "965e2df1-7d4e-4ff4-9ad0-bfc842bc52d3")
+	)
+	(fp_line
+		(start 2.16 12.32)
+		(end 2.16 -2.16)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "881a6f73-4226-4ffc-bf2a-3b7ab6b9b770")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -7.62 4.66 180)
+		(layer "F.Fab")
+		(uuid "37a46eac-20fb-4e3a-bdb5-09ca3187731a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.64 2.64)
+		(drill 1.76)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "73dbdf55-aaf6-4a33-9999-6399305d1971")
+	)
+	(pad "2" thru_hole circle
+		(at -15.24 0)
+		(size 3.345 3.345)
+		(drill 2.23)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3e3f28d1-da22-47db-8ccb-d241f903be29")
+	)
+	(pad "3" thru_hole circle
+		(at -15.24 10.16)
+		(size 3.345 3.345)
+		(drill 2.23)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2553991e-355c-4130-9440-9462758fb489")
+	)
+	(pad "4" thru_hole circle
+		(at 0 10.16)
+		(size 2.64 2.64)
+		(drill 1.76)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b8c395c4-2b6a-4061-9b11-484c17253078")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d/CS4200V-01L.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/3d/CS4200V-01L.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

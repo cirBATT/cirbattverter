@@ -28,3 +28,11 @@ LICENSE       text eol=lf
 *.gbr     -diff
 *.gbrjob  -diff
 *.drl     -diff
+
+# Document assets and reports
+*.svg text eol=lf -diff
+*.json text eol=lf
+*.csv text eol=lf
+*.yml text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf

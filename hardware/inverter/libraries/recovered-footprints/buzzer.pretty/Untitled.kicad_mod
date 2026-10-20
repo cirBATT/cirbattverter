@@ -1,0 +1,134 @@
+(footprint "Untitled"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.05 2.27 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "7904adf6-e0b6-4286-a604-32fd00c12941")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Buzzer"
+		(at 0 6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d22a7ca2-85f6-4196-acd7-0472b88cf294")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "662678b1-9c04-4816-90c9-4dd60c0a0809")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Buzzer, polarized"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ccb8b03a-3402-4051-81af-de2de9b001d6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C6883559"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1abb1839-00e1-4513-8e57-b3fd2e6180d3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property ki_fp_filters "*Buzzer*")
+	(sheetname "/")
+	(sheetfile "cirBATTverter_1KWH.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -4.5 -14.73)
+		(end 8.49 0.85)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b7bba0f2-6f5d-49be-95ab-cc414698e0b9")
+	)
+	(fp_rect
+		(start -4.4 -14.62)
+		(end 8.38 0.74)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7a266830-1927-4f37-990e-2527021bbbbe")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 7.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "462dede2-3d8b-4194-b283-db8f3d1b6ac7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 2 -12.5)
+		(size 2.2 3.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "7f307ccf-e3e1-4ee1-ac31-9847ed6f3bf2")
+	)
+	(pad "2" smd roundrect
+		(at 2 -1.5)
+		(size 2.2 3.25)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "ffb18aee-06f4-4b11-83cb-3a0c5630aa24")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3d/buzzer.STEP"
+		(offset
+			(xyz 2 7 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

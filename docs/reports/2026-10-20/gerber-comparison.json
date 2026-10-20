@@ -1,0 +1,86 @@
+{
+  "method": "KiCad 10.0.5 pcb export gerbers --board-plot-params, without zone refill. Ignore only TF.GenerationSoftware, TF.CreationDate, TF.MD5 and G04 Created by KiCad (PCBNEW ...) header/comment lines. Normalize line endings. Every remaining line must match in order.",
+  "files": [
+    {
+      "file": "cirBATTverter_1KWH-B_Cu.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "d133aaf2a78e3a2cc65ad57772aabd3d0b04cf9a34323093e70c686006a9f4ec",
+      "fresh_normalized_sha256": "d133aaf2a78e3a2cc65ad57772aabd3d0b04cf9a34323093e70c686006a9f4ec"
+    },
+    {
+      "file": "cirBATTverter_1KWH-B_Mask.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "177f29e06a2d2bd9273e077c68851b769b6a14365248f1e97ee120b621729680",
+      "fresh_normalized_sha256": "177f29e06a2d2bd9273e077c68851b769b6a14365248f1e97ee120b621729680"
+    },
+    {
+      "file": "cirBATTverter_1KWH-B_Paste.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "d6cdc078377c29269126505b554375211fe017148af5bb61936a6a3fb03ed6c0",
+      "fresh_normalized_sha256": "d6cdc078377c29269126505b554375211fe017148af5bb61936a6a3fb03ed6c0"
+    },
+    {
+      "file": "cirBATTverter_1KWH-B_Silkscreen.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "44cf9748bce9147727d26ca2992a57614e1fe490bbf415df6d007cf57c5c9eb8",
+      "fresh_normalized_sha256": "44cf9748bce9147727d26ca2992a57614e1fe490bbf415df6d007cf57c5c9eb8"
+    },
+    {
+      "file": "cirBATTverter_1KWH-Edge_Cuts.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "e1dd181b26bdbb6a778b763637c7915e71017b1d1ccc853b58469a2e51174b79",
+      "fresh_normalized_sha256": "e1dd181b26bdbb6a778b763637c7915e71017b1d1ccc853b58469a2e51174b79"
+    },
+    {
+      "file": "cirBATTverter_1KWH-F_Cu.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "3d6a96de66b6cdb7d5fa858d9adeb005d0e86b986d9a9ff7341c13e6ad8731ed",
+      "fresh_normalized_sha256": "3d6a96de66b6cdb7d5fa858d9adeb005d0e86b986d9a9ff7341c13e6ad8731ed"
+    },
+    {
+      "file": "cirBATTverter_1KWH-F_Mask.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "2a2ca1bf92036a458ade4d50f4aaf288aa4817a52c2357712b93252f307f4b30",
+      "fresh_normalized_sha256": "2a2ca1bf92036a458ade4d50f4aaf288aa4817a52c2357712b93252f307f4b30"
+    },
+    {
+      "file": "cirBATTverter_1KWH-F_Paste.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "3b6a045119922fc9983c4bb9926fbcb5c4473766e39cf5c1a66a80720c408fa8",
+      "fresh_normalized_sha256": "3b6a045119922fc9983c4bb9926fbcb5c4473766e39cf5c1a66a80720c408fa8"
+    },
+    {
+      "file": "cirBATTverter_1KWH-F_Silkscreen.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "3d7e52614fd3ef1606a762f56d7e20be5bd9ee96f1726cbdd953fd66fe303054",
+      "fresh_normalized_sha256": "3d7e52614fd3ef1606a762f56d7e20be5bd9ee96f1726cbdd953fd66fe303054"
+    },
+    {
+      "file": "cirBATTverter_1KWH-In1_Cu.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "fe730b7c9eeb1e5da1e4fd078195b1f0271feae91b0eeefe463290b199d3ef82",
+      "fresh_normalized_sha256": "fe730b7c9eeb1e5da1e4fd078195b1f0271feae91b0eeefe463290b199d3ef82"
+    },
+    {
+      "file": "cirBATTverter_1KWH-In2_Cu.gbr",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "a56bd096b8d18cae18a970df4703588232c641f9744864109aea592399892511",
+      "fresh_normalized_sha256": "a56bd096b8d18cae18a970df4703588232c641f9744864109aea592399892511"
+    }
+  ],
+  "drill_method": "KiCad 10.0.5 pcb export drill --format excellon --drill-origin absolute --excellon-separate-th. Ignore empty lines and TF.GenerationSoftware / TF.CreationDate / ; DRILL file KiCad header lines; every remaining line must match in order.",
+  "drill_files": [
+    {
+      "file": "cirBATTverter_1KWH-NPTH.drl",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "cca37cfec562b1307044b594f8875428652301b04409697ff15786e4d52beb27",
+      "fresh_normalized_sha256": "cca37cfec562b1307044b594f8875428652301b04409697ff15786e4d52beb27"
+    },
+    {
+      "file": "cirBATTverter_1KWH-PTH.drl",
+      "matches_after_header_normalization": true,
+      "supplied_normalized_sha256": "eb9cba7793e0af85a5f292a593508fd467d5e2f9da99b55774a6f8ca4ceb6e2b",
+      "fresh_normalized_sha256": "eb9cba7793e0af85a5f292a593508fd467d5e2f9da99b55774a6f8ca4ceb6e2b"
+    }
+  ]
+}
