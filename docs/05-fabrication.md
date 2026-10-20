@@ -6,7 +6,7 @@
 
 ## 1. Choisir une révision corrigée
 
-Identifier le commit utilisé, lire la [revue du 19 octobre](11-revue-corrections-2026-10-19.md), résoudre ou justifier les références du pilote Q15, valider les mesures de courant et protections, puis exécuter ERC et DRC avec les vérifications d'espacement actives. Les justifications d'exclusion doivent être documentées individuellement ; ne pas neutraliser une famille entière de contrôles pour obtenir un rapport vide.
+Identifier le commit utilisé, lire la [revue du 20 octobre](12-revue-corrections-2026-10-20.md), vérifier la révision corrigée de Q15, traiter les points PCB/ERC et valider les mesures de courant et protections, puis exécuter ERC et DRC avec les vérifications d'espacement actives. Les justifications d'exclusion doivent être documentées individuellement ; ne pas neutraliser une famille entière de contrôles pour obtenir un rapport vide.
 
 Vérifier la correspondance schéma/PCB et les empreintes des composants critiques. Les bibliothèques récupérées dans `hardware/inverter/libraries/` permettent de retrouver les objets intégrés au projet ; elles ne prouvent pas qu'un brochage est conforme au composant acheté.
 
@@ -30,7 +30,7 @@ Les fichiers déclarent 1,6 mm mais il faut vérifier l'épaisseur finale de l'e
 
 ## 3. Regénérer les Gerbers
 
-L’archive `production/inverter/gerber.zip` exportée le 17 octobre contient désormais F.Cu, In1.Cu, In2.Cu, B.Cu, les deux masques, le profil, les sérigraphies, pâtes et perçages PTH/NPTH. Les anciennes couches manquantes ont été ajoutées. Ce contrôle de présence ne qualifie ni le circuit ni un dossier prêt à commander.
+L’archive `production/inverter/gerber.zip` exportée le 20 octobre contient désormais F.Cu, In1.Cu, In2.Cu, B.Cu, les deux masques, le profil, les sérigraphies, pâtes et perçages PTH/NPTH. Les anciennes couches manquantes ont été ajoutées. Les 11 Gerbers et les deux perçages correspondent aux exports neufs du PCB selon la [comparaison documentée](12-revue-corrections-2026-10-20.md#vérification-des-fichiers-de-production). Cela ne qualifie ni le circuit ni un dossier prêt à commander.
 
 Après corrections et approbation du stackup :
 

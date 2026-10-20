@@ -1,5 +1,7 @@
 # Revue des corrections du 19 octobre 2026
 
+**Document historique :** les sources du 20 octobre corrigent ensuite la référence de Q15 et ses découplages. Consulter la [revue actuelle](12-revue-corrections-2026-10-20.md). Les constats ci-dessous décrivent les sources du 17 octobre.
+
 [Sommaire](README.md) · [Connectique actuelle](02-connectique.md) · [Révision précédente](10-revue-corrections-2026-10-16.md)
 
 **Conclusion : progrès confirmés ; révision encore non approuvée pour fabrication ou mise sous tension.** Les anciennes pistes +15V de J5-17 sont supprimées, R35 rejoint +400V et les couches Gerber manquantes sont présentes. La référence du pilote Q15 reste toutefois à corriger ou justifier, et les vérifications PCB ne passent pas avec les espacements actifs. Les points non résolus restent ouverts.

@@ -4,7 +4,7 @@
 
 Les tableaux ci-dessous décrivent la révision publiée. Les nets proviennent de la netliste KiCad et ont été comparés aux pads du PCB. Le CSV [connector-nets.csv](reports/connector-nets.csv) conserve les noms exacts.
 
-**Interface en cours de validation.** Les anciennes pistes +15V de J5-17 sont supprimées. Les références du pilote Q15 restent à revoir avant mise sous tension ; voir la [revue du 19 octobre](11-revue-corrections-2026-10-19.md).
+**Interface en cours de validation.** Les anciennes pistes +15V de J5-17 sont supprimées. Les références du pilote Q15 sont corrigées dans les sources du 20 octobre ; protections et comportement restent à valider. Voir la [revue du 20 octobre](12-revue-corrections-2026-10-20.md).
 
 ## Bornes utilisateur
 
@@ -85,7 +85,7 @@ Les positions 13/18/22 sont NC sur le module. Dans la révision du ZIP du 17 oct
 
 ## Vérification des circuits raccordés à J5
 
-Les 29 nets J5 et toutes les broches des 160 composants électriques ont été comparés entre netliste KiCad et PCB : aucun écart de net n'a été retrouvé. Le [CSV par broche](reports/egs005q-interface-review.csv) décrit la révision actuelle. Ce contrôle des noms de nets ne remplace pas l’examen du circuit : la différence entre source et références du pilote Q15 existe dans les deux fichiers.
+Les 29 nets J5 et toutes les broches des 160 composants électriques ont été comparés entre netliste KiCad et PCB : aucun écart de net n'a été retrouvé. Le [CSV par broche](reports/egs005q-interface-review.csv) décrit la révision actuelle. Ce contrôle des noms de nets ne remplace pas l’examen du circuit : les références de Q15 sont maintenant alignées, mais cela ne qualifie pas les mesures et protections.
 
 | Groupe | Raccordement courant | Conclusion |
 | --- | --- | --- |
@@ -93,7 +93,7 @@ Les 29 nets J5 et toutes les broches des 160 composants électriques ont été c
 | Bras 1 | 19 → PWM Q16 ; 23 → PWM Q17 ; 20 → source Q16/R58-1 ; 21 → R58-2/drain Q17 | HO/LO/SDH/VS affectés au bon bras |
 | Courant IFB1/IFB2 | 15 → ISENSE3_P/R59 ; 24 → ISENSE1_P/R60 ; 16/25 → ISENSE1_N | Deux shunts distincts de 10 mΩ ; gains et protection à valider |
 | IFBCOM | 26 → ISENSE1_N ; R52 = 10 mΩ vers GND2 | Raccordement ajouté ; seuil et fonctionnement à vérifier |
-| Q15 / Q17 | Q15-S sur ISENSE3_P ; Q15-SGND/PGND et Q17-S/SGND/PGND sur ISENSE1_P | Référence Q15 différente de sa source : point ouvert |
+| Q15 / Q17 | Q15-S/SGND/PGND et C52/C53 sur ISENSE3_P ; Q17-S/SGND/PGND sur ISENSE1_P | Référence Q15 corrigée ; retours Kelvin et protections à valider |
 | Tension AC / HM | 28 → OUT_P après T5 depuis bras 2 ; 29 → OUT_N après T5 depuis bras 1 | Affectation cohérente avec HM=0 ; stabilité à valider |
 | Mesure bus | 1 → +400V/C3 | Raccordement du module présent ; R35 rejoint désormais ce même bus, régulation à valider |
 | Températures | 5 → TH2/R40 ; 6 → TH3/R42 | Lois différentes à étalonner |
@@ -103,7 +103,7 @@ J5-4/FAN reste ouverte ; FAN1 est commandé par J4/Q13 dans le domaine batterie.
 
 J5-8 conserve un rail calculé idéalement à environ 12,09 V. La notice permet un essai de module à 12–15 V ; ce calcul seul ne prouve pas une incompatibilité. Mesurer les marges et le comportement des pilotes en conditions réelles.
 
-Voir les [preuves et actions restantes](11-revue-corrections-2026-10-19.md). La référence de Q15 et les protections restent à valider ; l’interface n’est pas qualifiée par cette revue.
+Voir les [preuves et actions restantes](12-revue-corrections-2026-10-20.md). La référence de Q15 est corrigée dans les nets ; les protections restent à valider ; l’interface n’est pas qualifiée par cette revue.
 
 ## Port de configuration
 

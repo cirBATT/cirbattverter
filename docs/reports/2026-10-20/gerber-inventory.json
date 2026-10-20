@@ -1,0 +1,61 @@
+{
+  "source": "production/inverter/gerber.zip",
+  "files": [
+    {
+      "file": "gerber/cirBATTverter_1KWH-B_Cu.gbr",
+      "size": 646754
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-B_Mask.gbr",
+      "size": 15825
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-B_Paste.gbr",
+      "size": 14336
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-B_Silkscreen.gbr",
+      "size": 101629
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-Edge_Cuts.gbr",
+      "size": 646
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-F_Cu.gbr",
+      "size": 666430
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-F_Mask.gbr",
+      "size": 139533
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-F_Paste.gbr",
+      "size": 25739
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-F_Silkscreen.gbr",
+      "size": 217616
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-In1_Cu.gbr",
+      "size": 607398
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-In2_Cu.gbr",
+      "size": 578693
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-job.gbrjob",
+      "size": 3968
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-NPTH.drl",
+      "size": 501
+    },
+    {
+      "file": "gerber/cirBATTverter_1KWH-PTH.drl",
+      "size": 17455
+    }
+  ]
+}

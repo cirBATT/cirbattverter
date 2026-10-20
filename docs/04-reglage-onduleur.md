@@ -4,7 +4,7 @@
 
 Le porteur du projet a confirmé **EGS005Q**. Les réglages ci-dessous se rapportent à la **notice V1.0**, dont les tableaux et photos ont été vérifiés. Une carte vendue sous un nom voisin ou une révision différente doit être contrôlée avant usage.
 
-**Prérequis : résoudre les références du pilote Q15 et les points PCB/protections ouverts.** Les anciens contacts +15V de J5-17 ont été supprimés et R35 rejoint le bus ; voir la [revue actuelle](11-revue-corrections-2026-10-19.md). Les cavaliers ne corrigent pas le câblage des pilotes.
+**Prérequis : résoudre les points PCB ouverts et valider les protections.** Les références du pilote Q15 sont corrigées dans les sources du 20 octobre. Les anciens contacts +15V de J5-17 ont été supprimés et R35 rejoint le bus ; voir la [revue actuelle](12-revue-corrections-2026-10-20.md). Les cavaliers ne corrigent pas le câblage des pilotes.
 
 ## Fréquence de sortie
 
@@ -81,7 +81,7 @@ TFB2 = 5 × R42 / (RTH3 + R42), R42 = 6,2 kΩ
 
 À 25 °C, si les NTC valent réellement 10 kΩ, on attend idéalement environ 0,83 V et 1,91 V. Les deux canaux ont donc des lois différentes. Pour convertir une tension de déclenchement en température, il faut la courbe R(T), le coefficient B, la tolérance et l'emplacement des NTC. Ils ne sont pas documentés complètement ici.
 
-Les shunts marqués `10m` sont 10 mΩ, pas 10 MΩ. Leur dissipation suit `P = I²R`. Le seuil réel dépend du montage, des amplificateurs du module et du courant instantané. Dans la révision du 17 octobre, R59 et R60 sont deux shunts distincts de 10 mΩ. Q15-S rejoint ISENSE3_P, mais ses références SGND/PGND restent sur ISENSE1_P. J5-26 rejoint ISENSE1_N au-dessus de R52 = 10 mΩ. Revoir ces références, les gains, seuils et chemins de courant avant calibration ; voir la [revue actuelle](11-revue-corrections-2026-10-19.md#q15-et-mesure-du-courant--point-encore-ouvert).
+Les shunts marqués `10m` sont 10 mΩ, pas 10 MΩ. Leur dissipation suit `P = I²R`. Le seuil réel dépend du montage, des amplificateurs du module et du courant instantané. Dans la révision du 17 octobre, R59 et R60 sont deux shunts distincts de 10 mΩ. Q15-S, SGND/PGND et les retours C52/C53 rejoignent maintenant ISENSE3_P dans la révision du 20 octobre. J5-26 rejoint ISENSE1_N au-dessus de R52 = 10 mΩ. Valider les références réelles, les gains, seuils et chemins de courant avant calibration ; voir la [revue actuelle](12-revue-corrections-2026-10-20.md#corrections-vérifiées).
 
 ## Fiche de configuration à publier
 

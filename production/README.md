@@ -1,10 +1,10 @@
 # Exports de production non approuvés
 
-**ZIP Gerber principal remplacé par celui reçu le 19 octobre, exporté le 17 octobre.** Les quatre couches cuivre et les deux masques sont présents ; le dossier reste non approuvé. BOM/CPL et planaire inchangés. Lire la [revue actuelle](../docs/11-revue-corrections-2026-10-19.md).
+**ZIP Gerber principal remplacé par celui reçu et exporté le 20 octobre.** Les quatre couches cuivre et les deux masques sont présents ; le dossier reste non approuvé. Les 11 Gerbers et deux perçages correspondent aux exports neufs du PCB après la normalisation documentée des en-têtes. BOM/CPL et planaire inchangés. Lire la [revue actuelle](../docs/12-revue-corrections-2026-10-20.md).
 
 **Lire l'[audit](../docs/07-audit-technique.md) et le [guide de fabrication](../docs/05-fabrication.md) avant usage. Cette révision ne constitue pas un ensemble approuvé pour commande.**
 
-| Dossier / fichier | État revérifié le 19 octobre 2026 |
+| Dossier / fichier | État revérifié le 20 octobre 2026 |
 | --- | --- |
 | `inverter/gerber.zip` | 14 fichiers : quatre cuivres, deux masques, profil, sérigraphies/pâtes, gbrjob et perçages PTH/NPTH ; non approuvé |
 | `inverter/*_JLCPCB_BOM.xlsx` | 61 lignes groupées, 160 repères ; valeurs et références critiques à compléter |

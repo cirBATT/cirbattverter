@@ -4,7 +4,7 @@
 
 cirBATTverter is an open hardware power electronics project by [cirBATT](https://cirbatt.com/), based in Grenoble, France. It explores a **48 V battery to 230 V sine-wave inverter**, with a target power of **1 kW**, in the context of second-life lithium batteries. Learn about [cirBATT's battery collection and requalification process](https://cirbatt.com/fonctionnement).
 
-**Reviewed 19 October 2026: further corrections confirmed; open issues remain.** Read the [current correction review](docs/11-revue-corrections-2026-10-19.md).
+**Reviewed 20 October 2026: Q15 references corrected; PCB checks and qualification remain open.** Read the [current correction review](docs/12-revue-corrections-2026-10-20.md).
 
 **This revision is a prototype requiring corrections before manufacture or energisation.** Power, efficiency, isolation, protection behaviour and DC-DC tuning have not been qualified on a physical board. Read the [technical audit](docs/07-audit-technique.md) before using the design.
 
@@ -20,9 +20,9 @@ The DC-DC switching frequency, SPWM carrier frequency and 50/60 Hz output freque
 ## Current findings
 
 - The former +15V contacts at J5-17 have been removed. Its pad remains unconnected, while EGS005Q P3-17 is ground; J5-3/27 provide GND2 on the board.
-- R35 now joins +400V. Separate 10 mΩ shunts R59 and R60 have been restored, and IFBCOM remains connected. Q15 source is on ISENSE3_P but SGND/PGND remain on ISENSE1_P: review this driver reference before energising. See the [29-pin review](docs/02-connectique.md) and [CSV evidence](docs/reports/egs005q-interface-review.csv).
+- R35 now joins +400V. Separate 10 mΩ shunts R59 and R60 have been restored, and IFBCOM remains connected. Q15 source, SGND/PGND and C52/C53 returns now share ISENSE3_P. This wiring issue is corrected in the supplied sources; current sensing and protection still need bench validation. See the [29-pin review](docs/02-connectique.md) and [CSV evidence](docs/reports/egs005q-interface-review.csv).
 - Strengthened PCB checks report 33 errors, with no shorting contact reported; 17 parity warnings remain. ERC reports 7 errors and 11 warnings.
-- The Gerber archive now includes all four copper layers and both masks. PCB and job metadata still specify 35 µm copper versus the original 70 µm intention; this is not an approved manufacturing package.
+- All 11 supplied Gerbers and both drill files match fresh PCB exports after the documented header normalization. The archive includes all four copper layers and both masks. PCB and job metadata still specify 35 µm copper versus the original 70 µm intention; this is not an approved manufacturing package.
 
 - Transformer core, winding correspondence and magnetic data are incomplete. No measured DC-DC resonance setting is supplied.
 

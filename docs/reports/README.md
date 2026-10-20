@@ -1,8 +1,14 @@
 # Rapports de vérification
 
-## Révision reçue le 19 octobre 2026
+## Révision reçue le 20 octobre 2026
 
-[Revue actuelle](../11-revue-corrections-2026-10-19.md) · [Synthèse](2026-10-19/summary.json) · [Manifeste ZIP](2026-10-19/input-manifest.json) · [ERC](2026-10-19/erc.json) · [DRC fourni](2026-10-19/drc-inverter.json) · [DRC renforcé](2026-10-19/drc-inverter-clearance-enabled.json) · [Inventaire Gerber](2026-10-19/gerber-inventory.json).
+[Revue actuelle](../12-revue-corrections-2026-10-20.md) · [Synthèse](2026-10-20/summary.json) · [Manifeste ZIP](2026-10-20/input-manifest.json) · [ERC](2026-10-20/erc.json) · [DRC fourni](2026-10-20/drc-inverter.json) · [DRC renforcé](2026-10-20/drc-inverter-clearance-enabled.json) · [Comparaison Gerbers/perçages](2026-10-20/gerber-comparison.json) · [Inventaire Gerber](2026-10-20/gerber-inventory.json).
+
+Le [manifeste de la revue du 19 octobre](2026-10-19/source-manifest.csv) est conservé pour dater les sources précédentes. Les CSV et le manifeste racine décrivent les fichiers courants.
+
+## Révision historique reçue le 19 octobre 2026
+
+[Revue précédente](../11-revue-corrections-2026-10-19.md) · [Synthèse](2026-10-19/summary.json) · [Manifeste ZIP](2026-10-19/input-manifest.json) · [ERC](2026-10-19/erc.json) · [DRC fourni](2026-10-19/drc-inverter.json) · [DRC renforcé](2026-10-19/drc-inverter-clearance-enabled.json) · [Inventaire Gerber](2026-10-19/gerber-inventory.json).
 
 Les CSV racine décrivent les sources actuelles. Les rapports précédents sont historiques. Le [manifeste du 16 octobre](2026-10-16/source-manifest.csv) conserve les empreintes de la révision précédente.
 

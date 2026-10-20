@@ -12,7 +12,7 @@ J5_pad,EGS005Q_P3_function,schematic_net,PCB_net,schematic_PCB_match,review,comm
 11,SDH2,/DESAT2_P,/DESAT2_P,True,coherent_a_valider,R57-1 / source Q14-12 ; R57-2 sur VS2. Retour positif shunt haut bras 2.
 12,VS2,/OUT_HS2_N,/OUT_HS2_N,True,coherent,R57-2 / drain Q15-1 / T5-4 : noeud de commutation bras 2.
 13,NC,unconnected-(J5-Pin_13-Pad13),unconnected-(J5-Pin_13-Pad13),True,coherent,NC laisse ouverte.
-14,2LO,/OUT_LS2_P,/OUT_LS2_P,True,reference_pilote_a_revoir,PWM Q15 correct ; Q15-S sur ISENSE3_P mais SGND/PGND sur ISENSE1_P.
+14,2LO,/OUT_LS2_P,/OUT_LS2_P,True,coherent_mesure_a_valider,"PWM Q15 correct ; source, SGND/PGND et retours C52/C53 maintenant sur ISENSE3_P. Deux shunts de bras distincts ; protection a valider."
 15,IFB2P,/ISENSE3_P,/ISENSE3_P,True,mesure_par_bras_a_valider,IFB2P mesure ISENSE3_P via R59=10mOhm ; distinct du bras 1.
 16,IFB2N,/ISENSE1_N,/ISENSE1_N,True,coherent_a_valider,R59-2 / R60-2 / R52-1 : retour commun des deux shunts bas.
 17,GND,unconnected-(J5-Pin_17-Pad17),unconnected-(J5-Pin_17-Pad17),True,ancien_contact_supprime,"Anciens segments +15V retires ; aucun shorting_items DRC courant. Pad NC ; P3-17 module GND2, autres masses via J5-3/27."

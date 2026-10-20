@@ -1,6 +1,6 @@
 # Guide de lecture
 
-**Révision reçue le 19 octobre :** commencer par la [revue des corrections et des points ouverts](11-revue-corrections-2026-10-19.md).
+**Révision reçue le 20 octobre :** commencer par la [revue des corrections et des points ouverts](12-revue-corrections-2026-10-20.md).
 
 Ce guide sépare les valeurs présentes dans les fichiers, les calculs et les validations encore nécessaires. **Lire l'[audit](07-audit-technique.md) avant de commander ou d'alimenter une carte.**
 

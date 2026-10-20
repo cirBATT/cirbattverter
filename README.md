@@ -10,17 +10,18 @@ Un projet matériel ouvert de [cirBATT](https://cirbatt.com/), à Grenoble, pour
 
 ## État de cette révision
 
-**Mise à jour du 19 octobre 2026 :** sources du 17 octobre intégrées. Lire la [vérification actuelle](docs/11-revue-corrections-2026-10-19.md).
+**Mise à jour du 20 octobre 2026 :** correction Q15 et nouveaux fichiers intégrés. Lire la [vérification actuelle](docs/12-revue-corrections-2026-10-20.md).
 
 **Prototype à revoir avant fabrication ou mise sous tension.** Les fichiers confirment des progrès et des points encore ouverts :
 
 - **Corrections confirmées :** anciennes pistes +15V de J5-17 supprimées, R35 raccordée à +400V, quatre couches cuivre et deux masques présents dans les Gerbers.
-- **Q15 :** source 12 sur ISENSE3_P, mais SGND 7 et PGND 11 sur ISENSE1_P. Cette référence de pilote différente de la source reste à corriger ou justifier.
+- **Q15 corrigée :** source 12, SGND 7, PGND 11 et retours C52/C53 sont sur ISENSE3_P. Les deux shunts de 10 mΩ restent séparés ; mesures et protections à valider sur banc.
 - **Mesures courant :** R59/R60 sont de nouveau deux shunts séparés de 10 mΩ ; IFBCOM reste raccordée. Gains, seuils et dynamique à valider.
 - **Contrôles :** 33 erreurs avec trois règles d'espacement/anneaux réactivées sur copie, 17 parités ; ERC à 7 erreurs et 11 avertissements. Les règles ignorées expliquent le zéro du DRC fourni.
+- **Exports :** les 11 Gerbers et les deux fichiers de perçage reçus correspondent à des exports neufs du PCB, après normalisation des seuls en-têtes de version/date et autres métadonnées indiquées dans le rapport.
 - **Fabrication et réglages :** cuivre déclaré 35 µm contre une ancienne intention de 70 µm ; noyau, magnétique, filtre, isolation et fréquence DC-DC mesurée restent à qualifier.
 
-Consulter la [revue actuelle et les actions à réaliser](docs/11-revue-corrections-2026-10-19.md) et l'[audit historique](docs/07-audit-technique.md). Ces constats sont issus des fichiers et des notices, pas de mesures sur une carte physique. Les changements matériels proviennent du ZIP fourni par le concepteur ; la revue ne les présente pas comme une validation de fabrication.
+Consulter la [revue actuelle et les actions à réaliser](docs/12-revue-corrections-2026-10-20.md) et l'[audit historique](docs/07-audit-technique.md). Ces constats sont issus des fichiers et des notices, pas de mesures sur une carte physique. Les changements matériels proviennent du ZIP fourni par le concepteur ; la revue ne les présente pas comme une validation de fabrication.
 
 ## Commencer ici
 
@@ -32,7 +33,7 @@ Consulter la [revue actuelle et les actions à réaliser](docs/11-revue-correcti
 | Régler 50/60 Hz, temps mort et démarrage EGS005Q | [Configuration de l'onduleur](docs/04-reglage-onduleur.md) |
 | Préparer les achats, PCB et l'assemblage | [Fabrication](docs/05-fabrication.md) |
 | Préparer les mesures et les premiers essais | [Mise en service et dépannage](docs/06-mise-en-service.md) |
-| Vérifier les dernières corrections et les points ouverts | [Revue du 19 octobre](docs/11-revue-corrections-2026-10-19.md) |
+| Vérifier les dernières corrections et les points ouverts | [Revue du 20 octobre](docs/12-revue-corrections-2026-10-20.md) |
 | Voir les preuves de la révision initiale | [Audit historique](docs/07-audit-technique.md) |
 | Retrouver les notices des fabricants | [Sources et versions](docs/08-sources.md) |
 | Comprendre la batterie, le BMS et le lien avec le réemploi | [Batteries de seconde vie et cirBATT](docs/09-batteries-seconde-vie.md) |

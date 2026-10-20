@@ -4,7 +4,7 @@ Le projet vise une reproduction indépendante d'un onduleur batterie. Les [point
 
 ## Contributions utiles
 
-- Références du pilote Q15, espacements/anneaux et validation des protections et des deux mesures R59/R60/R52 selon la [revue actuelle](docs/11-revue-corrections-2026-10-19.md).
+- Espacements/anneaux, points ERC et validation des protections et des deux mesures R59/R60/R52 selon la [revue actuelle](docs/12-revue-corrections-2026-10-20.md).
 - Dossier du transformateur : noyau, matériau, spires, connexions, assemblage et mesures.
 - Identification de la carte DC-DC et configuration complète des deux modules.
 - Validation du filtre de sortie, de l'isolation et des protections.
